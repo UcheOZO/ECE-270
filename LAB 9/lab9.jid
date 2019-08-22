@@ -1,0 +1,5 @@
+. lab9_top uozor_lab9.v "u:\desktop\lab 9\uozor_lab9.v"
+FDIVBY2 frequency_divider uozor_lab9.v "u:\desktop\lab 9\uozor_lab9.v"
+I1 OSCTIMER  "u:\desktop\lab 9\"
+LFTPB bounceless_switch uozor_lab9.v "u:\desktop\lab 9\uozor_lab9.v"
+RGTPB bounceless_switch uozor_lab9.v "u:\desktop\lab 9\uozor_lab9.v"

@@ -1,0 +1,15 @@
+MODULE moorelsa_sd DEFIN uozor_lab9.v
+MODULE ring_counter DEFIN uozor_lab9.v
+MODULE bintohex DEFIN uozor_lab9.v
+MODULE up_down_counter DEFIN uozor_lab9.v
+MODULE bounceless_switch DEFIN uozor_lab9.v
+MODULE frequency_divider DEFIN uozor_lab9.v
+MODULE lab9_top DEFIN uozor_lab9.v
+	SUBMODULE bounceless_switch
+		INSTANCE LFTPB
+	SUBMODULE bounceless_switch
+		INSTANCE RGTPB
+	SUBMODULE frequency_divider
+		INSTANCE FDIVBY2
+	SUBMODULE OSCTIMER
+		INSTANCE I1

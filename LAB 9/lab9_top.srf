@@ -1,0 +1,100 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC20
+
+#Implementation: lab 9
+
+$ Start of Compile
+#Thu Mar 21 07:55:17 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v"
+@I::"U:\desktop\lab 9\lab9.h"
+@I::"U:\desktop\lab 9\uozor_lab9.v"
+Verilog syntax check successful!
+Selecting top level module lab9_top
+@N: CG364 :"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v":417:7:417:14|Synthesizing module OSCTIMER
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":203:9:203:25|Synthesizing module frequency_divider
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":176:9:176:25|Synthesizing module bounceless_switch
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":222:9:222:23|Synthesizing module up_down_counter
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":266:9:266:16|Synthesizing module bintohex
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":320:7:320:18|Synthesizing module ring_counter
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":355:7:355:17|Synthesizing module moorelsa_sd
+
+@N: CG364 :"U:\desktop\lab 9\uozor_lab9.v":1:7:1:14|Synthesizing module lab9_top
+
+@W: CG296 :"U:\desktop\lab 9\uozor_lab9.v":153:11:153:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab 9\uozor_lab9.v":159:13:159:16|Referenced variable hexL is not in sensitivity list
+@W: CG290 :"U:\desktop\lab 9\uozor_lab9.v":159:30:159:33|Referenced variable hexR is not in sensitivity list
+@N: CL201 :"U:\desktop\lab 9\uozor_lab9.v":376:0:376:5|Trying to extract state machine for register present_state
+Extracted state machine for register present_state
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   110
+   111
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 21 07:55:17 2019
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"u:\desktop\lab 9\uozor_lab9.v":293:1:293:4|Found ROM, 'DIS1H.hexout_1[6:0]', 16 words by 7 bits 
+@N: MO106 :"u:\desktop\lab 9\uozor_lab9.v":293:1:293:4|Found ROM, 'DIS4H.hexout_1[6:0]', 16 words by 7 bits 
+Encoding state machine present_state[6:0] (view:work.moorelsa_sd(verilog))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   100 -> 0010001
+   110 -> 0100001
+   111 -> 1000001
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+OSCTIMER        1 use
+DFFRH           17 uses
+DFF             7 uses
+DFFRSH          2 uses
+IBUF            12 uses
+OBUF            57 uses
+AND2            131 uses
+XOR2            12 uses
+INV             105 uses
+OR2             5 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 94MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 21 07:55:18 2019
+
+###########################################################]
