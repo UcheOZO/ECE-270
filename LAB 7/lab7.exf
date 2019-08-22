@@ -1,0 +1,78 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      I[0:7]                        I                  0          8            1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      I_0_                        I[0]                       1            0            
+        Port      I_1_                        I[1]                       1            1            
+        Port      I_2_                        I[2]                       1            2            
+        Port      I_3_                        I[3]                       1            3            
+        Port      I_4_                        I[4]                       1            4            
+        Port      I_5_                        I[5]                       1            5            
+        Port      I_6_                        I[6]                       1            6            
+        Port      I_7_                        I[7]                       1            7            
+End
+Section Cross Reference File
+Design 'LAB7' created Wed Feb 27 02:02:13 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   I_7_                                      I[7]
+   Inst                   I_6_                                      I[6]
+   Inst                   I_5_                                      I[5]
+   Inst                   I_4_                                      I[4]
+   Inst                   I_3_                                      I[3]
+   Inst                   I_2_                                      I[2]
+   Inst                   I_1_                                      I[1]
+   Inst                   I_0_                                      I[0]
+   Inst                 I_i_7_                                    I_i[7]
+   Inst                 I_i_6_                                    I_i[6]
+   Inst                 I_i_5_                                    I_i[5]
+   Inst                 I_i_4_                                    I_i[4]
+   Inst                 I_i_3_                                    I_i[3]
+   Inst                 I_i_2_                                    I_i[2]
+   Inst                 I_i_1_                                    I_i[1]
+   Inst                 I_i_0_                                    I_i[0]
+   Net                i_i_7__n                                    I_i[7]
+   Net                i_i_6__n                                    I_i[6]
+   Net                i_i_5__n                                    I_i[5]
+   Net                i_i_4__n                                    I_i[4]
+   Net                i_i_3__n                                    I_i[3]
+   Net                i_i_2__n                                    I_i[2]
+   Net                i_i_1__n                                    I_i[1]
+   Net                i_i_0__n                                    I_i[0]
+   Net                i_c_7__n                                    I_c[7]
+   Net                  i_7__n                                      I[7]
+   Net                i_c_6__n                                    I_c[6]
+   Net                  i_6__n                                      I[6]
+   Net                i_c_5__n                                    I_c[5]
+   Net                  i_5__n                                      I[5]
+   Net                i_c_4__n                                    I_c[4]
+   Net                  i_4__n                                      I[4]
+   Net                i_c_3__n                                    I_c[3]
+   Net                  i_3__n                                      I[3]
+   Net                i_c_2__n                                    I_c[2]
+   Net                  i_2__n                                      I[2]
+   Net                i_c_1__n                                    I_c[1]
+   Net                  i_1__n                                      I[1]
+   Net                i_c_0__n                                    I_c[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     I_0_
+        Input     I_1_
+        Input     I_2_
+        Input     I_3_
+        Input     I_4_
+        Input     I_5_
+        Input     I_6_
+        Input     I_7_
+        Output     A
+        Output     B
+        Output     C
+        Output     D
+        Output     E
+        Output     F
+        Output     G
+        Output     DP
+End

@@ -1,0 +1,71 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC04
+
+#Implementation: lab 7
+
+$ Start of Compile
+#Wed Feb 27 05:36:26 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\cpld\lattice.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\generic\verilog\synplify\generic.v"
+@I::"U:\desktop\lab 7\lab7.h"
+@I::"U:\desktop\lab 7\alpha.v"
+Verilog syntax check successful!
+File U:\desktop\lab 7\alpha.v changed - recompiling
+Selecting top level module ALPHA
+@N: CG364 :"U:\desktop\lab 7\alpha.v":2:7:2:11|Synthesizing module ALPHA
+
+@W: CG360 :"U:\desktop\lab 7\alpha.v":2:37:2:38|No assignment to wire DP
+
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL259 :"U:\desktop\lab 7\alpha.v":53:27:53:31|Duplicate loc attributes found on net
+@W: CL157 :"U:\desktop\lab 7\alpha.v":2:37:2:38|*Output DP has undriven bits -- simulation mismatch possible.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 27 05:36:26 2019
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@W: MO111 :"u:\desktop\lab 7\alpha.v":2:37:2:38|Tristate driver DP on net DP has its enable tied to GND (module ALPHA) 
+@N: MO106 :"u:\desktop\lab 7\alpha.v":16:3:16:6|Found ROM, 'SEG7[6:0]', 32 words by 7 bits 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            5 uses
+OBUF            7 uses
+BUFTH           1 use
+AND2            93 uses
+INV             53 uses
+XOR2            1 use
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 94MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 27 05:36:27 2019
+
+###########################################################]

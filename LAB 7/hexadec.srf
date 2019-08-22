@@ -1,0 +1,30 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC04
+
+#Implementation: lab 7
+
+$ Start of Compile
+#Wed Feb 27 01:09:23 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\cpld\lattice.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\generic\verilog\synplify\generic.v"
+@I::"U:\desktop\lab 7\lab7.h"
+@I::"U:\desktop\lab 7\lab7.v"
+@E: CS187 :"U:\desktop\lab 7\lab7.v":7:10:7:10|Expecting ,
+@E: CS187 :"U:\desktop\lab 7\lab7.v":16:0:16:8|Expecting endmodule
+2 syntax errors
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 27 01:09:23 2019
+
+###########################################################]

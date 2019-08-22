@@ -1,0 +1,34 @@
+#$ TOOL ispLEVER Classic 1.7.00.05.28.13
+#$ DATE Wed Feb 27 02:02:13 2019
+#$ MODULE lab7
+#$ PINS 16 I_0_:2'ke'  A:14'ke'  B:15'ke'  C:16'ke'  D:17'ke'  E:18'ke'  F:19'ke'  G:20'ke'  DP:21'ke'  I_1_:3'ke'  I_2_:4'ke'  I_3_:5'ke'  I_4_:6'ke'  I_5_:7'ke'  I_6_:8'ke'  I_7_:9'ke' 
+
+.model lab7
+.inputs I_0_.BLIF I_1_.BLIF I_2_.BLIF I_3_.BLIF I_4_.BLIF I_5_.BLIF I_6_.BLIF \
+I_7_.BLIF
+.outputs A B C D E F G DP
+.names I_0_.BLIF A
+0 1
+1 0
+.names I_1_.BLIF B
+0 1
+1 0
+.names I_2_.BLIF C
+0 1
+1 0
+.names I_3_.BLIF D
+0 1
+1 0
+.names I_4_.BLIF E
+0 1
+1 0
+.names I_5_.BLIF F
+0 1
+1 0
+.names I_6_.BLIF G
+0 1
+1 0
+.names I_7_.BLIF DP
+0 1
+1 0
+.end

@@ -1,0 +1,169 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      I[0:4]                        I                  0          5            1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      I_0_                        I[0]                       1            0            
+        Port      I_1_                        I[1]                       1            1            
+        Port      I_2_                        I[2]                       1            2            
+        Port      I_3_                        I[3]                       1            3            
+        Port      I_4_                        I[4]                       1            4            
+End
+Section Cross Reference File
+Design 'ALPHA' created Wed Feb 27 05:37:10 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                  i_zNN                                      DP
+   Inst                   I_4_                                      I[4]
+   Inst                   I_3_                                      I[3]
+   Inst                   I_2_                                      I[2]
+   Inst                   I_1_                                      I[1]
+   Inst                   I_0_                                      I[0]
+   Inst       SEG7_i_0_a6_2_4_                          SEG7_i_0_a6_2[4]
+   Inst     SEG7_i_0_a6_1_0_4_                        SEG7_i_0_a6_1_0[4]
+   Inst         SEG7_i_0_a6_4_                            SEG7_i_0_a6[4]
+   Inst     SEG7_i_0_a6_3_1_3_                        SEG7_i_0_a6_3_1[3]
+   Inst       SEG7_i_0_a6_3_3_                          SEG7_i_0_a6_3[3]
+   Inst     SEG7_i_0_a6_2_1_3_                        SEG7_i_0_a6_2_1[3]
+   Inst       SEG7_i_0_a6_2_3_                          SEG7_i_0_a6_2[3]
+   Inst     SEG7_i_0_a6_0_1_3_                        SEG7_i_0_a6_0_1[3]
+   Inst       SEG7_i_0_a6_0_3_                          SEG7_i_0_a6_0[3]
+   Inst     SEG7_i_0_a6_1_0_3_                        SEG7_i_0_a6_1_0[3]
+   Inst         SEG7_i_0_a6_3_                            SEG7_i_0_a6[3]
+   Inst     SEG7_i_i_a6_0_1_0_                        SEG7_i_i_a6_0_1[0]
+   Inst       SEG7_i_i_a6_0_0_                          SEG7_i_i_a6_0[0]
+   Inst     SEG7_i_0_a6_3_1_6_                        SEG7_i_0_a6_3_1[6]
+   Inst       SEG7_i_0_a6_3_6_                          SEG7_i_0_a6_3[6]
+   Inst     SEG7_i_0_a6_2_1_6_                        SEG7_i_0_a6_2_1[6]
+   Inst       SEG7_i_0_a6_2_6_                          SEG7_i_0_a6_2[6]
+   Inst     SEG7_i_0_a6_1_0_6_                        SEG7_i_0_a6_1_0[6]
+   Inst         SEG7_i_0_a6_6_                            SEG7_i_0_a6[6]
+   Inst     SEG7_0_0_a6_3_1_5_                        SEG7_0_0_a6_3_1[5]
+   Inst       SEG7_0_0_a6_3_5_                          SEG7_0_0_a6_3[5]
+   Inst     SEG7_0_0_a6_0_1_5_                        SEG7_0_0_a6_0_1[5]
+   Inst       SEG7_0_0_a6_0_5_                          SEG7_0_0_a6_0[5]
+   Inst     SEG7_0_0_a6_1_0_5_                        SEG7_0_0_a6_1_0[5]
+   Inst         SEG7_0_0_a6_5_                            SEG7_0_0_a6[5]
+   Inst     SEG7_i_0_a6_2_1_4_                        SEG7_i_0_a6_2_1[4]
+   Inst          SEG7_i_0_2_4_                             SEG7_i_0_2[4]
+   Inst          SEG7_i_0_3_4_                             SEG7_i_0_3[4]
+   Inst            SEG7_i_0_4_                               SEG7_i_0[4]
+   Inst          SEG7_i_0_1_3_                             SEG7_i_0_1[3]
+   Inst          SEG7_i_0_2_3_                             SEG7_i_0_2[3]
+   Inst          SEG7_i_0_3_3_                             SEG7_i_0_3[3]
+   Inst            SEG7_i_0_3_                               SEG7_i_0[3]
+   Inst     SEG7_i_0_a6_2_1_2_                        SEG7_i_0_a6_2_1[2]
+   Inst       SEG7_i_0_a6_2_2_                          SEG7_i_0_a6_2[2]
+   Inst     SEG7_i_0_a6_1_0_2_                        SEG7_i_0_a6_1_0[2]
+   Inst         SEG7_i_0_a6_2_                            SEG7_i_0_a6[2]
+   Inst     SEG7_i_0_a6_1_1_1_                        SEG7_i_0_a6_1_1[1]
+   Inst       SEG7_i_0_a6_1_1_                          SEG7_i_0_a6_1[1]
+   Inst     SEG7_i_0_a6_1_0_1_                        SEG7_i_0_a6_1_0[1]
+   Inst         SEG7_i_0_a6_1_                            SEG7_i_0_a6[1]
+   Inst          SEG7_i_i_2_0_                             SEG7_i_i_2[0]
+   Inst          SEG7_i_i_3_0_                             SEG7_i_i_3[0]
+   Inst          SEG7_i_i_4_0_                             SEG7_i_i_4[0]
+   Inst            SEG7_i_i_0_                               SEG7_i_i[0]
+   Inst          SEG7_i_0_1_6_                             SEG7_i_0_1[6]
+   Inst          SEG7_i_0_2_6_                             SEG7_i_0_2[6]
+   Inst          SEG7_i_0_3_6_                             SEG7_i_0_3[6]
+   Inst          SEG7_i_0_4_6_                             SEG7_i_0_4[6]
+   Inst            SEG7_i_0_6_                               SEG7_i_0[6]
+   Inst          SEG7_0_0_1_5_                             SEG7_0_0_1[5]
+   Inst          SEG7_0_0_2_5_                             SEG7_0_0_2[5]
+   Inst          SEG7_0_0_3_5_                             SEG7_0_0_3[5]
+   Inst          SEG7_0_0_4_5_                             SEG7_0_0_4[5]
+   Inst            SEG7_0_0_5_                               SEG7_0_0[5]
+   Inst          SEG7_i_0_1_4_                             SEG7_i_0_1[4]
+   Inst          SEG7_i_0_i_4_                             SEG7_i_0_i[4]
+   Inst          SEG7_i_0_i_3_                             SEG7_i_0_i[3]
+   Inst          SEG7_i_0_1_2_                             SEG7_i_0_1[2]
+   Inst          SEG7_i_0_2_2_                             SEG7_i_0_2[2]
+   Inst          SEG7_i_0_3_2_                             SEG7_i_0_3[2]
+   Inst            SEG7_i_0_2_                               SEG7_i_0[2]
+   Inst          SEG7_i_0_1_1_                             SEG7_i_0_1[1]
+   Inst          SEG7_i_0_2_1_                             SEG7_i_0_2[1]
+   Inst            SEG7_i_0_1_                               SEG7_i_0[1]
+   Inst          SEG7_i_i_1_0_                             SEG7_i_i_1[0]
+   Inst          SEG7_i_0_i_6_                             SEG7_i_0_i[6]
+   Inst          SEG7_i_0_i_2_                             SEG7_i_0_i[2]
+   Inst          SEG7_i_0_i_1_                             SEG7_i_0_i[1]
+   Inst     SEG7_i_0_o2_0_i_1_                        SEG7_i_0_o2_0_i[1]
+   Inst     SEG7_i_0_o2_0_i_3_                        SEG7_i_0_o2_0_i[3]
+   Inst       SEG7_i_i_o2_i_0_                          SEG7_i_i_o2_i[0]
+   Inst       SEG7_i_0_o2_i_1_                          SEG7_i_0_o2_i[1]
+   Inst       SEG7_0_0_o2_i_5_                          SEG7_0_0_o2_i[5]
+   Inst       SEG7_i_0_o2_i_3_                          SEG7_i_0_o2_i[3]
+   Inst         SEG7_0_0_o2_5_                            SEG7_0_0_o2[5]
+   Inst                 I_i_1_                                    I_i[1]
+   Inst         SEG7_i_0_o2_1_                            SEG7_i_0_o2[1]
+   Inst         SEG7_i_i_o2_0_                            SEG7_i_i_o2[0]
+   Inst                 I_i_0_                                    I_i[0]
+   Inst       SEG7_i_0_o2_0_3_                          SEG7_i_0_o2_0[3]
+   Inst       SEG7_i_0_o2_0_1_                          SEG7_i_0_o2_0[1]
+   Inst       SEG7_i_0_a6_0_2_                          SEG7_i_0_a6_0[2]
+   Inst       SEG7_i_0_a6_1_2_                          SEG7_i_0_a6_1[2]
+   Inst       SEG7_i_0_a2_0_2_                          SEG7_i_0_a2_0[2]
+   Inst         SEG7_i_0_a2_3_                            SEG7_i_0_a2[3]
+   Inst         SEG7_i_0_a2_2_                            SEG7_i_0_a2[2]
+   Inst       SEG7_i_0_a2_0_4_                          SEG7_i_0_a2_0[4]
+   Inst       SEG7_i_0_a2_1_4_                          SEG7_i_0_a2_1[4]
+   Inst         SEG7_0_0_a2_5_                            SEG7_0_0_a2[5]
+   Inst       SEG7_i_0_a2_2_4_                          SEG7_i_0_a2_2[4]
+   Inst                 I_i_4_                                    I_i[4]
+   Inst         SEG7_i_0_a2_4_                            SEG7_i_0_a2[4]
+   Inst         SEG7_i_0_o2_3_                            SEG7_i_0_o2[3]
+   Inst         SEG7_i_0_x2_3_                            SEG7_i_0_x2[3]
+   Inst                 I_i_2_                                    I_i[2]
+   Inst                 I_i_3_                                    I_i[3]
+   Inst       SEG7_i_0_a6_1_3_                          SEG7_i_0_a6_1[3]
+   Inst       SEG7_i_0_a6_0_4_                          SEG7_i_0_a6_0[4]
+   Inst       SEG7_i_0_a6_1_4_                          SEG7_i_0_a6_1[4]
+   Inst       SEG7_0_0_a6_1_5_                          SEG7_0_0_a6_1[5]
+   Inst       SEG7_0_0_a6_2_5_                          SEG7_0_0_a6_2[5]
+   Inst       SEG7_i_0_a6_0_6_                          SEG7_i_0_a6_0[6]
+   Inst       SEG7_i_0_a6_1_6_                          SEG7_i_0_a6_1[6]
+   Inst         SEG7_i_i_a6_0_                            SEG7_i_i_a6[0]
+   Inst       SEG7_i_i_a6_1_0_                          SEG7_i_i_a6_1[0]
+   Inst       SEG7_i_i_a6_2_0_                          SEG7_i_i_a6_2[0]
+   Inst       SEG7_i_i_a6_3_0_                          SEG7_i_i_a6_3[0]
+   Inst       SEG7_i_i_a6_4_0_                          SEG7_i_i_a6_4[0]
+   Inst       SEG7_i_0_a6_0_1_                          SEG7_i_0_a6_0[1]
+   Net                 gnd_n_n                                       GND
+   Net                i_i_0__n                                    I_i[0]
+   Net                i_i_1__n                                    I_i[1]
+   Net                i_i_2__n                                    I_i[2]
+   Net                i_i_3__n                                    I_i[3]
+   Net                i_i_4__n                                    I_i[4]
+   Net                i_c_4__n                                    I_c[4]
+   Net                  i_4__n                                      I[4]
+   Net                i_c_3__n                                    I_c[3]
+   Net                  i_3__n                                      I[3]
+   Net                i_c_2__n                                    I_c[2]
+   Net                  i_2__n                                      I[2]
+   Net                i_c_1__n                                    I_c[1]
+   Net                  i_1__n                                      I[1]
+   Net                i_c_0__n                                    I_c[0]
+   Net             seg7_i_5__n                                 SEG7_i[5]
+   Net           seg7_i_1_5__n                               SEG7_i_1[5]
+   Net           seg7_i_2_5__n                               SEG7_i_2[5]
+   Net           seg7_i_3_5__n                               SEG7_i_3[5]
+   Net           seg7_i_4_5__n                               SEG7_i_4[5]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     I_0_
+        Input     I_1_
+        Input     I_2_
+        Input     I_3_
+        Input     I_4_
+        Output     A
+        Output     B
+        Output     C
+        Output     D
+        Output     E
+        Output     F
+        Output     G
+        Output     DP
+End

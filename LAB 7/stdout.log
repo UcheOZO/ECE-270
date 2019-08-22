@@ -1,0 +1,44 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic1_7\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic1_7\synpbase
+Date:        Wed Feb 27 06:02:05 2019
+Version:     G-2012.09LC-SP1 
+
+Arguments:   -product synplify_pro  -batch u:/desktop/lab 7\ARM.prj
+ProductType: synplify_pro
+
+
+
+
+
+
+log file: "U:\desktop\lab 7\ARM.srr"
+
+Running ARM|lab 7
+Running Compile on ARM|lab 7
+Running Compile Process on ARM|lab 7
+Running Compile Input on ARM|lab 7
+Copied U:\desktop\lab 7\synwork\ARM_compiler.srs to U:\desktop\lab 7\ARM.srs
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Copied U:\desktop\lab 7\ARM.srr to U:\desktop\lab 7\arm.srf
+Job Compile Process completed on ARM|lab 7
+Job Compile completed on ARM|lab 7
+Running Map on ARM|lab 7
+Running Map & Optimize on ARM|lab 7
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:00s
+
+Job Map completed on ARM|lab 7
+Copied U:\desktop\lab 7\ARM.srr to U:\desktop\lab 7\arm.srf
+Job Logic Synthesis completed on ARM|lab 7
+
+
+exit status=0
+
+

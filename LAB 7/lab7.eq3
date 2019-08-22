@@ -1,0 +1,162 @@
+ispLEVER Classic 1.7.00.05.28.13 Linked Equations File
+Copyright(C), 1992-2013, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design arm created Wed Feb 27 04:43:50 2019
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          0        1    Pin   B 
+   1          0        1    Pin   C 
+   0/1        0        1    Pin   D 
+   1/8        8        1    Pin   E.AR 
+   1          0        1    Pin   E.D 
+   1/8        8        1    Pin   E.LH 
+   1/8        8        1    Pin   F.AR 
+   1          0        1    Pin   F.D 
+   1/8        8        1    Pin   F.LH 
+   0/1        0        1    Pin   DP 
+   0/1        0        1    Pin   DP.OE 
+   1/8        8        1    Pin   A.AR 
+   1          0        1    Pin   A.D 
+   1/8        8        1    Pin   A.LH 
+   1/8        8        1    Pin   G.AR 
+   1          0        1    Pin   G.D 
+   1/8        8        1    Pin   G.LH 
+=========
+  14/67         Best P-Term Total: 14
+                       Total Pins: 16
+                      Total Nodes: 0
+            Average P-Term/Output: 0
+
+
+Equations:
+
+B = (1);
+
+C = (1);
+
+D = (0);
+
+E.AR = (I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+E.D = (1);
+
+E.LH = (!I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+F.AR = (I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+F.D = (1);
+
+F.LH = (!I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+DP = (0);
+
+DP.OE = (0);
+
+A.AR = (I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+A.D = (1);
+
+A.LH = (!I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+G.AR = (I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+G.D = (1);
+
+G.LH = (!I_0_ & !I_1_ & !I_2_ & !I_3_ & !I_4_ & !I_5_ & !I_6_ & I_7_);
+
+
+Reverse-Polarity Equations:
+
+!B = (0);
+
+!C = (0);
+
+!D = (1);
+
+!E.AR = (!I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!E.D = (0);
+
+!E.LH = (I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!F.AR = (!I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!F.D = (0);
+
+!F.LH = (I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!DP = (1);
+
+!DP.OE = (1);
+
+!A.AR = (!I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!A.D = (0);
+
+!A.LH = (I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!G.AR = (!I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+
+!G.D = (0);
+
+!G.LH = (I_0_
+     # I_1_
+     # I_2_
+     # I_3_
+     # I_4_
+     # I_5_
+     # I_6_
+     # !I_7_);
+

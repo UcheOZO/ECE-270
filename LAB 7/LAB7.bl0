@@ -1,0 +1,62 @@
+#$ DATE Wed Feb 27 02:02:13 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE lab7
+#$ PINS 16 I_0_:2'ke'  A:14'ke'  B:15'ke'  C:16'ke'  D:17'ke'  E:18'ke'  F:19'ke'  G:20'ke'  DP:21'ke'  I_1_:3'ke'  I_2_:4'ke'  I_3_:5'ke'  I_4_:6'ke'  I_5_:7'ke'  I_6_:8'ke'  I_7_:9'ke' 
+#$ NODES 16 i_i_7__n i_i_6__n i_i_5__n i_i_4__n i_i_3__n i_i_2__n i_i_1__n i_i_0__n i_c_7__n i_c_6__n \
+#  i_c_5__n i_c_4__n i_c_3__n i_c_2__n i_c_1__n i_c_0__n 
+.model lab7
+.inputs I_0_.BLIF I_1_.BLIF I_2_.BLIF I_3_.BLIF I_4_.BLIF I_5_.BLIF I_6_.BLIF I_7_.BLIF i_i_7__n.BLIF \
+  i_i_6__n.BLIF i_i_5__n.BLIF i_i_4__n.BLIF i_i_3__n.BLIF i_i_2__n.BLIF i_i_1__n.BLIF i_i_0__n.BLIF i_c_7__n.BLIF i_c_6__n.BLIF \
+  i_c_5__n.BLIF i_c_4__n.BLIF i_c_3__n.BLIF i_c_2__n.BLIF i_c_1__n.BLIF i_c_0__n.BLIF  
+.outputs A B C D E F G DP i_i_7__n i_i_6__n i_i_5__n \
+  i_i_4__n i_i_3__n i_i_2__n i_i_1__n i_i_0__n i_c_7__n i_c_6__n i_c_5__n i_c_4__n i_c_3__n i_c_2__n \
+  i_c_1__n i_c_0__n
+.names  I_7_.BLIF i_c_7__n
+1 1
+.names  I_6_.BLIF i_c_6__n
+1 1
+.names  I_5_.BLIF i_c_5__n
+1 1
+.names  I_4_.BLIF i_c_4__n
+1 1
+.names  I_3_.BLIF i_c_3__n
+1 1
+.names  I_2_.BLIF i_c_2__n
+1 1
+.names  I_1_.BLIF i_c_1__n
+1 1
+.names  I_0_.BLIF i_c_0__n
+1 1
+.names  i_i_0__n.BLIF A
+1 1
+.names  i_i_1__n.BLIF B
+1 1
+.names  i_i_2__n.BLIF C
+1 1
+.names  i_i_3__n.BLIF D
+1 1
+.names  i_i_4__n.BLIF E
+1 1
+.names  i_i_5__n.BLIF F
+1 1
+.names  i_i_6__n.BLIF G
+1 1
+.names  i_i_7__n.BLIF DP
+1 1
+.names  i_c_7__n.BLIF i_i_7__n
+0 1
+.names  i_c_6__n.BLIF i_i_6__n
+0 1
+.names  i_c_5__n.BLIF i_i_5__n
+0 1
+.names  i_c_4__n.BLIF i_i_4__n
+0 1
+.names  i_c_3__n.BLIF i_i_3__n
+0 1
+.names  i_c_2__n.BLIF i_i_2__n
+0 1
+.names  i_c_1__n.BLIF i_i_1__n
+0 1
+.names  i_c_0__n.BLIF i_i_0__n
+0 1
+.end
