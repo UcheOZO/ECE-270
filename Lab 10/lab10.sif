@@ -1,0 +1,757 @@
+// Node Statistic Information File
+// Tool:  ispLEVER Classic 1.7.00.05.28.13
+// Design 'lab10_top' created   Wed Mar 27 03:37:29 2019
+
+// Fmax Logic Level: 1.
+
+// Path: o_JUMBO_2_.Q
+//    -> o_JUMBO_2_.D
+
+// Signal Name: o_TOPRED_3_
+// Type: Output
+BEGIN o_TOPRED_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_2_
+// Type: Output
+BEGIN o_TOPRED_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_1_
+// Type: Output
+BEGIN o_TOPRED_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_0_
+// Type: Output
+BEGIN o_TOPRED_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_7_
+// Type: Output
+BEGIN o_TOPRED_7_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_6_
+// Type: Output
+BEGIN o_MIDRED_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_5_
+// Type: Output
+BEGIN o_MIDRED_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_7_
+// Type: Output
+BEGIN o_MIDRED_7_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_4_
+// Type: Output
+BEGIN o_MIDRED_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_3_
+// Type: Output
+BEGIN o_MIDRED_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_BOTRED_7_
+// Type: Output
+BEGIN o_BOTRED_7_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_7_.BLIF         	0
+END
+
+// Signal Name: o_MIDRED_2_
+// Type: Output
+BEGIN o_MIDRED_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_1_
+// Type: Output
+BEGIN o_MIDRED_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS1_6_
+// Type: Output
+BEGIN o_DIS1_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_MIDRED_0_
+// Type: Output
+BEGIN o_MIDRED_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_BOTRED_6_
+// Type: Output
+BEGIN o_BOTRED_6_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_6_.BLIF         	0
+END
+
+// Signal Name: o_DIS2_6_
+// Type: Output
+BEGIN o_DIS2_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_BOTRED_5_
+// Type: Output
+BEGIN o_BOTRED_5_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_5_.BLIF         	0
+END
+
+// Signal Name: o_BOTRED_4_
+// Type: Output
+BEGIN o_BOTRED_4_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_4_.BLIF         	0
+END
+
+// Signal Name: o_DIS3_6_
+// Type: Output
+BEGIN o_DIS3_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_BOTRED_3_
+// Type: Output
+BEGIN o_BOTRED_3_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_3_.BLIF         	0
+END
+
+// Signal Name: o_BOTRED_2_
+// Type: Output
+BEGIN o_BOTRED_2_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_2_.BLIF         	0
+END
+
+// Signal Name: o_DIS4_6_
+// Type: Output
+BEGIN o_DIS4_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_BOTRED_1_
+// Type: Output
+BEGIN o_BOTRED_1_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_1_.BLIF         	0
+END
+
+// Signal Name: o_BOTRED_0_
+// Type: Output
+BEGIN o_BOTRED_0_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	DIP_0_.BLIF         	0
+END
+
+// Signal Name: o_JUMBO_2_.D
+// Type: Output_reg
+BEGIN o_JUMBO_2_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	o_JUMBO_2_.Q        	1
+END
+
+// Signal Name: o_JUMBO_2_.C
+// Type: Output_reg
+BEGIN o_JUMBO_2_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Output    	o_JUMBO_1_.Q        	1
+END
+
+// Signal Name: o_JUMBO_2_.AP
+// Type: Output_reg
+BEGIN o_JUMBO_2_.AP
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	LFTPB_Q.Q           	1
+END
+
+// Signal Name: o_DIS1_5_
+// Type: Output
+BEGIN o_DIS1_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS1_4_
+// Type: Output
+BEGIN o_DIS1_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_LED_YELLOW_1_.D
+// Type: Output_reg
+BEGIN o_LED_YELLOW_1_.D
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_LED_YELLOW_1_.C
+// Type: Output_reg
+BEGIN o_LED_YELLOW_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NO.BLIF        	0
+END
+
+// Signal Name: o_LED_YELLOW_1_.AR
+// Type: Output_reg
+BEGIN o_LED_YELLOW_1_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NO.BLIF        	0
+END
+
+// Signal Name: o_LED_YELLOW_1_.AP
+// Type: Output_reg
+BEGIN o_LED_YELLOW_1_.AP
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NC.BLIF        	0
+END
+
+// Signal Name: o_DIS1_3_
+// Type: Output
+BEGIN o_DIS1_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS1_2_
+// Type: Output
+BEGIN o_DIS1_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS1_1_
+// Type: Output
+BEGIN o_DIS1_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS1_0_
+// Type: Output
+BEGIN o_DIS1_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_5_
+// Type: Output
+BEGIN o_DIS2_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_4_
+// Type: Output
+BEGIN o_DIS2_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_3_
+// Type: Output
+BEGIN o_DIS2_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_2_
+// Type: Output
+BEGIN o_DIS2_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_1_
+// Type: Output
+BEGIN o_DIS2_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS2_0_
+// Type: Output
+BEGIN o_DIS2_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_5_
+// Type: Output
+BEGIN o_DIS3_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_4_
+// Type: Output
+BEGIN o_DIS3_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_3_
+// Type: Output
+BEGIN o_DIS3_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_2_
+// Type: Output
+BEGIN o_DIS3_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_1_
+// Type: Output
+BEGIN o_DIS3_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS3_0_
+// Type: Output
+BEGIN o_DIS3_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_5_
+// Type: Output
+BEGIN o_DIS4_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_4_
+// Type: Output
+BEGIN o_DIS4_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_3_
+// Type: Output
+BEGIN o_DIS4_3_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_2_
+// Type: Output
+BEGIN o_DIS4_2_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_1_
+// Type: Output
+BEGIN o_DIS4_1_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_DIS4_0_
+// Type: Output
+BEGIN o_DIS4_0_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_JUMBO_1_.D
+// Type: Output_reg
+BEGIN o_JUMBO_1_.D
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		1
+Fanin Output    	o_JUMBO_1_.Q        	1
+END
+
+// Signal Name: o_JUMBO_1_.C
+// Type: Output_reg
+BEGIN o_JUMBO_1_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	tmr_out.BLIF        	0
+END
+
+// Signal Name: o_JUMBO_1_.AP
+// Type: Output_reg
+BEGIN o_JUMBO_1_.AP
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Node      	LFTPB_Q.Q           	1
+END
+
+// Signal Name: o_JUMBO_0_
+// Type: Output
+BEGIN o_JUMBO_0_
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	tmr_out.BLIF        	0
+END
+
+// Signal Name: o_LED_YELLOW_0_.D
+// Type: Output_reg
+BEGIN o_LED_YELLOW_0_.D
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_LED_YELLOW_0_.C
+// Type: Output_reg
+BEGIN o_LED_YELLOW_0_.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S1_NO.BLIF        	0
+END
+
+// Signal Name: o_LED_YELLOW_0_.AR
+// Type: Output_reg
+BEGIN o_LED_YELLOW_0_.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S1_NO.BLIF        	0
+END
+
+// Signal Name: o_LED_YELLOW_0_.AP
+// Type: Output_reg
+BEGIN o_LED_YELLOW_0_.AP
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S1_NC.BLIF        	0
+END
+
+// Signal Name: o_TOPRED_6_
+// Type: Output
+BEGIN o_TOPRED_6_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_5_
+// Type: Output
+BEGIN o_TOPRED_5_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: o_TOPRED_4_
+// Type: Output
+BEGIN o_TOPRED_4_
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: gnd_n_n
+// Type: Node
+BEGIN gnd_n_n
+Fanin Number		0
+Pterm Number		0
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: LFTPB_Q.D
+// Type: Node_reg
+BEGIN LFTPB_Q.D
+Fanin Number		0
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+END
+
+// Signal Name: LFTPB_Q.C
+// Type: Node_reg
+BEGIN LFTPB_Q.C
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NO.BLIF        	0
+END
+
+// Signal Name: LFTPB_Q.AR
+// Type: Node_reg
+BEGIN LFTPB_Q.AR
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NC.BLIF        	0
+END
+
+// Signal Name: LFTPB_Q.AP
+// Type: Node_reg
+BEGIN LFTPB_Q.AP
+Fanin Number		1
+Pterm Number		1
+Fanin per Macrocell	N/A
+Cluster PT		N/A
+Logic Levels		N/A
+Fanin Input     	i_S2_NO.BLIF        	0
+END
+
+// Design 'lab10_top' used clock signal list:
+CLOCK	i_S2_NO
+CLOCK	i_S1_NO
+

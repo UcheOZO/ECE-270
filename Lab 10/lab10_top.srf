@@ -1,0 +1,100 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC20
+
+#Implementation: lab 10
+
+$ Start of Compile
+#Thu Mar 28 08:15:28 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v"
+@I::"U:\desktop\lab 10\lab10.h"
+@I::"U:\desktop\lab 10\uozor_lab10.v"
+Verilog syntax check successful!
+File U:\desktop\lab 10\uozor_lab10.v changed - recompiling
+Selecting top level module lab10_top
+@N: CG364 :"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v":417:7:417:14|Synthesizing module OSCTIMER
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":162:9:162:25|Synthesizing module frequency_divider
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":135:9:135:25|Synthesizing module bounceless_switch
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":228:7:228:12|Synthesizing module msggen
+
+@W: CG296 :"U:\desktop\lab 10\uozor_lab10.v":324:10:324:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab 10\uozor_lab10.v":325:13:325:15|Referenced variable RST is not in sensitivity list
+@W: CG290 :"U:\desktop\lab 10\uozor_lab10.v":325:3:325:4|Referenced variable CQ is not in sensitivity list
+@W: CG296 :"U:\desktop\lab 10\uozor_lab10.v":333:10:333:23|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab 10\uozor_lab10.v":334:7:334:8|Referenced variable CQ is not in sensitivity list
+@W: CG290 :"U:\desktop\lab 10\uozor_lab10.v":337:2:337:3|Referenced variable count is not in sensitivity list
+@A: CL110 :"U:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Too many clocks (> 8) for set/reset analysis of next_CQ, try moving enabling expressions outside always block
+@W: CL118 :"U:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Latch generated from always block for signal next_CQ[5:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"U:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Latch generated from always block for signal next[6:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"U:\desktop\lab 10\uozor_lab10.v":325:0:325:1|Latch generated from always block for signal count[3:0]; possible missing assignment in an if or case statement.
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":182:7:182:15|Synthesizing module dispshift
+
+@N: CL177 :"U:\desktop\lab 10\uozor_lab10.v":198:0:198:5|Sharing sequential element Di2.
+@N: CL177 :"U:\desktop\lab 10\uozor_lab10.v":198:0:198:5|Sharing sequential element Di3.
+@W: CL169 :"U:\desktop\lab 10\uozor_lab10.v":198:0:198:5|Pruning register Di4[6:0] 
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":473:7:473:13|Synthesizing module john4sc
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":500:7:500:13|Synthesizing module johndec
+
+@N: CG364 :"U:\desktop\lab 10\uozor_lab10.v":1:7:1:15|Synthesizing module lab10_top
+
+@W: CL156 :"U:\desktop\lab 10\uozor_lab10.v":121:7:121:18|*Input un1_johnstate[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 28 08:15:29 2019
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"u:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Found ROM, 'next_1[6:0]', 12 words by 7 bits 
+@W: MO129 :"u:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Sequential instance STEP3A.next_CQ[5] reduced to a combinational gate by constant propagation
+@W: MT462 :"u:\desktop\lab 10\uozor_lab10.v":335:1:412:3|Net STEP3A.N_156_i appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"u:\desktop\lab 10\uozor_lab10.v":325:3:325:21|Net STEP3A.count25_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"u:\desktop\lab 10\uozor_lab10.v":334:1:334:4|Net STEP3A.N_186_0 appears to be an unidentified clock source. Assuming default frequency. 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+OSCTIMER        1 use
+DFF             13 uses
+DFFRH           41 uses
+DFFRSH          2 uses
+IBUF            12 uses
+OBUF            57 uses
+AND2            196 uses
+INV             168 uses
+OR2             2 uses
+XOR2            2 uses
+DLAT            9 uses
+DLATRSH         6 uses
+DLATRH          1 use
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 32MB peak: 95MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 28 08:15:31 2019
+
+###########################################################]

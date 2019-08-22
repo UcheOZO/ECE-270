@@ -1,0 +1,1 @@
+-nodal -src lab10.bl5 -type BLIF -presrc lab10.bl3 -crf lab10.crf -sif lab10.sif -devfile "C:/ispLEVER_Classic1_7/ispcpld/dat/lc4k/m4e_256_96.dev" -lci lab10.lct
