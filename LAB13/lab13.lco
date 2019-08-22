@@ -1,0 +1,495 @@
+[DEVICE]
+Family = lc4k;
+PartType = LC4256ZE;
+Package = 144TQFP;
+PartNumber = LC4256ZE-5TN144C;
+Speed = -5.8;
+Operating_condition = COM;
+EN_Segment = Yes;
+Pin_MC_1to1 = No;
+Default_Device_Io_Types=LVCMOS18,-;
+Voltage = 1.8;
+
+[REVISION]
+RCS = "$Header $";
+Parent = lc4k256e.lci;
+Design = ;
+DATE = 04/16/2019;
+TIME = 19:12:25;
+Source_Format = Pure_Verilog_HDL;
+Type = ;
+Pre_Fit_Time = ;
+
+[IGNORE ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+IO_Types = No;
+
+[CLEAR ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+IO_Types = No;
+
+[BACKANNOTATE ASSIGNMENTS]
+Pin_Assignment = No;
+Pin_Block = No;
+Pin_Macrocell_Block = No;
+Routing = No;
+Io_Types = No;
+
+[GLOBAL CONSTRAINTS]
+Max_Fanin = 24;
+Max_PTerm_Split = 80;
+Max_PTerm_Collapse = 16;
+Max_Pin_Percent = 100;
+Max_Macrocell_Percent = 100;
+Max_GLB_Input_Percent = 100;
+Logic_Reduction = Yes;
+XOR_Synthesis = Yes;
+Keep_XOR = No;
+DT_Synthesis = Yes;
+Node_Collapse = Yes;
+Nodes_collapsing_mode = Area;
+Use_CE = Yes;
+Use_Internal_COM_FB = Yes;
+Set_Reset_Swap = No;
+Clock_Optimize = No;
+EN_Set_Reset_Dont_Care = No;
+TOE_AS_IO = No;
+Set_Reset_Dont_Care = No;
+EN_In_Reg_Optimize = No;
+In_Reg_Optimize = Yes;
+Run_Time = 0;
+Routing_Attempts = 2;
+Balanced_Partitioning = Yes;
+Spread_Placement = Yes;
+Vcc = ;
+Dual_Function_Macrocell = 1;
+Global_PTOE = Yes;
+Hard_Fast_Bypass = No;
+Fitter_Effort_Level = LOW;
+Auto_buffering_for_high_glb_fanin = Off;
+Auto_buffering_for_low_bonded_io = Off;
+User_max_glb_fanin = 36;
+Adjust_input_assignments = Off;
+
+[LOCATION ASSIGNMENTS]
+// Block A
+o_MIDRED_7_=pin,130,-,A,2;
+o_MIDRED_6_=pin,131,-,A,4;
+o_MIDRED_5_=pin,132,-,A,6;
+o_MIDRED_4_=pin,133,-,A,8;
+o_MIDRED_3_=pin,134,-,A,1;
+o_MIDRED_2_=pin,135,-,A,0;
+STEP3_qIR_1_=node,-,-,A,7;
+STEP1B_MEM_STEP1B_MEM_ram0__5_=node,-,-,A,14;
+N_803=node,-,-,A,3;
+STEP1B_MEM_STEP1B_MEM_ram5__3_=node,-,-,A,9;
+STEP1B_MEM_STEP1B_MEM_ram10__3_=node,-,-,A,10;
+STEP1B_MEM_STEP1B_MEM_ram11__3_=node,-,-,A,11;
+STEP1B_MEM_STEP1B_MEM_ram13__3_=node,-,-,A,12;
+STEP1B_MEM_STEP1B_MEM_ram14__3_=node,-,-,A,13;
+STEP1B_MEM_STEP1B_MEM_ram14__4_=node,-,-,A,15;
+N_698=node,-,-,A,5;
+// Block B
+o_JUMBO_2_=pin,142,-,B,0;
+o_MIDRED_1_=pin,138,-,B,2;
+o_MIDRED_0_=pin,139,-,B,4;
+o_JUMBO_1_=pin,141,-,B,8;
+o_JUMBO_0_=pin,140,-,B,6;
+N_87=node,-,-,B,5;
+STEP1B_oADDR_0_=node,-,-,B,3;
+STEP1B_oADDR_1_=node,-,-,B,10;
+STEP1B_oADDR_2_=node,-,-,B,9;
+step1b_mem_3__n=node,-,-,B,1;
+N_805=node,-,-,B,7;
+step1b_un1_iaddr_0__n=node,-,-,B,11;
+step1b_un1_iaddr_1__n=node,-,-,B,12;
+step1b_un1_iaddr_2__n=node,-,-,B,13;
+step1b_un1_iaddr_3__n=node,-,-,B,14;
+// Block C
+STEP1B_MEM_STEP1B_MEM_ram0__2_=node,-,-,C,0;
+STEP1B_MEM_STEP1B_MEM_ram1__1_=node,-,-,C,1;
+STEP1B_MEM_STEP1B_MEM_ram1__2_=node,-,-,C,2;
+STEP1B_MEM_STEP1B_MEM_ram4__1_=node,-,-,C,3;
+STEP1B_MEM_STEP1B_MEM_ram5__1_=node,-,-,C,4;
+STEP1B_MEM_STEP1B_MEM_ram6__1_=node,-,-,C,5;
+STEP1B_MEM_STEP1B_MEM_ram7__1_=node,-,-,C,6;
+STEP1B_MEM_STEP1B_MEM_ram8__1_=node,-,-,C,7;
+STEP1B_MEM_STEP1B_MEM_ram9__1_=node,-,-,C,8;
+STEP1B_MEM_STEP1B_MEM_ram9__2_=node,-,-,C,9;
+STEP1B_MEM_STEP1B_MEM_ram10__2_=node,-,-,C,10;
+STEP1B_MEM_STEP1B_MEM_ram11__1_=node,-,-,C,11;
+STEP1B_MEM_STEP1B_MEM_ram12__2_=node,-,-,C,12;
+STEP1B_MEM_STEP1B_MEM_ram13__2_=node,-,-,C,13;
+STEP1B_MEM_STEP1B_MEM_ram15__2_=node,-,-,C,14;
+// Block D
+addrbus_1__n=node,-,-,D,8;
+STEP4B_qA_0_=node,-,-,D,4;
+STEP4B_qA_3_=node,-,-,D,1;
+ipe=node,-,-,D,14;
+STEP5B_oDATA_1_=node,-,-,D,2;
+STEP5B_oDATA_2_=node,-,-,D,7;
+STEP4B_uche_P_0_a2_3_=node,-,-,D,0;
+STEP2_qPC_2_=node,-,-,D,6;
+STEP2_qPC_3_=node,-,-,D,5;
+step4b_uche_un47_c_3_n=node,-,-,D,3;
+addrbus_0_3__n=node,-,-,D,9;
+addrbus_0_2__n=node,-,-,D,10;
+N_100_i=node,-,-,D,12;
+STEP4B_uche_S_1_0_a2_1_1_=node,-,-,D,11;
+o_JUMBO_0__0=node,-,-,D,13;
+// Block E
+DIP_7_=pin,26,-,E,12;
+DIP_6_=pin,25,-,E,10;
+DIP_5_=pin,24,-,E,8;
+DIP_4_=pin,23,-,E,6;
+N_84=node,-,-,E,1;
+STEP1B_MEM_STEP1B_MEM_ram2__2_=node,-,-,E,0;
+STEP1B_MEM_STEP1B_MEM_ram3__2_=node,-,-,E,6;
+STEP1B_MEM_STEP1B_MEM_ram4__2_=node,-,-,E,7;
+STEP1B_MEM_STEP1B_MEM_ram6__2_=node,-,-,E,8;
+STEP1B_MEM_STEP1B_MEM_ram7__2_=node,-,-,E,9;
+STEP1B_MEM_STEP1B_MEM_ram7__5_=node,-,-,E,2;
+STEP1B_MEM_STEP1B_MEM_ram8__2_=node,-,-,E,10;
+STEP1B_MEM_STEP1B_MEM_ram8__5_=node,-,-,E,3;
+STEP1B_MEM_STEP1B_MEM_ram9__5_=node,-,-,E,5;
+STEP1B_MEM_STEP1B_MEM_ram10__5_=node,-,-,E,13;
+STEP1B_MEM_STEP1B_MEM_ram11__2_=node,-,-,E,11;
+STEP1B_MEM_STEP1B_MEM_ram14__2_=node,-,-,E,12;
+STEP1B_MEM_STEP1B_MEM_ram14__5_=node,-,-,E,14;
+N_697=node,-,-,E,4;
+// Block F
+o_TOPRED_7_=pin,28,-,F,2;
+o_TOPRED_6_=pin,29,-,F,4;
+o_TOPRED_5_=pin,30,-,F,6;
+o_TOPRED_4_=pin,31,-,F,8;
+o_TOPRED_3_=pin,32,-,F,0;
+o_TOPRED_2_=pin,33,-,F,1;
+STEP4B_qA_1_=node,-,-,F,5;
+STEP4B_qA_2_=node,-,-,F,3;
+STEP5B_oDATA_0_=node,-,-,F,10;
+STEP5B_oDATA_3_=node,-,-,F,12;
+STEP4B_uche_P_i_o2_1_=node,-,-,F,9;
+step4b_uche_un42_c_1_n=node,-,-,F,13;
+step4b_uche_c_0_1__n=node,-,-,F,11;
+step4b_uche_c_0_2__n=node,-,-,F,7;
+// Block G
+o_DIS4_6_=pin,44,-,G,2;
+o_TOPRED_1_=pin,39,-,G,1;
+o_TOPRED_0_=pin,40,-,G,0;
+N_88=node,-,-,G,3;
+STEP1B_MEM_STEP1B_MEM_ram0__3_=node,-,-,G,4;
+STEP1B_MEM_STEP1B_MEM_ram1__3_=node,-,-,G,5;
+STEP1B_MEM_STEP1B_MEM_ram2__3_=node,-,-,G,6;
+STEP1B_MEM_STEP1B_MEM_ram3__3_=node,-,-,G,7;
+STEP1B_MEM_STEP1B_MEM_ram4__3_=node,-,-,G,8;
+STEP1B_MEM_STEP1B_MEM_ram6__3_=node,-,-,G,9;
+STEP1B_MEM_STEP1B_MEM_ram7__3_=node,-,-,G,10;
+STEP1B_MEM_STEP1B_MEM_ram8__3_=node,-,-,G,11;
+STEP1B_MEM_STEP1B_MEM_ram9__3_=node,-,-,G,12;
+STEP1B_MEM_STEP1B_MEM_ram12__3_=node,-,-,G,13;
+STEP1B_MEM_STEP1B_MEM_ram15__3_=node,-,-,G,14;
+// Block H
+o_DIS4_5_=pin,48,-,H,0;
+o_DIS4_4_=pin,49,-,H,1;
+o_DIS4_3_=pin,50,-,H,8;
+o_DIS4_2_=pin,51,-,H,6;
+o_DIS4_1_=pin,52,-,H,4;
+o_DIS4_0_=pin,53,-,H,2;
+N_86=node,-,-,H,3;
+N_748=node,-,-,H,7;
+STEP1B_MEM_STEP1B_MEM_ram0__4_=node,-,-,H,5;
+STEP1B_MEM_STEP1B_MEM_ram1__4_=node,-,-,H,9;
+STEP1B_MEM_STEP1B_MEM_ram2__4_=node,-,-,H,11;
+STEP1B_MEM_STEP1B_MEM_ram7__4_=node,-,-,H,12;
+STEP1B_MEM_STEP1B_MEM_ram8__4_=node,-,-,H,13;
+STEP1B_MEM_STEP1B_MEM_ram9__4_=node,-,-,H,14;
+STEP1B_MEM_STEP1B_MEM_ram11__4_=node,-,-,H,15;
+// Block I
+i_S1_NC=pin,58,-,I,2;
+i_S1_NO=pin,59,-,I,4;
+i_S2_NC=pin,60,-,I,6;
+i_S2_NO=pin,61,-,I,8;
+o_LED_YELLOW_0_=pin,63,-,I,1;
+o_LED_YELLOW_1_=pin,62,-,I,0;
+N_89=node,-,-,I,2;
+RGTPB_Q=node,-,-,I,4;
+LFTPB_Q=node,-,-,I,5;
+STEP1B_MEM_STEP1B_MEM_ram0__0_=node,-,-,I,3;
+STEP1B_MEM_STEP1B_MEM_ram1__0_=node,-,-,I,6;
+STEP1B_MEM_STEP1B_MEM_ram2__0_=node,-,-,I,7;
+STEP1B_MEM_STEP1B_MEM_ram4__0_=node,-,-,I,8;
+STEP1B_MEM_STEP1B_MEM_ram5__0_=node,-,-,I,9;
+STEP1B_MEM_STEP1B_MEM_ram6__0_=node,-,-,I,10;
+STEP1B_MEM_STEP1B_MEM_ram9__0_=node,-,-,I,11;
+STEP1B_MEM_STEP1B_MEM_ram10__0_=node,-,-,I,12;
+STEP1B_MEM_STEP1B_MEM_ram12__0_=node,-,-,I,13;
+STEP1B_MEM_STEP1B_MEM_ram13__0_=node,-,-,I,14;
+// Block J
+step1b_mem_4__n=node,-,-,J,1;
+STEP1B_MEM_STEP1B_MEM_ram1__6_=node,-,-,J,0;
+N_806=node,-,-,J,6;
+STEP1B_MEM_STEP1B_MEM_ram3__4_=node,-,-,J,2;
+STEP1B_MEM_STEP1B_MEM_ram4__6_=node,-,-,J,3;
+STEP1B_MEM_STEP1B_MEM_ram5__6_=node,-,-,J,4;
+STEP1B_MEM_STEP1B_MEM_ram6__4_=node,-,-,J,5;
+STEP1B_MEM_STEP1B_MEM_ram7__6_=node,-,-,J,7;
+STEP1B_MEM_STEP1B_MEM_ram8__6_=node,-,-,J,8;
+STEP1B_MEM_STEP1B_MEM_ram10__4_=node,-,-,J,9;
+STEP1B_MEM_STEP1B_MEM_ram10__6_=node,-,-,J,10;
+STEP1B_MEM_STEP1B_MEM_ram12__6_=node,-,-,J,11;
+STEP1B_MEM_STEP1B_MEM_ram13__4_=node,-,-,J,12;
+STEP1B_MEM_STEP1B_MEM_ram13__6_=node,-,-,J,13;
+STEP1B_MEM_STEP1B_MEM_ram15__4_=node,-,-,J,14;
+// Block K
+DIP_3_=pin,76,-,K,12;
+DIP_2_=pin,77,-,K,10;
+DIP_1_=pin,78,-,K,8;
+DIP_0_=pin,79,-,K,6;
+o_DIS1_1_=pin,81,-,K,2;
+o_DIS1_0_=pin,80,-,K,4;
+STEP4B_uche_P_i_o2_2_=node,-,-,K,0;
+STEP1B_MEM_STEP1B_MEM_ram2__6_=node,-,-,K,5;
+STEP1B_MEM_STEP1B_MEM_ram3__0_=node,-,-,K,3;
+STEP1B_MEM_STEP1B_MEM_ram3__6_=node,-,-,K,12;
+STEP1B_MEM_STEP1B_MEM_ram5__2_=node,-,-,K,6;
+step4b_next_cf_0_n=node,-,-,K,1;
+STEP1B_MEM_STEP1B_MEM_ram7__0_=node,-,-,K,7;
+STEP1B_MEM_STEP1B_MEM_ram8__0_=node,-,-,K,8;
+STEP1B_MEM_STEP1B_MEM_ram9__6_=node,-,-,K,13;
+N_80=node,-,-,K,15;
+STEP1B_MEM_STEP1B_MEM_ram11__0_=node,-,-,K,9;
+STEP1B_MEM_STEP1B_MEM_ram14__0_=node,-,-,K,10;
+STEP1B_MEM_STEP1B_MEM_ram14__6_=node,-,-,K,14;
+STEP1B_MEM_STEP1B_MEM_ram15__0_=node,-,-,K,11;
+// Block L
+o_DIS1_6_=pin,87,-,L,6;
+o_DIS1_5_=pin,86,-,L,8;
+o_DIS1_4_=pin,85,-,L,1;
+o_DIS1_3_=pin,84,-,L,0;
+o_DIS1_2_=pin,83,-,L,2;
+o_DIS2_0_=pin,88,-,L,4;
+addrbus_0__n=node,-,-,L,9;
+STEP3_qIR_6_=node,-,-,L,5;
+STEP3_qIR_0_=node,-,-,L,11;
+STEP3_qIR_3_=node,-,-,L,12;
+STEP2_qPC_0_=node,-,-,L,13;
+STEP2_qPC_1_=node,-,-,L,10;
+step1b_mem_ramout_15_2__un0_n=node,-,-,L,3;
+N_804=node,-,-,L,7;
+N_79=node,-,-,L,14;
+// Block M
+o_DIS2_6_=pin,98,-,M,1;
+o_DIS2_5_=pin,97,-,M,0;
+o_DIS2_4_=pin,96,-,M,8;
+o_DIS2_3_=pin,95,-,M,6;
+o_DIS2_2_=pin,94,-,M,4;
+o_DIS2_1_=pin,93,-,M,2;
+STEP1B_oADDR_3_=node,-,-,M,12;
+STEP3_qIR_4_=node,-,-,M,5;
+STEP3_qIR_5_=node,-,-,M,10;
+step1b_mem_1_ramout_15_0__un1_n=node,-,-,M,3;
+N_746=node,-,-,M,7;
+STEP3_qIR_2_=node,-,-,M,13;
+step1b_mem_ramout_15_5__un0_n=node,-,-,M,9;
+N_807=node,-,-,M,11;
+// Block N
+o_BOTRED_5_=pin,105,-,N,1;
+o_BOTRED_4_=pin,104,-,N,0;
+o_BOTRED_3_=pin,103,-,N,8;
+o_BOTRED_2_=pin,102,-,N,6;
+o_BOTRED_1_=pin,101,-,N,4;
+o_BOTRED_0_=pin,100,-,N,2;
+step1b_mem_1_ramout_15_5__un1_n=node,-,-,N,3;
+STEP1B_MEM_STEP1B_MEM_ram0__6_=node,-,-,N,5;
+STEP1B_MEM_STEP1B_MEM_ram4__4_=node,-,-,N,7;
+STEP1B_MEM_STEP1B_MEM_ram5__4_=node,-,-,N,9;
+STEP1B_MEM_STEP1B_MEM_ram5__5_=node,-,-,N,10;
+STEP1B_MEM_STEP1B_MEM_ram6__5_=node,-,-,N,11;
+STEP1B_MEM_STEP1B_MEM_ram11__6_=node,-,-,N,12;
+STEP1B_MEM_STEP1B_MEM_ram12__4_=node,-,-,N,13;
+STEP1B_MEM_STEP1B_MEM_ram12__5_=node,-,-,N,14;
+STEP1B_MEM_STEP1B_MEM_ram13__5_=node,-,-,N,15;
+// Block O
+o_BOTRED_7_=pin,112,-,O,0;
+o_BOTRED_6_=pin,111,-,O,1;
+o_DIS3_0_=pin,116,-,O,2;
+N_85=node,-,-,O,3;
+step1b_mem_1_ramout_15_1__un1_n=node,-,-,O,5;
+STEP1B_MEM_STEP1B_MEM_ram0__1_=node,-,-,O,7;
+STEP1B_MEM_STEP1B_MEM_ram2__1_=node,-,-,O,8;
+STEP1B_MEM_STEP1B_MEM_ram3__1_=node,-,-,O,9;
+STEP1B_MEM_STEP1B_MEM_ram6__6_=node,-,-,O,4;
+STEP1B_MEM_STEP1B_MEM_ram10__1_=node,-,-,O,10;
+STEP1B_MEM_STEP1B_MEM_ram12__1_=node,-,-,O,11;
+STEP1B_MEM_STEP1B_MEM_ram13__1_=node,-,-,O,12;
+STEP1B_MEM_STEP1B_MEM_ram14__1_=node,-,-,O,13;
+STEP1B_MEM_STEP1B_MEM_ram15__1_=node,-,-,O,14;
+STEP1B_MEM_STEP1B_MEM_ram15__6_=node,-,-,O,6;
+// Block P
+o_DIS3_6_=pin,125,-,P,2;
+o_DIS3_5_=pin,124,-,P,4;
+o_DIS3_4_=pin,123,-,P,6;
+o_DIS3_3_=pin,122,-,P,8;
+o_DIS3_2_=pin,121,-,P,1;
+o_DIS3_1_=pin,120,-,P,0;
+N_90=node,-,-,P,3;
+step1b_mem_1_ramout_15_6__un0_n=node,-,-,P,5;
+step1b_mem_6__n=node,-,-,P,13;
+STEP1B_MEM_STEP1B_MEM_ram1__5_=node,-,-,P,7;
+STEP1B_MEM_STEP1B_MEM_ram2__5_=node,-,-,P,9;
+STEP1B_MEM_STEP1B_MEM_ram3__5_=node,-,-,P,10;
+STEP1B_MEM_STEP1B_MEM_ram4__5_=node,-,-,P,11;
+STEP1B_MEM_STEP1B_MEM_ram11__5_=node,-,-,P,12;
+STEP1B_MEM_STEP1B_MEM_ram15__5_=node,-,-,P,15;
+[PTOE ASSIGNMENTS]
+
+[INPUT REGISTERS]
+Default=NONE;
+;
+
+[IO TYPES]
+DIP_7_=LVCMOS18,pin,-,-;
+DIP_6_=LVCMOS18,pin,-,-;
+DIP_5_=LVCMOS18,pin,-,-;
+DIP_4_=LVCMOS18,pin,-,-;
+DIP_3_=LVCMOS18,pin,-,-;
+DIP_2_=LVCMOS18,pin,-,-;
+DIP_1_=LVCMOS18,pin,-,-;
+DIP_0_=LVCMOS18,pin,-,-;
+i_S1_NC=LVCMOS18,pin,-,-;
+i_S1_NO=LVCMOS18,pin,-,-;
+i_S2_NC=LVCMOS18,pin,-,-;
+i_S2_NO=LVCMOS18,pin,-,-;
+o_LED_YELLOW_0_=LVCMOS18,pin,1,-;
+o_TOPRED_7_=LVCMOS18,pin,0,-;
+o_MIDRED_7_=LVCMOS18,pin,0,-;
+o_BOTRED_7_=LVCMOS18,pin,1,-;
+o_DIS1_6_=LVCMOS18,pin,1,-;
+o_DIS2_6_=LVCMOS18,pin,1,-;
+o_DIS3_6_=LVCMOS18,pin,1,-;
+o_DIS4_6_=LVCMOS18,pin,0,-;
+o_TOPRED_6_=LVCMOS18,pin,0,-;
+o_JUMBO_2_=LVCMOS18,pin,0,-;
+o_TOPRED_5_=LVCMOS18,pin,0,-;
+o_TOPRED_4_=LVCMOS18,pin,0,-;
+o_LED_YELLOW_1_=LVCMOS18,pin,1,-;
+o_TOPRED_3_=LVCMOS18,pin,0,-;
+o_TOPRED_2_=LVCMOS18,pin,0,-;
+o_TOPRED_1_=LVCMOS18,pin,0,-;
+o_TOPRED_0_=LVCMOS18,pin,0,-;
+o_MIDRED_6_=LVCMOS18,pin,0,-;
+o_MIDRED_5_=LVCMOS18,pin,0,-;
+o_MIDRED_4_=LVCMOS18,pin,0,-;
+o_MIDRED_3_=LVCMOS18,pin,0,-;
+o_MIDRED_2_=LVCMOS18,pin,0,-;
+o_MIDRED_1_=LVCMOS18,pin,0,-;
+o_MIDRED_0_=LVCMOS18,pin,0,-;
+o_BOTRED_6_=LVCMOS18,pin,1,-;
+o_BOTRED_5_=LVCMOS18,pin,1,-;
+o_BOTRED_4_=LVCMOS18,pin,1,-;
+o_BOTRED_3_=LVCMOS18,pin,1,-;
+o_BOTRED_2_=LVCMOS18,pin,1,-;
+o_BOTRED_1_=LVCMOS18,pin,1,-;
+o_BOTRED_0_=LVCMOS18,pin,1,-;
+o_DIS1_5_=LVCMOS18,pin,1,-;
+o_DIS1_4_=LVCMOS18,pin,1,-;
+o_DIS1_3_=LVCMOS18,pin,1,-;
+o_DIS1_2_=LVCMOS18,pin,1,-;
+o_DIS1_1_=LVCMOS18,pin,1,-;
+o_DIS1_0_=LVCMOS18,pin,1,-;
+o_DIS2_5_=LVCMOS18,pin,1,-;
+o_DIS2_4_=LVCMOS18,pin,1,-;
+o_DIS2_3_=LVCMOS18,pin,1,-;
+o_DIS2_2_=LVCMOS18,pin,1,-;
+o_DIS2_1_=LVCMOS18,pin,1,-;
+o_DIS2_0_=LVCMOS18,pin,1,-;
+o_DIS3_5_=LVCMOS18,pin,1,-;
+o_DIS3_4_=LVCMOS18,pin,1,-;
+o_DIS3_3_=LVCMOS18,pin,1,-;
+o_DIS3_2_=LVCMOS18,pin,1,-;
+o_DIS3_1_=LVCMOS18,pin,1,-;
+o_DIS3_0_=LVCMOS18,pin,1,-;
+o_DIS4_5_=LVCMOS18,pin,0,-;
+o_DIS4_4_=LVCMOS18,pin,0,-;
+o_DIS4_3_=LVCMOS18,pin,0,-;
+o_DIS4_2_=LVCMOS18,pin,0,-;
+o_DIS4_1_=LVCMOS18,pin,0,-;
+o_DIS4_0_=LVCMOS18,pin,0,-;
+o_JUMBO_1_=LVCMOS18,pin,0,-;
+o_JUMBO_0_=LVCMOS18,pin,0,-;
+
+[PLL ASSIGNMENTS]
+
+[RESOURCE RESERVATIONS]
+layer=OFF;
+
+[SLEWRATE]
+Default=FAST;
+
+[PULLUP]
+Default=DOWN;
+
+[FITTER RESULTS]
+I/O_pin_util = 69;
+I/O_pin = 67;
+Logic_PT_util = 66;
+Logic_PT = 856;
+Occupied_MC_util = 95;
+Occupied_MC = 245;
+Occupied_PT_util = 87;
+Occupied_PT = 1153;
+GLB_input_util = 83;
+GLB_input = 482;
+
+[TIMING CONSTRAINTS]
+
+[FITTER REPORT FORMAT]
+Fitter_Options = Yes;
+Pinout_Diagram = No;
+Pinout_Listing = Yes;
+Detailed_Block_Segment_Summary = Yes;
+Input_Signal_List = Yes;
+Output_Signal_List = Yes;
+Bidir_Signal_List = Yes;
+Node_Signal_List = Yes;
+Signal_Fanout_List = Yes;
+Block_Segment_Fanin_List = Yes;
+Postfit_Eqn = Yes;
+Page_Break = Yes;
+Detailed = No;
+
+[POWER]
+Default=HIGH;
+
+[SOURCE_CONSTRAINT_OPTION]
+
+[HARDWARE DEVICE OPTIONS]
+Zero_Hold_Time = No;
+Signature_Word = ;
+Pullup = No;
+Slew_Rate = FAST;
+
+[TIMING ANALYZER]
+Last_source=;
+Last_source_type=Fmax;
+
