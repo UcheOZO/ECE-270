@@ -1,0 +1,31 @@
+MODULE dcl DEFIN uozor_lab11.v
+MODULE match_detect DEFIN uozor_lab11.v
+MODULE lfsr DEFIN uozor_lab11.v
+MODULE up_count_decode DEFIN uozor_lab11.v
+MODULE dispshift DEFIN uozor_lab11.v
+MODULE msggen DEFIN uozor_lab11.v
+MODULE bounceless_switch DEFIN uozor_lab11.v
+MODULE frequency_divider DEFIN uozor_lab11.v
+MODULE lab11_top DEFIN uozor_lab11.v
+	SUBMODULE dcl
+		INSTANCE STEP5
+	SUBMODULE match_detect
+		INSTANCE STEP4
+	SUBMODULE lfsr
+		INSTANCE STEP3
+	SUBMODULE up_count_decode
+		INSTANCE STEP2
+	SUBMODULE dispshift
+		INSTANCE STEP1B
+	SUBMODULE msggen
+		INSTANCE STEP1A
+	SUBMODULE bounceless_switch
+		INSTANCE LFTPB
+	SUBMODULE bounceless_switch
+		INSTANCE RGTPB
+	SUBMODULE frequency_divider
+		INSTANCE FDIVBY4
+	SUBMODULE frequency_divider
+		INSTANCE FDIVBY2
+	SUBMODULE OSCTIMER
+		INSTANCE I1

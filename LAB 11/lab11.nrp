@@ -1,0 +1,31 @@
+ispLEVER Classic 1.7.00.05.28.13 SDFGEN
+Copyright(C),1992-2013, Lattice Semiconductor Corporation. All Rights Reserved.
+Output Files:
+  Netlist File: lab11.vo
+  Delay   File: lab11.sdf
+
+Parsing C:/ispLEVER_Classic1_7/ispcpld/dat/sdf.mdl
+Input file: u:/desktop/lab 11\lab11.tt4
+Reading library information ...
+Mapping to combinational gates 
+Mapping to netlist view.
+Note 18862: NODE name STEP1A_next_CQ_2_bus.D.X1 being renamed to GATE_STEP1A_next_CQ_2_bus_D_X1.
+Note 18862: NODE name STEP1A_next_CQ_2_bus.D.X2 being renamed to GATE_STEP1A_next_CQ_2_bus_D_X2.
+Note 18862: NODE name STEP1A_next_CQ_3_bus.D.X1 being renamed to GATE_STEP1A_next_CQ_3_bus_D_X1.
+Note 18862: NODE name STEP1A_next_CQ_3_bus.D.X2 being renamed to GATE_STEP1A_next_CQ_3_bus_D_X2.
+Note 18862: NODE name step5_n_47_0_n being renamed to GATE_STEP5_outLED_1_0_bus_LH.
+Note 18862: NODE name STEP1A_next_0_bus.D.X1 being renamed to GATE_STEP1A_next_0_bus_D_X1.
+Note 18862: NODE name STEP1A_next_0_bus.D.X2 being renamed to GATE_STEP1A_next_0_bus_D_X2.
+Note 18862: NODE name step5_n_46_0_n being renamed to GATE_o_JUMBO_1X_AP.
+Note 18862: NODE name STEP1A_next_2_bus.D.X1 being renamed to GATE_STEP1A_next_2_bus_D_X1.
+Note 18862: NODE name step5_un1_next_qstate54_i_n being renamed to GATE_STEP5_outSRST_LH.
+Note 18862: NODE name step1a_un1_next46_i_n being renamed to GATE_STEP1A_next_CQ_0_bus_LH.
+Note 18862: NODE name step1a_n_32_i_n being renamed to GATE_STEP1A_next_0_bus_LH.
+Note 18862: NODE name o_JUMBO_1__0 being renamed to GATE_o_JUMBO_1X_LH.
+Note 18862: NODE name o_JUMBO_2__0 being renamed to GATE_o_JUMBO_2X_LH.
+Note 18862: NODE name STEP5_outNMSG_1_0__0 being renamed to GATE_STEP5_outNMSG_1_0_bus_LH.
+Utilization Estimate
+    Combinational Macros:        658
+    Flip-Flop and Latch Macros:  128
+    I/O Pads:                     69
+Elapsed time: 2 seconds

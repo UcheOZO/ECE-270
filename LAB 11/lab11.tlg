@@ -1,0 +1,34 @@
+
+// Batch Timer Log File (Release Version: 1.7.00.05.28.13)
+
+//  Project = lab11
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+//  Register-to-register critical path delay: 6.55 ns
+//    -    0.45  tCOi                              LFTPB_Q.C                ==>  LFTPB_Q.Q
+//    -    4.10  tFBK+tROUTE+tBLA*9+tMCELL         LFTPB_Q.Q                ==>  STEP1A_outCHAR_0_.D
+//    -    2.00  tS_PT                             STEP1A_outCHAR_0_.D      ==>  STEP1A_outCHAR_0_.C

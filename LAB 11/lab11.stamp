@@ -1,0 +1,700 @@
+
+Timing Report for STAMP
+
+//  Project = lab11
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section IO
+  //DESTINATION NODES;
+  o_BOTRED[0] [out]
+  o_BOTRED[1] [out]
+  o_BOTRED[2] [out]
+  o_BOTRED[3] [out]
+  o_BOTRED[4] [out]
+  o_BOTRED[5] [out]
+  o_BOTRED[6] [out]
+  o_BOTRED[7] [out]
+  o_DIS1[0] [out]
+  o_DIS1[1] [out]
+  o_DIS1[2] [out]
+  o_DIS1[3] [out]
+  o_DIS1[4] [out]
+  o_DIS1[5] [out]
+  o_DIS1[6] [out]
+  o_DIS2[0] [out]
+  o_DIS2[1] [out]
+  o_DIS2[2] [out]
+  o_DIS2[3] [out]
+  o_DIS2[4] [out]
+  o_DIS2[5] [out]
+  o_DIS2[6] [out]
+  o_DIS3[0] [out]
+  o_DIS3[1] [out]
+  o_DIS3[2] [out]
+  o_DIS3[3] [out]
+  o_DIS3[4] [out]
+  o_DIS3[5] [out]
+  o_DIS3[6] [out]
+  o_DIS4[0] [out]
+  o_DIS4[1] [out]
+  o_DIS4[2] [out]
+  o_DIS4[3] [out]
+  o_DIS4[4] [out]
+  o_DIS4[5] [out]
+  o_DIS4[6] [out]
+  o_JUMBO[0] [out]
+  o_JUMBO[1] [out]
+  o_JUMBO[2] [out]
+  o_LED_YELLOW[0] [out]
+  o_LED_YELLOW[1] [out]
+  o_MIDRED[0] [out]
+  o_MIDRED[1] [out]
+  o_MIDRED[2] [out]
+  o_MIDRED[3] [out]
+  o_MIDRED[4] [out]
+  o_MIDRED[5] [out]
+  o_MIDRED[6] [out]
+  o_MIDRED[7] [out]
+  o_TOPRED[0] [out]
+  o_TOPRED[1] [out]
+  o_TOPRED[2] [out]
+  o_TOPRED[3] [out]
+  o_TOPRED[4] [out]
+  o_TOPRED[5] [out]
+  o_TOPRED[6] [out]
+  o_TOPRED[7] [out]
+  FDIVBY2_clk_out.C [reg]
+  FDIVBY4_clk_out.C [reg]
+  LFTPB_Q.C [reg]
+  RGTPB_Q.C [reg]
+  STEP1A_CQ_0_.C [reg]
+  STEP1A_CQ_1_.C [reg]
+  STEP1A_CQ_2_.C [reg]
+  STEP1A_CQ_3_.C [reg]
+  STEP1A_CQ_4_.C [reg]
+  STEP1A_CQ_5_.C [reg]
+  STEP1A_count_0_.LH [reg]
+  STEP1A_count_1_.LH [reg]
+  STEP1A_count_2_.LH [reg]
+  STEP1A_count_3_.LH [reg]
+  STEP1A_next_0_.LH [reg]
+  STEP1A_next_1_.LH [reg]
+  STEP1A_next_2_.LH [reg]
+  STEP1A_next_3_.LH [reg]
+  STEP1A_next_4_.LH [reg]
+  STEP1A_next_5_.LH [reg]
+  STEP1A_next_6_.LH [reg]
+  STEP1A_next_CQ_0_.LH [reg]
+  STEP1A_next_CQ_1_.LH [reg]
+  STEP1A_next_CQ_2_.LH [reg]
+  STEP1A_next_CQ_3_.LH [reg]
+  STEP1A_next_CQ_4_.LH [reg]
+  STEP1A_outCHAR_0_.C [reg]
+  STEP1A_outCHAR_1_.C [reg]
+  STEP1A_outCHAR_2_.C [reg]
+  STEP1A_outCHAR_3_.C [reg]
+  STEP1A_outCHAR_4_.C [reg]
+  STEP1A_outCHAR_5_.C [reg]
+  STEP1A_outCHAR_6_.C [reg]
+  STEP1B_Di1_0_.C [reg]
+  STEP1B_Di1_1_.C [reg]
+  STEP1B_Di1_2_.C [reg]
+  STEP1B_Di1_3_.C [reg]
+  STEP1B_Di1_4_.C [reg]
+  STEP1B_Di1_5_.C [reg]
+  STEP1B_Di1_6_.C [reg]
+  STEP1B_outDISP_0_.C [reg]
+  STEP1B_outDISP_1_.C [reg]
+  STEP1B_outDISP_2_.C [reg]
+  STEP1B_outDISP_3_.C [reg]
+  STEP1B_outDISP_4_.C [reg]
+  STEP1B_outDISP_5_.C [reg]
+  STEP1B_outDISP_6_.C [reg]
+  STEP1B_outDISP_7_.C [reg]
+  STEP1B_outDISP_8_.C [reg]
+  STEP1B_outDISP_9_.C [reg]
+  STEP1B_outDISP_10_.C [reg]
+  STEP1B_outDISP_11_.C [reg]
+  STEP1B_outDISP_12_.C [reg]
+  STEP1B_outDISP_13_.C [reg]
+  STEP1B_outDISP_14_.C [reg]
+  STEP1B_outDISP_15_.C [reg]
+  STEP1B_outDISP_16_.C [reg]
+  STEP1B_outDISP_17_.C [reg]
+  STEP1B_outDISP_18_.C [reg]
+  STEP1B_outDISP_19_.C [reg]
+  STEP1B_outDISP_20_.C [reg]
+  STEP2_count_state_0_.C [reg]
+  STEP2_count_state_1_.C [reg]
+  STEP2_count_state_2_.C [reg]
+  STEP2_next_count_state_0_.LH [reg]
+  STEP2_next_count_state_1_.LH [reg]
+  STEP2_next_count_state_2_.LH [reg]
+  STEP3_qcombo_0_.C [reg]
+  STEP3_qcombo_1_.C [reg]
+  STEP3_qcombo_2_.C [reg]
+  STEP3_qcombo_3_.C [reg]
+  STEP3_qcombo_4_.C [reg]
+  STEP3_qcombo_5_.C [reg]
+  STEP3_qcombo_6_.C [reg]
+  STEP3_qcombo_7_.C [reg]
+  STEP5_next_qstate_0_.LH [reg]
+  STEP5_next_qstate_1_.LH [reg]
+  STEP5_next_qstate_2_.LH [reg]
+  STEP5_next_qstate_3_.LH [reg]
+  STEP5_outEN.LH [reg]
+  STEP5_outLED_1_0_.LH [reg]
+  STEP5_outNMSG_1_0_.LH [reg]
+  STEP5_outNMSG_1_1_.LH [reg]
+  STEP5_outSRST.LH [reg]
+  STEP5_qstate_0_.C [reg]
+  STEP5_qstate_1_.C [reg]
+  STEP5_qstate_2_.C [reg]
+  STEP5_qstate_3_.C [reg]
+  o_DIS1_0_.C [reg]
+  o_DIS1_1_.C [reg]
+  o_DIS1_2_.C [reg]
+  o_DIS1_3_.C [reg]
+  o_DIS1_4_.C [reg]
+  o_DIS1_5_.C [reg]
+  o_DIS1_6_.C [reg]
+  o_DIS2_0_.C [reg]
+  o_DIS2_1_.C [reg]
+  o_DIS2_2_.C [reg]
+  o_DIS2_3_.C [reg]
+  o_DIS2_4_.C [reg]
+  o_DIS2_5_.C [reg]
+  o_DIS2_6_.C [reg]
+  o_DIS3_0_.C [reg]
+  o_DIS3_1_.C [reg]
+  o_DIS3_2_.C [reg]
+  o_DIS3_3_.C [reg]
+  o_DIS3_4_.C [reg]
+  o_DIS3_5_.C [reg]
+  o_DIS3_6_.C [reg]
+  o_DIS4_0_.C [reg]
+  o_DIS4_1_.C [reg]
+  o_DIS4_2_.C [reg]
+  o_DIS4_3_.C [reg]
+  o_DIS4_4_.C [reg]
+  o_DIS4_5_.C [reg]
+  o_DIS4_6_.C [reg]
+  o_JUMBO_1_.LH [reg]
+  o_JUMBO_2_.LH [reg]
+  o_LED_YELLOW_0_.C [reg]
+  o_LED_YELLOW_1_.C [reg]
+  o_MIDRED_0_.LH [reg]
+  o_MIDRED_1_.LH [reg]
+  o_MIDRED_2_.LH [reg]
+  o_MIDRED_3_.LH [reg]
+  o_MIDRED_4_.LH [reg]
+  o_MIDRED_5_.LH [reg]
+  o_MIDRED_6_.LH [reg]
+  o_MIDRED_7_.LH [reg]
+  FDIVBY2_clk_out.D [reg]
+  FDIVBY4_clk_out.D [reg]
+  LFTPB_Q.D [reg]
+  RGTPB_Q.D [reg]
+  STEP1A_CQ_0_.D [reg]
+  STEP1A_CQ_1_.D [reg]
+  STEP1A_CQ_2_.D [reg]
+  STEP1A_CQ_3_.D [reg]
+  STEP1A_CQ_4_.D [reg]
+  STEP1A_CQ_5_.D [reg]
+  STEP1A_count_0_.D [reg]
+  STEP1A_count_1_.D [reg]
+  STEP1A_count_2_.D [reg]
+  STEP1A_count_3_.D [reg]
+  STEP1A_next_0_.D.X1 [reg]
+  STEP1A_next_0_.D.X2 [reg]
+  STEP1A_next_1_.D [reg]
+  STEP1A_next_2_.D.X1 [reg]
+  STEP1A_next_2_.D.X2 [reg]
+  STEP1A_next_3_.D [reg]
+  STEP1A_next_4_.D [reg]
+  STEP1A_next_5_.D [reg]
+  STEP1A_next_6_.D [reg]
+  STEP1A_next_CQ_0_.D [reg]
+  STEP1A_next_CQ_1_.D [reg]
+  STEP1A_next_CQ_2_.D.X1 [reg]
+  STEP1A_next_CQ_2_.D.X2 [reg]
+  STEP1A_next_CQ_3_.D.X1 [reg]
+  STEP1A_next_CQ_3_.D.X2 [reg]
+  STEP1A_next_CQ_4_.D [reg]
+  STEP1A_outCHAR_0_.D [reg]
+  STEP1A_outCHAR_1_.D [reg]
+  STEP1A_outCHAR_2_.D [reg]
+  STEP1A_outCHAR_3_.D [reg]
+  STEP1A_outCHAR_4_.D [reg]
+  STEP1A_outCHAR_5_.D [reg]
+  STEP1A_outCHAR_6_.D [reg]
+  STEP1B_Di1_0_.D [reg]
+  STEP1B_Di1_1_.D [reg]
+  STEP1B_Di1_2_.D [reg]
+  STEP1B_Di1_3_.D [reg]
+  STEP1B_Di1_4_.D [reg]
+  STEP1B_Di1_5_.D [reg]
+  STEP1B_Di1_6_.D [reg]
+  STEP1B_outDISP_0_.D [reg]
+  STEP1B_outDISP_1_.D [reg]
+  STEP1B_outDISP_2_.D [reg]
+  STEP1B_outDISP_3_.D [reg]
+  STEP1B_outDISP_4_.D [reg]
+  STEP1B_outDISP_5_.D [reg]
+  STEP1B_outDISP_6_.D [reg]
+  STEP1B_outDISP_7_.D [reg]
+  STEP1B_outDISP_8_.D [reg]
+  STEP1B_outDISP_9_.D [reg]
+  STEP1B_outDISP_10_.D [reg]
+  STEP1B_outDISP_11_.D [reg]
+  STEP1B_outDISP_12_.D [reg]
+  STEP1B_outDISP_13_.D [reg]
+  STEP1B_outDISP_14_.D [reg]
+  STEP1B_outDISP_15_.D [reg]
+  STEP1B_outDISP_16_.D [reg]
+  STEP1B_outDISP_17_.D [reg]
+  STEP1B_outDISP_18_.D [reg]
+  STEP1B_outDISP_19_.D [reg]
+  STEP1B_outDISP_20_.D [reg]
+  STEP2_count_state_0_.D [reg]
+  STEP2_count_state_1_.D [reg]
+  STEP2_count_state_2_.D [reg]
+  STEP2_next_count_state_0_.D [reg]
+  STEP2_next_count_state_1_.D [reg]
+  STEP2_next_count_state_2_.D [reg]
+  STEP3_qcombo_0_.CE [reg]
+  STEP3_qcombo_0_.T [reg]
+  STEP3_qcombo_1_.CE [reg]
+  STEP3_qcombo_1_.D [reg]
+  STEP3_qcombo_2_.CE [reg]
+  STEP3_qcombo_2_.D [reg]
+  STEP3_qcombo_3_.CE [reg]
+  STEP3_qcombo_3_.D [reg]
+  STEP3_qcombo_4_.CE [reg]
+  STEP3_qcombo_4_.D [reg]
+  STEP3_qcombo_5_.CE [reg]
+  STEP3_qcombo_5_.D [reg]
+  STEP3_qcombo_6_.CE [reg]
+  STEP3_qcombo_6_.D [reg]
+  STEP3_qcombo_7_.CE [reg]
+  STEP3_qcombo_7_.D [reg]
+  STEP5_next_qstate_0_.D [reg]
+  STEP5_next_qstate_1_.D [reg]
+  STEP5_next_qstate_2_.D [reg]
+  STEP5_next_qstate_3_.D [reg]
+  STEP5_outEN.D [reg]
+  STEP5_outLED_1_0_.D [reg]
+  STEP5_outNMSG_1_0_.D [reg]
+  STEP5_outNMSG_1_1_.D [reg]
+  STEP5_outSRST.D [reg]
+  STEP5_qstate_0_.D [reg]
+  STEP5_qstate_1_.D [reg]
+  STEP5_qstate_2_.D [reg]
+  STEP5_qstate_3_.D [reg]
+  o_DIS1_0_.D [reg]
+  o_DIS1_1_.D [reg]
+  o_DIS1_2_.D [reg]
+  o_DIS1_3_.D [reg]
+  o_DIS1_4_.D [reg]
+  o_DIS1_5_.D [reg]
+  o_DIS1_6_.D [reg]
+  o_DIS2_0_.D [reg]
+  o_DIS2_1_.D [reg]
+  o_DIS2_2_.D [reg]
+  o_DIS2_3_.D [reg]
+  o_DIS2_4_.D [reg]
+  o_DIS2_5_.D [reg]
+  o_DIS2_6_.D [reg]
+  o_DIS3_0_.D [reg]
+  o_DIS3_1_.D [reg]
+  o_DIS3_2_.D [reg]
+  o_DIS3_3_.D [reg]
+  o_DIS3_4_.D [reg]
+  o_DIS3_5_.D [reg]
+  o_DIS3_6_.D [reg]
+  o_DIS4_0_.D [reg]
+  o_DIS4_1_.D [reg]
+  o_DIS4_2_.D [reg]
+  o_DIS4_3_.D [reg]
+  o_DIS4_4_.D [reg]
+  o_DIS4_5_.D [reg]
+  o_DIS4_6_.D [reg]
+  o_JUMBO_1_.D [reg]
+  o_JUMBO_2_.D [reg]
+  o_LED_YELLOW_0_.D [reg]
+  o_LED_YELLOW_1_.D [reg]
+  o_MIDRED_0_.D [reg]
+  o_MIDRED_1_.D [reg]
+  o_MIDRED_2_.D [reg]
+  o_MIDRED_3_.D [reg]
+  o_MIDRED_4_.D [reg]
+  o_MIDRED_5_.D [reg]
+  o_MIDRED_6_.D [reg]
+  o_MIDRED_7_.D [reg]
+
+  //SOURCE NODES;
+  DIP[0] [in]
+  DIP[1] [in]
+  DIP[2] [in]
+  DIP[3] [in]
+  DIP[4] [in]
+  DIP[5] [in]
+  DIP[6] [in]
+  DIP[7] [in]
+  i_S1_NC [in]
+  i_S1_NO [in]
+  i_S2_NC [in]
+  i_S2_NO [in]
+  FDIVBY2_clk_out.Q [reg]
+  FDIVBY4_clk_out.Q [reg]
+  LFTPB_Q.Q [reg]
+  RGTPB_Q.Q [reg]
+  STEP1A_CQ_0_.Q [reg]
+  STEP1A_CQ_1_.Q [reg]
+  STEP1A_CQ_2_.Q [reg]
+  STEP1A_CQ_3_.Q [reg]
+  STEP1A_CQ_4_.Q [reg]
+  STEP1A_CQ_5_.Q [reg]
+  STEP1A_count_0_.Q [reg]
+  STEP1A_count_1_.Q [reg]
+  STEP1A_count_2_.Q [reg]
+  STEP1A_count_3_.Q [reg]
+  STEP1A_next_0_.Q [reg]
+  STEP1A_next_1_.Q [reg]
+  STEP1A_next_2_.Q [reg]
+  STEP1A_next_3_.Q [reg]
+  STEP1A_next_4_.Q [reg]
+  STEP1A_next_5_.Q [reg]
+  STEP1A_next_6_.Q [reg]
+  STEP1A_next_CQ_0_.Q [reg]
+  STEP1A_next_CQ_1_.Q [reg]
+  STEP1A_next_CQ_2_.Q [reg]
+  STEP1A_next_CQ_3_.Q [reg]
+  STEP1A_next_CQ_4_.Q [reg]
+  STEP1A_outCHAR_0_.Q [reg]
+  STEP1A_outCHAR_1_.Q [reg]
+  STEP1A_outCHAR_2_.Q [reg]
+  STEP1A_outCHAR_3_.Q [reg]
+  STEP1A_outCHAR_4_.Q [reg]
+  STEP1A_outCHAR_5_.Q [reg]
+  STEP1A_outCHAR_6_.Q [reg]
+  STEP1B_Di1_0_.Q [reg]
+  STEP1B_Di1_1_.Q [reg]
+  STEP1B_Di1_2_.Q [reg]
+  STEP1B_Di1_3_.Q [reg]
+  STEP1B_Di1_4_.Q [reg]
+  STEP1B_Di1_5_.Q [reg]
+  STEP1B_Di1_6_.Q [reg]
+  STEP1B_outDISP_0_.Q [reg]
+  STEP1B_outDISP_1_.Q [reg]
+  STEP1B_outDISP_2_.Q [reg]
+  STEP1B_outDISP_3_.Q [reg]
+  STEP1B_outDISP_4_.Q [reg]
+  STEP1B_outDISP_5_.Q [reg]
+  STEP1B_outDISP_6_.Q [reg]
+  STEP1B_outDISP_7_.Q [reg]
+  STEP1B_outDISP_8_.Q [reg]
+  STEP1B_outDISP_9_.Q [reg]
+  STEP1B_outDISP_10_.Q [reg]
+  STEP1B_outDISP_11_.Q [reg]
+  STEP1B_outDISP_12_.Q [reg]
+  STEP1B_outDISP_13_.Q [reg]
+  STEP1B_outDISP_14_.Q [reg]
+  STEP1B_outDISP_15_.Q [reg]
+  STEP1B_outDISP_16_.Q [reg]
+  STEP1B_outDISP_17_.Q [reg]
+  STEP1B_outDISP_18_.Q [reg]
+  STEP1B_outDISP_19_.Q [reg]
+  STEP1B_outDISP_20_.Q [reg]
+  STEP2_count_state_0_.Q [reg]
+  STEP2_count_state_1_.Q [reg]
+  STEP2_count_state_2_.Q [reg]
+  STEP2_next_count_state_0_.Q [reg]
+  STEP2_next_count_state_1_.Q [reg]
+  STEP2_next_count_state_2_.Q [reg]
+  STEP3_qcombo_0_.Q [reg]
+  STEP3_qcombo_1_.Q [reg]
+  STEP3_qcombo_2_.Q [reg]
+  STEP3_qcombo_3_.Q [reg]
+  STEP3_qcombo_4_.Q [reg]
+  STEP3_qcombo_5_.Q [reg]
+  STEP3_qcombo_6_.Q [reg]
+  STEP3_qcombo_7_.Q [reg]
+  STEP5_next_qstate_0_.Q [reg]
+  STEP5_next_qstate_1_.Q [reg]
+  STEP5_next_qstate_2_.Q [reg]
+  STEP5_next_qstate_3_.Q [reg]
+  STEP5_outEN.Q [reg]
+  STEP5_outLED_1_0_.Q [reg]
+  STEP5_outNMSG_1_0_.Q [reg]
+  STEP5_outNMSG_1_1_.Q [reg]
+  STEP5_outSRST.Q [reg]
+  STEP5_qstate_0_.Q [reg]
+  STEP5_qstate_1_.Q [reg]
+  STEP5_qstate_2_.Q [reg]
+  STEP5_qstate_3_.Q [reg]
+  o_DIS1[0].Q [reg]
+  o_DIS1[1].Q [reg]
+  o_DIS1[2].Q [reg]
+  o_DIS1[3].Q [reg]
+  o_DIS1[4].Q [reg]
+  o_DIS1[5].Q [reg]
+  o_DIS1[6].Q [reg]
+  o_DIS2[0].Q [reg]
+  o_DIS2[1].Q [reg]
+  o_DIS2[2].Q [reg]
+  o_DIS2[3].Q [reg]
+  o_DIS2[4].Q [reg]
+  o_DIS2[5].Q [reg]
+  o_DIS2[6].Q [reg]
+  o_DIS3[0].Q [reg]
+  o_DIS3[1].Q [reg]
+  o_DIS3[2].Q [reg]
+  o_DIS3[3].Q [reg]
+  o_DIS3[4].Q [reg]
+  o_DIS3[5].Q [reg]
+  o_DIS3[6].Q [reg]
+  o_DIS4[0].Q [reg]
+  o_DIS4[1].Q [reg]
+  o_DIS4[2].Q [reg]
+  o_DIS4[3].Q [reg]
+  o_DIS4[4].Q [reg]
+  o_DIS4[5].Q [reg]
+  o_DIS4[6].Q [reg]
+  o_JUMBO[1].Q [reg]
+  o_JUMBO[2].Q [reg]
+  o_LED_YELLOW[0].Q [reg]
+  o_LED_YELLOW[1].Q [reg]
+  o_MIDRED[0].Q [reg]
+  o_MIDRED[1].Q [reg]
+  o_MIDRED[2].Q [reg]
+  o_MIDRED[3].Q [reg]
+  o_MIDRED[4].Q [reg]
+  o_MIDRED[5].Q [reg]
+  o_MIDRED[6].Q [reg]
+  o_MIDRED[7].Q [reg]
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 152.67 MHz
+  Clock Source From:           i_S2_NO
+  Logic Levels:                1
+  Path Delay:                  6.55 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+   0.45  tCOi                                   LFTPB_Q.C                     LFTPB_Q.Q
+   4.10  tFBK+tROUTE+tBLA*9+tMCELL              LFTPB_Q.Q                     STEP1A_outCHAR_0_.D
+   2.00  tS_PT                                  STEP1A_outCHAR_0_.D           STEP1A_outCHAR_0_.C
+ 
+  Clock Source From: i_S1_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   6.50           1      L7       =>  A3        STEP5_qstate_0_.C             STEP5_next_qstate_0_.D         
+   6.50           1      L7       =>  A5        STEP5_qstate_0_.C             STEP5_next_qstate_1_.D         
+   6.50           1      L7       =>  N5        STEP5_qstate_0_.C             STEP5_next_qstate_2_.D         
+   6.50           1      L7       =>  A7        STEP5_qstate_0_.C             STEP5_next_qstate_3_.D         
+   6.50           1      L7       =>  L7        STEP5_qstate_0_.C             STEP5_qstate_0_.D              
+   6.50           1      L7       =>  F11       STEP5_qstate_0_.C             STEP5_qstate_1_.D              
+   6.50           1      L7       =>  K7        STEP5_qstate_0_.C             STEP5_qstate_2_.D              
+   6.50           1      L7       =>  I10       STEP5_qstate_0_.C             STEP5_qstate_3_.D              
+   6.50           1      F11      =>  A3        STEP5_qstate_1_.C             STEP5_next_qstate_0_.D         
+   6.50           1      F11      =>  A5        STEP5_qstate_1_.C             STEP5_next_qstate_1_.D         
+   6.50           1      F11      =>  N5        STEP5_qstate_1_.C             STEP5_next_qstate_2_.D         
+   6.50           1      F11      =>  A7        STEP5_qstate_1_.C             STEP5_next_qstate_3_.D         
+   6.50           1      F11      =>  L7        STEP5_qstate_1_.C             STEP5_qstate_0_.D              
+   6.50           1      F11      =>  F11       STEP5_qstate_1_.C             STEP5_qstate_1_.D              
+   6.50           1      F11      =>  K7        STEP5_qstate_1_.C             STEP5_qstate_2_.D              
+   6.50           1      F11      =>  I10       STEP5_qstate_1_.C             STEP5_qstate_3_.D              
+   6.50           1      K7       =>  A3        STEP5_qstate_2_.C             STEP5_next_qstate_0_.D         
+   6.50           1      K7       =>  N5        STEP5_qstate_2_.C             STEP5_next_qstate_2_.D         
+   6.50           1      K7       =>  A7        STEP5_qstate_2_.C             STEP5_next_qstate_3_.D         
+   6.50           1      K7       =>  L7        STEP5_qstate_2_.C             STEP5_qstate_0_.D              
+   6.50           1      K7       =>  F11       STEP5_qstate_2_.C             STEP5_qstate_1_.D              
+   6.50           1      K7       =>  K7        STEP5_qstate_2_.C             STEP5_qstate_2_.D              
+   6.50           1      K7       =>  I10       STEP5_qstate_2_.C             STEP5_qstate_3_.D              
+   6.50           1      I10      =>  A3        STEP5_qstate_3_.C             STEP5_next_qstate_0_.D         
+   6.50           1      I10      =>  A7        STEP5_qstate_3_.C             STEP5_next_qstate_3_.D         
+   6.50           1      I10      =>  L7        STEP5_qstate_3_.C             STEP5_qstate_0_.D              
+   6.50           1      I10      =>  F11       STEP5_qstate_3_.C             STEP5_qstate_1_.D              
+   6.50           1      I10      =>  K7        STEP5_qstate_3_.C             STEP5_qstate_2_.D              
+   6.50           1      I10      =>  I10       STEP5_qstate_3_.C             STEP5_qstate_3_.D              
+   6.40           1      F3       =>  B12       STEP2_count_state_0_.C        STEP2_next_count_state_0_.D    
+   6.40           1      F3       =>  D9        STEP2_count_state_0_.C        STEP2_next_count_state_1_.D    
+   6.40           1      F3       =>  D3        STEP2_count_state_0_.C        STEP2_next_count_state_2_.D    
+   6.40           1      F3       =>  L7        STEP2_count_state_0_.C        STEP5_qstate_0_.D              
+   6.40           1      F3       =>  F11       STEP2_count_state_0_.C        STEP5_qstate_1_.D              
+   6.40           1      F3       =>  K7        STEP2_count_state_0_.C        STEP5_qstate_2_.D              
+   6.40           1      F3       =>  I10       STEP2_count_state_0_.C        STEP5_qstate_3_.D              
+   6.40           1      F3       =>  B4        STEP2_count_state_0_.C        o_MIDRED_0_.D                  
+   6.40           1      F3       =>  B2        STEP2_count_state_0_.C        o_MIDRED_1_.D                  
+   6.40           1      F3       =>  A1        STEP2_count_state_0_.C        o_MIDRED_2_.D                  
+   6.40           1      F3       =>  A0        STEP2_count_state_0_.C        o_MIDRED_3_.D                  
+   6.40           1      F3       =>  A8        STEP2_count_state_0_.C        o_MIDRED_4_.D                  
+   6.40           1      F3       =>  A6        STEP2_count_state_0_.C        o_MIDRED_5_.D                  
+   6.40           1      F3       =>  A4        STEP2_count_state_0_.C        o_MIDRED_6_.D                  
+   6.40           1      F3       =>  A2        STEP2_count_state_0_.C        o_MIDRED_7_.D                  
+   6.40           1      F5       =>  D9        STEP2_count_state_1_.C        STEP2_next_count_state_1_.D    
+   6.40           1      F5       =>  D3        STEP2_count_state_1_.C        STEP2_next_count_state_2_.D    
+   6.40           1      F5       =>  L7        STEP2_count_state_1_.C        STEP5_qstate_0_.D              
+   6.40           1      F5       =>  F11       STEP2_count_state_1_.C        STEP5_qstate_1_.D              
+   6.40           1      F5       =>  K7        STEP2_count_state_1_.C        STEP5_qstate_2_.D              
+   6.40           1      F5       =>  I10       STEP2_count_state_1_.C        STEP5_qstate_3_.D              
+   6.40           1      F5       =>  B4        STEP2_count_state_1_.C        o_MIDRED_0_.D                  
+   6.40           1      F5       =>  B2        STEP2_count_state_1_.C        o_MIDRED_1_.D                  
+   6.40           1      F5       =>  A1        STEP2_count_state_1_.C        o_MIDRED_2_.D                  
+   6.40           1      F5       =>  A0        STEP2_count_state_1_.C        o_MIDRED_3_.D                  
+   6.40           1      F5       =>  A8        STEP2_count_state_1_.C        o_MIDRED_4_.D                  
+   6.40           1      F5       =>  A6        STEP2_count_state_1_.C        o_MIDRED_5_.D                  
+   6.40           1      F5       =>  A4        STEP2_count_state_1_.C        o_MIDRED_6_.D                  
+   6.40           1      F5       =>  A2        STEP2_count_state_1_.C        o_MIDRED_7_.D                  
+   6.40           1      F7       =>  D3        STEP2_count_state_2_.C        STEP2_next_count_state_2_.D    
+   6.40           1      F7       =>  L7        STEP2_count_state_2_.C        STEP5_qstate_0_.D              
+   6.40           1      F7       =>  F11       STEP2_count_state_2_.C        STEP5_qstate_1_.D              
+   6.40           1      F7       =>  K7        STEP2_count_state_2_.C        STEP5_qstate_2_.D              
+   6.40           1      F7       =>  I10       STEP2_count_state_2_.C        STEP5_qstate_3_.D              
+   6.40           1      F7       =>  B4        STEP2_count_state_2_.C        o_MIDRED_0_.D                  
+   6.40           1      F7       =>  B2        STEP2_count_state_2_.C        o_MIDRED_1_.D                  
+   6.40           1      F7       =>  A1        STEP2_count_state_2_.C        o_MIDRED_2_.D                  
+   6.40           1      F7       =>  A0        STEP2_count_state_2_.C        o_MIDRED_3_.D                  
+   6.40           1      F7       =>  A8        STEP2_count_state_2_.C        o_MIDRED_4_.D                  
+   6.40           1      F7       =>  A6        STEP2_count_state_2_.C        o_MIDRED_5_.D                  
+   6.40           1      F7       =>  A4        STEP2_count_state_2_.C        o_MIDRED_6_.D                  
+   6.40           1      F7       =>  A2        STEP2_count_state_2_.C        o_MIDRED_7_.D                  
+   6.00           1      B12      =>  F3        STEP2_next_count_state_0_.LH   STEP2_count_state_0_.D         
+   6.00           1      D9       =>  F5        STEP2_next_count_state_1_.LH   STEP2_count_state_1_.D         
+   6.00           1      D3       =>  F7        STEP2_next_count_state_2_.LH   STEP2_count_state_2_.D         
+   6.00           1      A3       =>  L7        STEP5_next_qstate_0_.LH       STEP5_qstate_0_.D              
+   6.00           1      A5       =>  F11       STEP5_next_qstate_1_.LH       STEP5_qstate_1_.D              
+   6.00           1      N5       =>  K7        STEP5_next_qstate_2_.LH       STEP5_qstate_2_.D              
+   6.00           1      A7       =>  I10       STEP5_next_qstate_3_.LH       STEP5_qstate_3_.D              
+   6.00           1      N3       =>  H7        STEP5_outNMSG_1_0_.LH         STEP1A_count_0_.D              
+   6.00           1      N3       =>  H9        STEP5_outNMSG_1_0_.LH         STEP1A_count_1_.D              
+   6.00           1      N3       =>  H10       STEP5_outNMSG_1_0_.LH         STEP1A_count_2_.D              
+   6.00           1      N3       =>  H11       STEP5_outNMSG_1_0_.LH         STEP1A_count_3_.D              
+   6.00           1      A9       =>  H7        STEP5_outNMSG_1_1_.LH         STEP1A_count_0_.D              
+   6.00           1      A9       =>  H9        STEP5_outNMSG_1_1_.LH         STEP1A_count_1_.D              
+   6.00           1      A9       =>  H10       STEP5_outNMSG_1_1_.LH         STEP1A_count_2_.D              
+   6.00           1      A9       =>  H11       STEP5_outNMSG_1_1_.LH         STEP1A_count_3_.D              
+   6.00           1      A12      =>  F3        STEP5_outSRST.LH              STEP2_count_state_0_.D         
+   6.00           1      A12      =>  F5        STEP5_outSRST.LH              STEP2_count_state_1_.D         
+   6.00           1      A12      =>  F7        STEP5_outSRST.LH              STEP2_count_state_2_.D         
+ 
+  Clock Source From: i_S2_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   6.55           1      I5       =>  O6        LFTPB_Q.C                     STEP1A_outCHAR_0_.D            
+   6.55           1      I5       =>  G9        LFTPB_Q.C                     STEP1A_outCHAR_1_.D            
+   6.55           1      I5       =>  J5        LFTPB_Q.C                     STEP1A_outCHAR_2_.D            
+   6.55           1      I5       =>  J7        LFTPB_Q.C                     STEP1A_outCHAR_3_.D            
+   6.55           1      I5       =>  H12       LFTPB_Q.C                     STEP1A_outCHAR_4_.D            
+   6.55           1      I5       =>  G10       LFTPB_Q.C                     STEP1A_outCHAR_5_.D            
+   6.55           1      I5       =>  G11       LFTPB_Q.C                     STEP1A_outCHAR_6_.D            
+   6.15           1      H9       =>  G3        STEP1A_count_1_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H9       =>  H3        STEP1A_count_1_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H9       =>  B1        STEP1A_count_1_.LH            STEP1A_next_CQ_2_.D.X1         
+   6.15           1      H9       =>  B1        STEP1A_count_1_.LH            STEP1A_next_CQ_2_.D.X2         
+   6.15           1      H9       =>  G5        STEP1A_count_1_.LH            STEP1A_next_CQ_3_.D.X1         
+   6.15           1      H10      =>  G3        STEP1A_count_2_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H10      =>  H3        STEP1A_count_2_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H10      =>  B1        STEP1A_count_2_.LH            STEP1A_next_CQ_2_.D.X1         
+   6.15           1      H10      =>  G5        STEP1A_count_2_.LH            STEP1A_next_CQ_3_.D.X1         
+   6.15           1      H10      =>  G5        STEP1A_count_2_.LH            STEP1A_next_CQ_3_.D.X2         
+   6.15           1      H11      =>  G3        STEP1A_count_3_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H11      =>  H3        STEP1A_count_3_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H11      =>  B1        STEP1A_count_3_.LH            STEP1A_next_CQ_2_.D.X1         
+   6.15           1      H11      =>  B1        STEP1A_count_3_.LH            STEP1A_next_CQ_2_.D.X2         
+   6.15           1      H11      =>  G5        STEP1A_count_3_.LH            STEP1A_next_CQ_3_.D.X1         
+   6.15           1      H11      =>  G5        STEP1A_count_3_.LH            STEP1A_next_CQ_3_.D.X2         
+   6.15           1      H11      =>  H5        STEP1A_count_3_.LH            STEP1A_next_CQ_4_.D            
+   6.00           1      G3       =>  O8        STEP1A_next_CQ_0_.LH          STEP1A_CQ_0_.D                 
+   6.00           1      H3       =>  J12       STEP1A_next_CQ_1_.LH          STEP1A_CQ_1_.D                 
+   6.00           1      B1       =>  G12       STEP1A_next_CQ_2_.LH          STEP1A_CQ_2_.D                 
+   6.00           1      G5       =>  G13       STEP1A_next_CQ_3_.LH          STEP1A_CQ_3_.D                 
+   6.00           1      H5       =>  O9        STEP1A_next_CQ_4_.LH          STEP1A_CQ_4_.D                 
+   6.00           1      B12      =>  F3        STEP2_next_count_state_0_.LH   STEP2_count_state_0_.D         
+   6.00           1      D9       =>  F5        STEP2_next_count_state_1_.LH   STEP2_count_state_1_.D         
+   6.00           1      D3       =>  F7        STEP2_next_count_state_2_.LH   STEP2_count_state_2_.D         
+   6.00           1      A3       =>  L7        STEP5_next_qstate_0_.LH       STEP5_qstate_0_.D              
+   6.00           1      A5       =>  F11       STEP5_next_qstate_1_.LH       STEP5_qstate_1_.D              
+   6.00           1      N5       =>  K7        STEP5_next_qstate_2_.LH       STEP5_qstate_2_.D              
+   6.00           1      A7       =>  I10       STEP5_next_qstate_3_.LH       STEP5_qstate_3_.D              
+   6.00           1      N3       =>  H7        STEP5_outNMSG_1_0_.LH         STEP1A_count_0_.D              
+   6.00           1      N3       =>  H9        STEP5_outNMSG_1_0_.LH         STEP1A_count_1_.D              
+   6.00           1      N3       =>  H10       STEP5_outNMSG_1_0_.LH         STEP1A_count_2_.D              
+   6.00           1      N3       =>  H11       STEP5_outNMSG_1_0_.LH         STEP1A_count_3_.D              
+   6.00           1      A9       =>  H7        STEP5_outNMSG_1_1_.LH         STEP1A_count_0_.D              
+   6.00           1      A9       =>  H9        STEP5_outNMSG_1_1_.LH         STEP1A_count_1_.D              
+   6.00           1      A9       =>  H10       STEP5_outNMSG_1_1_.LH         STEP1A_count_2_.D              
+   6.00           1      A9       =>  H11       STEP5_outNMSG_1_1_.LH         STEP1A_count_3_.D              
+   6.00           1      A12      =>  F3        STEP5_outSRST.LH              STEP2_count_state_0_.D         
+   6.00           1      A12      =>  F5        STEP5_outSRST.LH              STEP2_count_state_1_.D         
+   6.00           1      A12      =>  F7        STEP5_outSRST.LH              STEP2_count_state_2_.D         
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+  6.15,- 2.15     1     p26       =>  L7        DIP[7]                        STEP5_qstate_0_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  F11       DIP[7]                        STEP5_qstate_1_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  K7        DIP[7]                        STEP5_qstate_2_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  I10       DIP[7]                        STEP5_qstate_3_.D             DIP[7]
+  6.05,- 2.05     1     p25       =>  A3        DIP[6]                        STEP5_next_qstate_0_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A5        DIP[6]                        STEP5_next_qstate_1_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  N5        DIP[6]                        STEP5_next_qstate_2_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A7        DIP[6]                        STEP5_next_qstate_3_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A12       DIP[6]                        STEP5_outSRST.D               DIP[6]
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   6.00           1     p26       => p112       DIP[7]                        o_BOTRED[7]
+   5.90           1     p23       => p104       DIP[4]                        o_BOTRED[4]
+   5.90           1     p24       => p105       DIP[5]                        o_BOTRED[5]
+   5.90           1     p24       => p40        DIP[5]                        o_TOPRED[0]
+   5.90           1     p24       => p39        DIP[5]                        o_TOPRED[1]
+   5.90           1     p24       => p33        DIP[5]                        o_TOPRED[2]
+   5.90           1     p24       => p32        DIP[5]                        o_TOPRED[3]
+   5.90           1     p24       => p31        DIP[5]                        o_TOPRED[4]
+   5.90           1     p24       => p30        DIP[5]                        o_TOPRED[5]
+   5.90           1     p24       => p29        DIP[5]                        o_TOPRED[6]
+   5.90           1     p24       => p28        DIP[5]                        o_TOPRED[7]
+   5.90           1     p25       => p111       DIP[6]                        o_BOTRED[6]
+   5.80           1     p79       => p100       DIP[0]                        o_BOTRED[0]
+   5.80           1     p78       => p101       DIP[1]                        o_BOTRED[1]
+   5.80           1     p77       => p102       DIP[2]                        o_BOTRED[2]
+   5.80           1     p76       => p103       DIP[3]                        o_BOTRED[3]
+
+
+Section tCO
+
+     tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+   6.60           1     p59       => p63        i_S1_NO                       o_LED_YELLOW[0]               o_LED_YELLOW_0_.C
+   6.60           1     p61       => p62        i_S2_NO                       o_LED_YELLOW[1]               o_LED_YELLOW_1_.C

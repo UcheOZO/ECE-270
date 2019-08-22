@@ -1,0 +1,149 @@
+
+Timing Report
+
+//  Project = lab11
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 152.67 MHz
+  Clock Source From:           i_S2_NO
+  Logic Levels:                1
+  Path Delay:                  6.55 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+   0.45  tCOi                                   LFTPB_Q.C                     LFTPB_Q.Q
+   4.10  tFBK+tROUTE+tBLA*9+tMCELL              LFTPB_Q.Q                     STEP1A_outCHAR_0_.D
+   2.00  tS_PT                                  STEP1A_outCHAR_0_.D           STEP1A_outCHAR_0_.C
+ 
+  Clock Source From: i_S1_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   6.50           1      L7       =>  A3        STEP5_qstate_0_.C             STEP5_next_qstate_0_.D         
+   6.50           1      L7       =>  A5        STEP5_qstate_0_.C             STEP5_next_qstate_1_.D         
+   6.50           1      L7       =>  N5        STEP5_qstate_0_.C             STEP5_next_qstate_2_.D         
+   6.50           1      L7       =>  A7        STEP5_qstate_0_.C             STEP5_next_qstate_3_.D         
+   6.50           1      L7       =>  L7        STEP5_qstate_0_.C             STEP5_qstate_0_.D              
+   6.50           1      L7       =>  F11       STEP5_qstate_0_.C             STEP5_qstate_1_.D              
+   6.50           1      L7       =>  K7        STEP5_qstate_0_.C             STEP5_qstate_2_.D              
+   6.50           1      L7       =>  I10       STEP5_qstate_0_.C             STEP5_qstate_3_.D              
+   6.50           1      F11      =>  A3        STEP5_qstate_1_.C             STEP5_next_qstate_0_.D         
+   6.50           1      F11      =>  A5        STEP5_qstate_1_.C             STEP5_next_qstate_1_.D         
+   6.50           1      F11      =>  N5        STEP5_qstate_1_.C             STEP5_next_qstate_2_.D         
+   6.50           1      F11      =>  A7        STEP5_qstate_1_.C             STEP5_next_qstate_3_.D         
+   6.50           1      F11      =>  L7        STEP5_qstate_1_.C             STEP5_qstate_0_.D              
+   6.50           1      F11      =>  F11       STEP5_qstate_1_.C             STEP5_qstate_1_.D              
+   6.50           1      F11      =>  K7        STEP5_qstate_1_.C             STEP5_qstate_2_.D              
+   6.50           1      F11      =>  I10       STEP5_qstate_1_.C             STEP5_qstate_3_.D              
+   6.50           1      K7       =>  A3        STEP5_qstate_2_.C             STEP5_next_qstate_0_.D         
+   6.50           1      K7       =>  N5        STEP5_qstate_2_.C             STEP5_next_qstate_2_.D         
+   6.50           1      K7       =>  A7        STEP5_qstate_2_.C             STEP5_next_qstate_3_.D         
+   6.50           1      K7       =>  L7        STEP5_qstate_2_.C             STEP5_qstate_0_.D              
+ 
+  Clock Source From: i_S2_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   6.55           1      I5       =>  O6        LFTPB_Q.C                     STEP1A_outCHAR_0_.D            
+   6.55           1      I5       =>  G9        LFTPB_Q.C                     STEP1A_outCHAR_1_.D            
+   6.55           1      I5       =>  J5        LFTPB_Q.C                     STEP1A_outCHAR_2_.D            
+   6.55           1      I5       =>  J7        LFTPB_Q.C                     STEP1A_outCHAR_3_.D            
+   6.55           1      I5       =>  H12       LFTPB_Q.C                     STEP1A_outCHAR_4_.D            
+   6.55           1      I5       =>  G10       LFTPB_Q.C                     STEP1A_outCHAR_5_.D            
+   6.55           1      I5       =>  G11       LFTPB_Q.C                     STEP1A_outCHAR_6_.D            
+   6.15           1      H9       =>  G3        STEP1A_count_1_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H9       =>  H3        STEP1A_count_1_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H9       =>  B1        STEP1A_count_1_.LH            STEP1A_next_CQ_2_.D.X1         
+   6.15           1      H9       =>  B1        STEP1A_count_1_.LH            STEP1A_next_CQ_2_.D.X2         
+   6.15           1      H9       =>  G5        STEP1A_count_1_.LH            STEP1A_next_CQ_3_.D.X1         
+   6.15           1      H10      =>  G3        STEP1A_count_2_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H10      =>  H3        STEP1A_count_2_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H10      =>  B1        STEP1A_count_2_.LH            STEP1A_next_CQ_2_.D.X1         
+   6.15           1      H10      =>  G5        STEP1A_count_2_.LH            STEP1A_next_CQ_3_.D.X1         
+   6.15           1      H10      =>  G5        STEP1A_count_2_.LH            STEP1A_next_CQ_3_.D.X2         
+   6.15           1      H11      =>  G3        STEP1A_count_3_.LH            STEP1A_next_CQ_0_.D            
+   6.15           1      H11      =>  H3        STEP1A_count_3_.LH            STEP1A_next_CQ_1_.D            
+   6.15           1      H11      =>  B1        STEP1A_count_3_.LH            STEP1A_next_CQ_2_.D.X1         
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+  6.15,- 2.15     1     p26       =>  L7        DIP[7]                        STEP5_qstate_0_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  F11       DIP[7]                        STEP5_qstate_1_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  K7        DIP[7]                        STEP5_qstate_2_.D             DIP[7]
+  6.15,- 2.15     1     p26       =>  I10       DIP[7]                        STEP5_qstate_3_.D             DIP[7]
+  6.05,- 2.05     1     p25       =>  A3        DIP[6]                        STEP5_next_qstate_0_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A5        DIP[6]                        STEP5_next_qstate_1_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  N5        DIP[6]                        STEP5_next_qstate_2_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A7        DIP[6]                        STEP5_next_qstate_3_.D        DIP[6]
+  6.05,- 2.05     1     p25       =>  A12       DIP[6]                        STEP5_outSRST.D               DIP[6]
+
+
+Section tRCV
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   2.20           1     p58       =>  I7        i_S1_NC                       RGTPB_Q.AR
+   2.20           1     p58       =>  I3        i_S1_NC                       o_LED_YELLOW_0_.AP
+   2.20           1     p59       =>  I7        i_S1_NO                       RGTPB_Q.AP
+   2.20           1     p59       =>  I3        i_S1_NO                       o_LED_YELLOW_0_.AR
+   2.20           1     p60       =>  I5        i_S2_NC                       LFTPB_Q.AR
+   2.20           1     p60       =>  I1        i_S2_NC                       o_LED_YELLOW_1_.AP
+   2.20           1     p61       =>  I5        i_S2_NO                       LFTPB_Q.AP
+   2.20           1     p61       =>  I1        i_S2_NO                       o_LED_YELLOW_1_.AR
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   6.00           1     p26       => p112       DIP[7]                        o_BOTRED[7]
+   5.90           1     p23       => p104       DIP[4]                        o_BOTRED[4]
+   5.90           1     p24       => p105       DIP[5]                        o_BOTRED[5]
+   5.90           1     p24       => p40        DIP[5]                        o_TOPRED[0]
+   5.90           1     p24       => p39        DIP[5]                        o_TOPRED[1]
+   5.90           1     p24       => p33        DIP[5]                        o_TOPRED[2]
+   5.90           1     p24       => p32        DIP[5]                        o_TOPRED[3]
+   5.90           1     p24       => p31        DIP[5]                        o_TOPRED[4]
+   5.90           1     p24       => p30        DIP[5]                        o_TOPRED[5]
+   5.90           1     p24       => p29        DIP[5]                        o_TOPRED[6]
+   5.90           1     p24       => p28        DIP[5]                        o_TOPRED[7]
+   5.90           1     p25       => p111       DIP[6]                        o_BOTRED[6]
+   5.80           1     p79       => p100       DIP[0]                        o_BOTRED[0]
+   5.80           1     p78       => p101       DIP[1]                        o_BOTRED[1]
+   5.80           1     p77       => p102       DIP[2]                        o_BOTRED[2]
+   5.80           1     p76       => p103       DIP[3]                        o_BOTRED[3]
+
+
+Section tCO
+
+     tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+   6.60           1     p59       => p63        i_S1_NO                       o_LED_YELLOW[0]               o_LED_YELLOW_0_.C
+   6.60           1     p61       => p62        i_S2_NO                       o_LED_YELLOW[1]               o_LED_YELLOW_1_.C
