@@ -1,0 +1,143 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC20
+
+#Implementation: lab12
+
+$ Start of Compile
+#Thu Apr 11 06:43:39 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v"
+@I::"U:\desktop\lab12\lab12.h"
+@I::"U:\desktop\lab12\uozor_lab12.v"
+Verilog syntax check successful!
+File U:\desktop\lab12\uozor_lab12.v changed - recompiling
+Selecting top level module lab12_top
+@N: CG364 :"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v":417:7:417:14|Synthesizing module OSCTIMER
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":297:9:297:25|Synthesizing module frequency_divider
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":270:9:270:25|Synthesizing module bounceless_switch
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":802:7:802:13|Synthesizing module winlose
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":596:7:596:10|Synthesizing module lfsr
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":624:7:624:10|Synthesizing module cla4
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":660:7:660:13|Synthesizing module magcomp
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":693:7:693:14|Synthesizing module roundcnt
+
+@W: CG296 :"U:\desktop\lab12\uozor_lab12.v":711:10:711:12|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab12\uozor_lab12.v":712:4:712:7|Referenced variable qrnd is not in sensitivity list
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":316:8:316:14|Synthesizing module bcd2dis
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":731:7:731:11|Synthesizing module bcdfa
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":772:7:772:14|Synthesizing module bcdaccum
+
+@W: CS263 :"U:\desktop\lab12\uozor_lab12.v":784:14:784:17|Port-width mismatch for port A. Formal has width 4, Actual 1
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":409:7:409:12|Synthesizing module msggen
+
+@W: CG296 :"U:\desktop\lab12\uozor_lab12.v":507:10:507:15|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab12\uozor_lab12.v":517:2:517:3|Referenced variable count is not in sensitivity list
+@W: CG296 :"U:\desktop\lab12\uozor_lab12.v":550:10:550:11|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab12\uozor_lab12.v":554:19:554:23|Referenced variable first is not in sensitivity list
+@W: CG290 :"U:\desktop\lab12\uozor_lab12.v":556:19:556:24|Referenced variable second is not in sensitivity list
+@W: CG360 :"U:\desktop\lab12\uozor_lab12.v":422:12:422:15|No assignment to wire tens
+
+@W: CG360 :"U:\desktop\lab12\uozor_lab12.v":422:18:422:21|No assignment to wire ones
+
+@W: CL118 :"U:\desktop\lab12\uozor_lab12.v":508:1:508:2|Latch generated from always block for signal next_CQ[4:0]; possible missing assignment in an if or case statement.
+@W: CL208 :"U:\desktop\lab12\uozor_lab12.v":508:1:508:2|All reachable assignments to bit 4 of next_CQ[4:0] assign 0, register removed by optimization.
+@W: CL118 :"U:\desktop\lab12\uozor_lab12.v":551:1:551:4|Latch generated from always block for signal next[6:0]; possible missing assignment in an if or case statement.
+@A: CL282 :"U:\desktop\lab12\uozor_lab12.v":485:0:485:5|Feedback mux created for signal CQ[4:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL189 :"U:\desktop\lab12\uozor_lab12.v":485:0:485:5|Register bit CQ[4] is always 0, optimizing ...
+@W: CL260 :"U:\desktop\lab12\uozor_lab12.v":485:0:485:5|Pruning register bit 4 of CQ[4:0] 
+
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":357:7:357:15|Synthesizing module dispshift
+
+@N: CG179 :"U:\desktop\lab12\uozor_lab12.v":390:15:390:21|Removing redundant assignment
+@N: CG364 :"U:\desktop\lab12\uozor_lab12.v":1:7:1:15|Synthesizing module lab12_top
+
+@W: CL156 :"U:\desktop\lab12\uozor_lab12.v":209:55:209:64|*Input un1_TOPRED[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"U:\desktop\lab12\uozor_lab12.v":253:7:253:17|*Input un1_MIDRED[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL159 :"U:\desktop\lab12\uozor_lab12.v":660:15:660:17|Input iCF is unused
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 11 06:43:39 2019
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"u:\desktop\lab12\uozor_lab12.v":335:3:335:6|Found ROM, 'STEP9I.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"u:\desktop\lab12\uozor_lab12.v":335:3:335:6|Found ROM, 'STEP9H.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"u:\desktop\lab12\uozor_lab12.v":335:3:335:6|Found ROM, 'STEP9E.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"u:\desktop\lab12\uozor_lab12.v":335:3:335:6|Found ROM, 'ozor.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"u:\desktop\lab12\uozor_lab12.v":335:3:335:6|Found ROM, 'uche.outDIS_1[6:0]', 10 words by 7 bits 
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[15],  because it is equivalent to instance STEP9K.Di4[1]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[16],  because it is equivalent to instance STEP9K.Di4[2]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[17],  because it is equivalent to instance STEP9K.Di4[3]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[7],  because it is equivalent to instance STEP9K.Di3[0]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[8],  because it is equivalent to instance STEP9K.Di3[1]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[9],  because it is equivalent to instance STEP9K.Di3[2]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[10],  because it is equivalent to instance STEP9K.Di3[3]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[14],  because it is equivalent to instance STEP9K.Di4[0]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[11],  because it is equivalent to instance STEP9K.Di3[4]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[12],  because it is equivalent to instance STEP9K.Di3[5]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[13],  because it is equivalent to instance STEP9K.Di3[6]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[18],  because it is equivalent to instance STEP9K.Di4[4]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[19],  because it is equivalent to instance STEP9K.Di4[5]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[20],  because it is equivalent to instance STEP9K.Di4[6]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[4],  because it is equivalent to instance STEP9K.Di2[4]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[5],  because it is equivalent to instance STEP9K.Di2[5]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[6],  because it is equivalent to instance STEP9K.Di2[6]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[0],  because it is equivalent to instance STEP9K.Di2[0]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[1],  because it is equivalent to instance STEP9K.Di2[1]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[2],  because it is equivalent to instance STEP9K.Di2[2]
+@W: BN132 :"u:\desktop\lab12\uozor_lab12.v":372:0:372:5|Removing instance STEP9K.outDISP[3],  because it is equivalent to instance STEP9K.Di2[3]
+@W: MT462 :|Net gmoverf appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"u:\desktop\lab12\uozor_lab12.v":510:1:542:3|Net STEP9J.un1_next_CQ41_1 appears to be an unidentified clock source. Assuming default frequency. 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+OSCTIMER        1 use
+DFFRH           16 uses
+DFFCRH          43 uses
+DFFC            4 uses
+DFFSH           1 use
+DFFRSH          2 uses
+IBUF            12 uses
+OBUF            57 uses
+AND2            367 uses
+XOR2            36 uses
+INV             255 uses
+OR2             6 uses
+DLAT            11 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 33MB peak: 97MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 11 06:43:42 2019
+
+###########################################################]

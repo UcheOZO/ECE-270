@@ -1,0 +1,2296 @@
+#$ DATE Thu Apr 11 06:43:49 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ PROPERTY LATTICE OSCTIMER I1= -, -, -, tmr_out, 1048576; 
+#$ MODULE lab12_top
+#$ PINS 69 DIP_7_:26'ke'  o_TOPRED_7_:28'ke'  o_MIDRED_7_:130'ke'  DIP_6_:25'ke'  DIP_5_:24'ke'  o_BOTRED_7_:112'ke'  DIP_4_:23'ke'  DIP_3_:76'ke'  o_DIS1_6_:87'ke'  DIP_2_:77'ke'  DIP_1_:78'ke'  o_DIS2_6_:98'ke'  DIP_0_:79'ke'  o_TOPRED_6_:29'ke'  o_DIS3_6_:125'ke'  o_TOPRED_5_:30'ke'  o_TOPRED_4_:31'ke'  o_DIS4_6_:44'ke'  o_TOPRED_3_:32'ke'  o_TOPRED_2_:33'ke'  o_JUMBO_2_:142'ke'  o_TOPRED_1_:39'ke'  o_TOPRED_0_:40'ke'  o_LED_YELLOW_1_:62'ke'  o_MIDRED_6_:131'ke'  i_S1_NC:58'ke'  o_MIDRED_5_:132'ke'  i_S1_NO:59'ke'  o_MIDRED_4_:133'ke'  i_S2_NC:60'ke'  o_MIDRED_3_:134'ke'  i_S2_NO:61'ke'  o_MIDRED_2_:135'ke'  o_MIDRED_1_:138'ke'  o_MIDRED_0_:139'ke'  o_BOTRED_6_:111'ke'  o_BOTRED_5_:105'ke'  o_BOTRED_4_:104'ke'  o_BOTRED_3_:103'ke'  o_BOTRED_2_:102'ke'  o_BOTRED_1_:101'ke'  o_BOTRED_0_:100'ke'  o_DIS1_5_:86'ke'  o_DIS1_4_:85'ke'  o_DIS1_3_:84'ke'  o_DIS1_2_:83'ke'  o_DIS1_1_:81'ke'  o_DIS1_0_:80'ke'  o_DIS2_5_:97'ke'  o_DIS2_4_:96'ke'  o_DIS2_3_:95'ke'  o_DIS2_2_:94'ke'  o_DIS2_1_:93'ke'  o_DIS2_0_:88'ke'  o_DIS3_5_:124'ke'  o_DIS3_4_:123'ke'  o_DIS3_3_:122'ke'  o_DIS3_2_:121'ke'  o_DIS3_1_:120'ke'  o_DIS3_0_:116'ke'  o_DIS4_5_:48'ke'  o_DIS4_4_:49'ke'  o_DIS4_3_:50'ke'  o_DIS4_2_:51'ke'  o_DIS4_1_:52'ke'  o_DIS4_0_:53'ke'  o_JUMBO_1_:141'ke'  o_JUMBO_0_:140'ke'  o_LED_YELLOW_0_:63'ke' 
+#$ NODES 735 un1_dis1_3__n step9j_n_39_0_n step9j_n_17_0_1_n un1_dis1_1__n step9j_n_40_0_n step9j_n_17_0_2_n un1_dis1_0__n step9j_n_54_0_n step9j_n_17_0_3_n un1_dis1_14__n \
+#  un4_dis1_i_27__n step9j_n_17_0_4_n step9b_un38_c_1_n un1_dis1_i_27__n step9j_n_15_0_1_n STEP9B_P_2_ dis1_i_27__n step9j_n_15_0_2_n step9b_un47_c_1_n un4_dis1_i_20__n \
+#  step9j_n_13_0_1_n STEP9B_P_1_ un1_dis1_i_20__n step9j_n_13_0_2_n STEP9B_P_0_ dis1_i_20__n step9j_n_13_0_3_n step9b_g_2__n un4_dis1_i_15__n step9j_n_13_0_4_n \
+#  step9b_un47_c_2_n un1_dis1_i_15__n step9j_n_13_0_5_n step9b_un26_c_n dis1_i_15__n step9j_n_13_0_6_n tmr_out step9b_un42_c_1_n N_220_0 step9j_n_13_0_7_n \
+#  LFTPB_Q step9b_un22_c_n N_95_i step9j_n_197_0_1_n FDIVBY2_clk_out STEP9B_P_3_ N_81_i step9j_n_197_0_2_n FDIVBY4_clk_out step9b_un42_c_n \
+#  N_94_i step9j_n_197_0_3_n RGTPB_Q step9f_next_oscore4_n N_93_i step9j_n_197_0_4_n gnd_n_n step9f_n_90_n N_80_i step9j_n_197_0_5_n \
+#  vcc_n_n N_168 un4_dis1_i_26__n step9j_next_cq_1_0_1_3__n STEP9A_qprice_0_ N_165 un1_dis1_i_26__n step9j_n_8_0_1_n STEP9A_qprice_1_ N_169 \
+#  dis1_i_26__n step9j_n_8_0_2_n STEP9A_qprice_2_ N_172 un4_dis1_i_25__n step9j_n_187_1_n STEP9A_qprice_3_ step9f_n_20_n un1_dis1_i_25__n step9j_n_186_1_n \
+#  zfout jumbo_leds_0__n dis1_i_25__n step9j_n_207_1_n gmoverf cfout un4_dis1_i_23__n step9j_n_207_2_n STEP9D_qrnd_0_ step9b_un38_c_n \
+#  un1_dis1_i_23__n step9j_n_157_1_n STEP9D_qrnd_1_ step9b_un35_c_n dis1_i_23__n step9j_n_157_2_n STEP9D_qrnd_2_ step9b_g_3__n un4_dis1_i_21__n step9j_n_156_1_n \
+#  STEP9D_qrnd_3_ un1_dis1_22__n un1_dis1_i_21__n step9j_n_142_1_n STEP9F_oSCORE_0_ un4_dis1_22__n dis1_i_21__n step9j_n_137_1_n STEP9F_oSCORE_1_ N_86 \
+#  step9j_n_79_0_n step9j_n_130_1_n STEP9F_oSCORE_2_ N_87 step9j_n_52_0_n step9j_n_130_2_n STEP9F_oSCORE_3_ N_85 step9j_n_26_0_n step9j_n_129_1_n \
+#  STEP9F_oSCORE_4_ un4_dis1_24__n N_221_i step9j_n_129_2_n STEP9F_oSCORE_5_ N_97 N_224_0 step9j_n_128_1_n STEP9F_oSCORE_6_ un1_dis1_24__n \
+#  step9j_msel_i_i_n step9j_n_125_1_n STEP9F_oSCORE_7_ step9f_n_31_n step9j_n_53_0_n step9j_n_124_1_n STEP9J_outCHAR_0_ step9f_tenscarry_n step9f_uche_z_i_1__n step9j_n_123_1_n \
+#  STEP9J_outCHAR_1_ step9f_uche_un5_cout_n step9f_uche_z_i_2__n step9j_n_109_1_n STEP9J_outCHAR_2_ step9f_uche_un2_cout_n step9f_n_48_0_n step9j_n_108_1_n STEP9J_outCHAR_3_ STEP9F_ozor_G_45 \
+#  step9f_ozor_z_i_2__n step9j_n_100_1_n STEP9J_outCHAR_4_ STEP9F_ozor_G_62_i step9f_ozor_z_i_1__n step9j_n_96_1_n STEP9J_outCHAR_5_ STEP9F_G_43 step9f_n_73_0_n step9j_n_89_1_n \
+#  STEP9J_outCHAR_6_ STEP9F_G_41_i_o3 step9f_n_28_i_n STEP9F_uche_G_17_1 STEP9K_Di2_0_ step9f_hundredscarry_n step9f_n_30_i_n STEP9F_uche_G_12_0_a2_1 STEP9K_Di2_1_ step9f_ozor_un5_cout_n \
+#  step9f_ozor_un2_cout_i_n STEP9F_ozor_G_63_1 STEP9K_Di2_2_ step9f_ozor_un2_cout_n step9f_ozor_un5_cout_i_n STEP9F_G_34_1 STEP9K_Di2_3_ step9f_n_56_n step9f_hundredscarry_0_n STEP9F_G_34_2 \
+#  STEP9K_Di2_4_ step9f_n_59_n step9f_uche_un2_cout_i_n STEP9F_G_33_0_a2_1 STEP9K_Di2_5_ step9f_n_28_n step9f_n_31_i_n STEP9F_G_33_0_a2_2 STEP9K_Di2_6_ step9j_msel_i_n \
+#  step9f_uche_un5_cout_i_n step9f_n_30_1_n STEP9K_Di3_0_ N_224 step9f_tenscarry_0_n step9j_ozor_next_1_i_m2_0_2__un3_n STEP9K_Di3_1_ N_221 un4_dis1_i_24__n step9j_ozor_next_1_i_m2_0_2__un1_n \
+#  STEP9K_Di3_2_ step9j_n_79_n un1_dis1_i_24__n step9j_ozor_next_1_i_m2_0_2__un0_n STEP9K_Di3_3_ step9j_n_78_n dis1_i_24__n step9f_uche_un11_sum_3__un3_n STEP9K_Di3_4_ un1_dis1_21__n \
+#  un4_dis1_i_22__n step9f_uche_un11_sum_3__un1_n STEP9K_Di3_5_ un1_dis1_23__n un1_dis1_i_22__n step9f_uche_un11_sum_3__un0_n STEP9K_Di3_6_ un1_dis1_25__n dis1_i_22__n step9f_uche_un11_sum_2__un3_n \
+#  STEP9K_Di4_0_ un1_dis1_26__n zfout_i step9f_uche_un11_sum_2__un1_n STEP9K_Di4_1_ un4_dis1_21__n step9b_un42_c_i_n step9f_uche_un11_sum_2__un0_n STEP9K_Di4_2_ un4_dis1_23__n \
+#  step9b_un38_c_1_i_n step9f_ozor_un11_sum_3__un3_n STEP9K_Di4_3_ un4_dis1_25__n step9b_g_i_2__n step9f_ozor_un11_sum_3__un1_n STEP9K_Di4_4_ un4_dis1_26__n step9b_un22_c_i_n step9f_ozor_un11_sum_3__un0_n \
+#  STEP9K_Di4_5_ N_91 step9b_un26_c_i_n step9f_ozor_un11_sum_2__un3_n STEP9K_Di4_6_ N_92 step9b_c_0_2__n step9f_ozor_un11_sum_2__un1_n STEP9K_outDISP_21_ N_93 \
+#  step9b_un35_c_i_n step9f_ozor_un11_sum_2__un0_n STEP9K_outDISP_22_ N_94 step9b_g_i_3__n step9j_ozor_next_1_i_m2_2__un3_n STEP9K_outDISP_23_ N_95 step9b_un38_c_i_n step9j_ozor_next_1_i_m2_2__un1_n \
+#  STEP9K_outDISP_24_ N_90 cfout_0 step9j_ozor_next_1_i_m2_2__un0_n STEP9K_outDISP_25_ N_220 step9f_n_27_0_n STEP9K_outDISP_26_ un1_dis1_15__n jumbo_leds_i_0__n \
+#  STEP9K_outDISP_27_ un1_dis1_20__n step9c_un1_lt_i_n midred_0__n un4_dis1_15__n randprice_i_2__n midred_1__n N_39 step9a_un4_feedback_0_n midred_2__n \
+#  un4_dis1_27__n randprice_i_1__n midred_3__n un1_dis1_27__n randprice_i_0__n jumbo_0__n STEP9J_ozor_next_CQ_1_0_0_0_x2_1_ N_169_i jumbo_1__n step9j_n_40_n \
+#  N_172_0 jumbo_2__n step9j_n_37_n N_165_i un1_dis1_7__n step9j_n_185_n N_168_0 un1_dis1_8__n step9j_n_87_n step9f_n_90_i_n \
+#  un1_dis1_9__n step9j_n_85_n step9f_next_oscore4_0_n un1_dis1_10__n step9j_n_86_n un4_dis1_i_14__n un1_dis1_11__n S1BC_i un1_dis1_i_14__n un1_dis1_12__n \
+#  S2BC_i dis1_i_14__n un1_dis1_13__n jumbo_i_0__n N_185_i STEP9D_G_162 jumbo_i_1__n un4_dis1_1_i_0__n STEP9D_G_164 jumbo_i_2__n \
+#  un1_dis1_i_0__n STEP9D_G_166 un1_dis1_i_7__n dis1_i_0__n un1_dis1_i_8__n un4_dis1_i_1__n N_173 un1_dis1_i_9__n un1_dis1_i_1__n step9c_un1_lt_n \
+#  un1_dis1_i_10__n dis1_i_1__n STEP9A_un1_feedback un1_dis1_i_11__n un4_dis1_i_2__n step9a_un4_feedback_n un1_dis1_i_12__n un1_dis1_i_2__n STEP9K_Di1_0_ un1_dis1_i_13__n \
+#  dis1_i_2__n STEP9K_Di1_1_ dip_i_0__n un4_dis1_i_3__n STEP9K_Di1_2_ dip_i_1__n un1_dis1_i_3__n STEP9K_Di1_3_ dip_i_2__n dis1_i_3__n \
+#  STEP9K_Di1_4_ dip_i_3__n un4_dis1_1_i_4__n STEP9K_Di1_5_ dip_i_4__n un1_dis1_i_4__n STEP9K_Di1_6_ dip_i_5__n dis1_i_4__n STEP9J_CQ_3_ \
+#  dip_i_6__n un4_dis1_i_5__n STEP9J_CQ_1_ dip_i_7__n un1_dis1_i_5__n STEP9J_CQ_2_ midred_i_0__n dis1_i_5__n STEP9J_CQ_0_ midred_i_1__n \
+#  un4_dis1_i_6__n step9j_un1_next_cq41_1_n midred_i_2__n un1_dis1_i_6__n STEP9J_next_CQ_0_ midred_i_3__n dis1_i_6__n STEP9J_next_CQ_1_ step9j_cq_i_1__n N_142_i \
+#  STEP9J_next_CQ_2_ step9j_cq_i_3__n N_141_i STEP9J_next_CQ_3_ step9j_cq_i_0__n N_128_i STEP9J_next_0_ step9j_cq_i_2__n N_195_i STEP9J_next_1_ \
+#  N_89_i N_129_i STEP9J_next_2_ gmoverf_i N_130_i STEP9J_next_3_ myscore_i_2__n un4_dis1_i_18__n STEP9J_next_4_ N_37_i \
+#  un1_dis1_i_18__n STEP9J_next_5_ N_39_i dis1_i_18__n STEP9J_next_6_ N_38_i un4_dis1_i_19__n myscore_i_5__n un1_dis1_i_19__n myscore_i_4__n \
+#  dis1_i_19__n step9j_n_26_n myscore_i_6__n step9f_n_29_0_n step9j_n_27_n step9j_n_78_i_n N_34_i step9j_n_31_n N_92_i step9j_n_77_0_n \
+#  step9j_n_34_n N_91_i step9j_n_27_0_n step9j_n_39_n N_97_i N_46_i step9j_n_52_n N_90_i N_45_i step9j_n_53_n \
+#  myscore_i_7__n N_32_i step9j_n_54_n step9f_ozor_un3_sum_i_i_2__n N_47_i N_34 step9f_uche_un3_sum_i_i_2__n N_33_i step9j_n_88_n N_85_i \
+#  un4_dis1_i_17__n step9j_n_89_n N_86_i un1_dis1_i_17__n step9j_n_90_n N_87_i dis1_i_17__n step9j_n_92_n step9b_n_4_i_n un4_dis1_i_16__n \
+#  step9j_n_94_n myscore_i_3__n un1_dis1_i_16__n step9j_n_96_n step9b_n_8_i_n dis1_i_16__n step9j_n_98_n step9b_n_6_i_n step9j_n_187_i_n step9j_n_100_n \
+#  diffout_i_0__n step9j_n_183_i_n step9j_n_102_n roundnum_i_0__n step9j_n_34_0_n step9j_n_108_n roundnum_i_1__n step9j_n_216_i_n step9j_n_109_n roundnum_i_3__n \
+#  step9f_n_90_1_i_n step9j_n_123_n roundnum_i_2__n step9j_n_33_0_n step9j_n_124_n N_144_i step9j_n_180_i_n step9j_n_125_n N_135_i step9j_n_181_i_n \
+#  step9j_n_126_n N_133_i step9f_n_33_i_n step9j_n_127_n N_145_i step9f_n_35_i_n step9j_n_128_n N_139_i step9f_n_36_0_n step9j_n_129_n \
+#  N_140_i step9j_n_102_i_n step9j_n_130_n N_138_i step9j_n_157_i_n step9j_n_131_n N_41_i step9j_n_207_i_n step9j_n_132_n N_42_i \
+#  step9j_n_133_n myscore_i_0__n step9j_n_134_i_n step9j_n_134_n N_217_i step9j_n_144_i_n step9j_n_135_n myscore_i_1__n step9j_n_146_i_n step9j_n_136_n \
+#  N_43_i step9j_n_148_i_n step9j_n_137_n N_44_i step9j_n_150_i_n step9j_n_138_n step9j_n_76_i_0_n step9j_n_156_i_n step9j_n_140_n i_S2_NO_i \
+#  step9j_n_142_n step9j_n_140_i_n step9j_n_144_n i_S1_NO_i step9j_n_142_i_n step9j_n_146_n step9j_n_209_i_n step9j_n_148_n step9j_n_150_n step9j_n_135_i_n \
+#  step9j_n_156_n step9j_n_32_i_i_0_n step9j_n_136_i_n step9j_n_157_n step9j_un1_next_cq41_1_i_n step9j_n_137_i_n step9j_n_207_n step9j_n_138_i_n step9j_n_172_n dip_c_0__n \
+#  step9j_n_215_i_n step9j_n_177_n step9j_n_184_n dip_c_1__n step9j_n_131_i_n step9j_n_186_n step9j_n_132_i_n step9j_n_187_n dip_c_2__n step9j_n_133_i_n \
+#  step9j_n_209_n step9j_n_192_n dip_c_3__n step9j_n_124_i_n step9j_n_212_n step9j_n_125_i_n step9j_n_213_n dip_c_4__n step9j_n_126_i_n step9j_n_214_n \
+#  step9j_n_127_i_n step9j_n_215_n dip_c_5__n step9j_n_128_i_n step9j_n_216_n step9j_n_129_i_n step9j_n_218_n dip_c_6__n step9j_n_130_i_n STEP9J_ozor_next_1_i_x2_3_ \
+#  step9j_n_212_i_n step9f_next_oscore_0_sqmuxa_n dip_c_7__n STEP9F_uche_G_3_i_o2 step9j_n_98_i_n STEP9F_uche_G_12_0_a2 i_S1_NC_c step9j_n_100_i_n STEP9F_G_34 step9j_n_108_i_n \
+#  step9f_n_23_n i_S1_NO_c step9j_n_109_i_n step9f_n_27_n step9j_n_123_i_n step9f_n_29_n i_S2_NC_c step9f_n_30_n step9j_n_90_i_n step9f_n_36_n \
+#  i_S2_NO_c step9j_n_94_i_n step9f_n_48_n step9j_n_96_i_n step9f_n_61_n step9j_next_cq_1_0_3__n step9f_n_73_n step9j_n_88_i_n STEP9F_G_33_0_a2 step9j_n_89_i_n \
+#  STEP9F_ozor_G_63 step9j_n_92_i_n STEP9F_uche_G_17 step9b_c_2__n STEP9C_un1_LT_0_x2 STEP9F_uche_un11_SUM_i_1_ step9j_n_77_0_1_n STEP9C_un1_LT_0_x2_1 STEP9C_un1_LT_0_x2_2 STEP9F_uche_G_39_i \
+#  STEP9C_un1_LT_0_x2_3 STEP9F_ozor_un11_SUM_i_1_ cfout_0_1 cfout_0_2 cfout_0_3 STEP9F_uche_G_1 step9b_c_0_1_2__n step9f_n_33_n step9b_c_0_2_2__n step9f_n_35_n \
+#  step9f_tenscarry_0_1_n step9f_n_90_1_n step9f_tenscarry_0_2_n step9j_n_33_n step9f_tenscarry_0_3_n step9j_n_180_n step9f_hundredscarry_0_1_n N_89 step9j_n_34_0_1_n step9j_n_181_n \
+#  un4_dis1_1_16__n step9j_n_183_n un4_dis1_1_17__n N_41 un4_dis1_1_20__n un1_dis1_16__n un4_dis1_1_19__n un1_dis1_17__n un4_dis1_2_19__n un4_dis1_16__n \
+#  N_43_1 un4_dis1_17__n un4_dis1_1_14__n step9j_n_76_n N_42_1 N_47 un4_dis1_1_18__n un4_dis1_20__n N_138_1 N_44 \
+#  N_135_1 N_43 un4_dis1_1_5__n un4_dis1_19__n un4_dis1_1_1__n N_46 un4_dis1_1_2__n N_45 step9b_un38_c_1_1_n N_217 \
+#  step9b_un42_c_1_1_n N_38 step9f_n_90_1_0_n N_37 N_165_1 step9j_n_77_n step9a_un4_feedback_0_1_n un4_dis1_14__n un4_dis1_1_22__n un1_dis1_2__n \
+#  un4_dis1_2_22__n un1_dis1_5__n N_87_1 un1_dis1_6__n un4_dis1_1_24__n N_42 N_91_1 un4_dis1_18__n un4_dis1_1_26__n un1_dis1_19__n \
+#  un4_dis1_2_26__n un1_dis1_18__n un4_dis1_1_25__n N_195 un4_dis1_1_21__n N_143_1 un4_dis1_1_23__n N_138 N_90_1 N_135 \
+#  un4_dis1_1_15__n un4_dis1_1_4__n un4_dis1_2_15__n un4_dis1_5__n N_39_1 N_140 un4_dis1_1_27__n N_139 step9j_n_40_0_1_n un4_dis1_1_0__n \
+#  step9j_n_185_1_n N_145 STEP9A_un1_feedback_1 un4_dis1_1__n step9j_n_86_i_n step9j_n_25_0_1_n N_133 step9j_n_85_i_n step9j_n_25_0_2_n N_144 \
+#  step9j_n_25_0_3_n un4_dis1_2__n step9j_n_87_i_n step9j_n_23_i_1_n un4_dis1_3__n step9j_n_80_i_i_n step9j_n_23_i_2_n un4_dis1_6__n step9j_next_cq_1_0_1__n step9j_n_23_i_3_n \
+#  N_130 step9j_n_31_0_n step9j_n_23_i_4_n N_142 step9j_n_185_i_n step9j_n_23_i_5_n N_141 step9j_n_36_0_n step9j_n_21_0_1_n N_185 \
+#  step9j_n_186_i_n step9j_n_21_0_2_n un1_dis1_4__n step9j_n_37_0_n step9j_n_21_0_3_n 
+#$ EXTERNAL OSCTIMER 4 DYNOSCDIS'i' TIMERRES'i' OSCOUT'o' TIMEROUT'o'
+#$ NODES 1 I1>OSCOUT
+
+#$ INSTANCE I1 OSCTIMER 4 gnd_n_n gnd_n_n I1>OSCOUT tmr_out
+.model lab12_top
+.inputs DIP_7_.BLIF i_S1_NC.BLIF i_S1_NO.BLIF i_S2_NC.BLIF i_S2_NO.BLIF DIP_6_.BLIF DIP_5_.BLIF DIP_4_.BLIF DIP_3_.BLIF \
+  DIP_2_.BLIF DIP_1_.BLIF DIP_0_.BLIF un1_dis1_3__n.BLIF step9j_n_39_0_n.BLIF step9j_n_17_0_1_n.BLIF un1_dis1_1__n.BLIF step9j_n_40_0_n.BLIF step9j_n_17_0_2_n.BLIF \
+  un1_dis1_0__n.BLIF step9j_n_54_0_n.BLIF step9j_n_17_0_3_n.BLIF un1_dis1_14__n.BLIF un4_dis1_i_27__n.BLIF step9j_n_17_0_4_n.BLIF step9b_un38_c_1_n.BLIF un1_dis1_i_27__n.BLIF step9j_n_15_0_1_n.BLIF \
+  STEP9B_P_2_.BLIF dis1_i_27__n.BLIF step9j_n_15_0_2_n.BLIF step9b_un47_c_1_n.BLIF un4_dis1_i_20__n.BLIF step9j_n_13_0_1_n.BLIF STEP9B_P_1_.BLIF un1_dis1_i_20__n.BLIF step9j_n_13_0_2_n.BLIF \
+  STEP9B_P_0_.BLIF dis1_i_20__n.BLIF step9j_n_13_0_3_n.BLIF step9b_g_2__n.BLIF un4_dis1_i_15__n.BLIF step9j_n_13_0_4_n.BLIF step9b_un47_c_2_n.BLIF un1_dis1_i_15__n.BLIF step9j_n_13_0_5_n.BLIF \
+  step9b_un26_c_n.BLIF dis1_i_15__n.BLIF step9j_n_13_0_6_n.BLIF tmr_out.BLIF step9b_un42_c_1_n.BLIF N_220_0.BLIF step9j_n_13_0_7_n.BLIF LFTPB_Q.BLIF step9b_un22_c_n.BLIF \
+  N_95_i.BLIF step9j_n_197_0_1_n.BLIF FDIVBY2_clk_out.BLIF STEP9B_P_3_.BLIF N_81_i.BLIF step9j_n_197_0_2_n.BLIF FDIVBY4_clk_out.BLIF step9b_un42_c_n.BLIF N_94_i.BLIF \
+  step9j_n_197_0_3_n.BLIF RGTPB_Q.BLIF step9f_next_oscore4_n.BLIF N_93_i.BLIF step9j_n_197_0_4_n.BLIF step9f_n_90_n.BLIF N_80_i.BLIF step9j_n_197_0_5_n.BLIF vcc_n_n.BLIF \
+  N_168.BLIF un4_dis1_i_26__n.BLIF step9j_next_cq_1_0_1_3__n.BLIF STEP9A_qprice_0_.BLIF N_165.BLIF un1_dis1_i_26__n.BLIF step9j_n_8_0_1_n.BLIF STEP9A_qprice_1_.BLIF N_169.BLIF \
+  dis1_i_26__n.BLIF step9j_n_8_0_2_n.BLIF STEP9A_qprice_2_.BLIF N_172.BLIF un4_dis1_i_25__n.BLIF step9j_n_187_1_n.BLIF STEP9A_qprice_3_.BLIF step9f_n_20_n.BLIF un1_dis1_i_25__n.BLIF \
+  step9j_n_186_1_n.BLIF zfout.BLIF jumbo_leds_0__n.BLIF dis1_i_25__n.BLIF step9j_n_207_1_n.BLIF gmoverf.BLIF cfout.BLIF un4_dis1_i_23__n.BLIF step9j_n_207_2_n.BLIF \
+  STEP9D_qrnd_0_.BLIF step9b_un38_c_n.BLIF un1_dis1_i_23__n.BLIF step9j_n_157_1_n.BLIF STEP9D_qrnd_1_.BLIF step9b_un35_c_n.BLIF dis1_i_23__n.BLIF step9j_n_157_2_n.BLIF STEP9D_qrnd_2_.BLIF \
+  step9b_g_3__n.BLIF un4_dis1_i_21__n.BLIF step9j_n_156_1_n.BLIF STEP9D_qrnd_3_.BLIF un1_dis1_22__n.BLIF un1_dis1_i_21__n.BLIF step9j_n_142_1_n.BLIF STEP9F_oSCORE_0_.BLIF un4_dis1_22__n.BLIF \
+  dis1_i_21__n.BLIF step9j_n_137_1_n.BLIF STEP9F_oSCORE_1_.BLIF N_86.BLIF step9j_n_79_0_n.BLIF step9j_n_130_1_n.BLIF STEP9F_oSCORE_2_.BLIF N_87.BLIF step9j_n_52_0_n.BLIF \
+  step9j_n_130_2_n.BLIF STEP9F_oSCORE_3_.BLIF N_85.BLIF step9j_n_26_0_n.BLIF step9j_n_129_1_n.BLIF STEP9F_oSCORE_4_.BLIF un4_dis1_24__n.BLIF N_221_i.BLIF step9j_n_129_2_n.BLIF \
+  STEP9F_oSCORE_5_.BLIF N_97.BLIF N_224_0.BLIF step9j_n_128_1_n.BLIF STEP9F_oSCORE_6_.BLIF un1_dis1_24__n.BLIF step9j_msel_i_i_n.BLIF step9j_n_125_1_n.BLIF STEP9F_oSCORE_7_.BLIF \
+  step9f_n_31_n.BLIF step9j_n_53_0_n.BLIF step9j_n_124_1_n.BLIF STEP9J_outCHAR_0_.BLIF step9f_tenscarry_n.BLIF step9f_uche_z_i_1__n.BLIF step9j_n_123_1_n.BLIF STEP9J_outCHAR_1_.BLIF step9f_uche_un5_cout_n.BLIF \
+  step9f_uche_z_i_2__n.BLIF step9j_n_109_1_n.BLIF STEP9J_outCHAR_2_.BLIF step9f_uche_un2_cout_n.BLIF step9f_n_48_0_n.BLIF step9j_n_108_1_n.BLIF STEP9J_outCHAR_3_.BLIF STEP9F_ozor_G_45.BLIF step9f_ozor_z_i_2__n.BLIF \
+  step9j_n_100_1_n.BLIF STEP9J_outCHAR_4_.BLIF STEP9F_ozor_G_62_i.BLIF step9f_ozor_z_i_1__n.BLIF step9j_n_96_1_n.BLIF STEP9J_outCHAR_5_.BLIF STEP9F_G_43.BLIF step9f_n_73_0_n.BLIF step9j_n_89_1_n.BLIF \
+  STEP9J_outCHAR_6_.BLIF STEP9F_G_41_i_o3.BLIF step9f_n_28_i_n.BLIF STEP9F_uche_G_17_1.BLIF STEP9K_Di2_0_.BLIF step9f_hundredscarry_n.BLIF step9f_n_30_i_n.BLIF STEP9F_uche_G_12_0_a2_1.BLIF STEP9K_Di2_1_.BLIF \
+  step9f_ozor_un5_cout_n.BLIF step9f_ozor_un2_cout_i_n.BLIF STEP9F_ozor_G_63_1.BLIF STEP9K_Di2_2_.BLIF step9f_ozor_un2_cout_n.BLIF step9f_ozor_un5_cout_i_n.BLIF STEP9F_G_34_1.BLIF STEP9K_Di2_3_.BLIF step9f_n_56_n.BLIF \
+  step9f_hundredscarry_0_n.BLIF STEP9F_G_34_2.BLIF STEP9K_Di2_4_.BLIF step9f_n_59_n.BLIF step9f_uche_un2_cout_i_n.BLIF STEP9F_G_33_0_a2_1.BLIF STEP9K_Di2_5_.BLIF step9f_n_28_n.BLIF step9f_n_31_i_n.BLIF \
+  STEP9F_G_33_0_a2_2.BLIF STEP9K_Di2_6_.BLIF step9j_msel_i_n.BLIF step9f_uche_un5_cout_i_n.BLIF step9f_n_30_1_n.BLIF STEP9K_Di3_0_.BLIF N_224.BLIF step9f_tenscarry_0_n.BLIF step9j_ozor_next_1_i_m2_0_2__un3_n.BLIF \
+  STEP9K_Di3_1_.BLIF N_221.BLIF un4_dis1_i_24__n.BLIF step9j_ozor_next_1_i_m2_0_2__un1_n.BLIF STEP9K_Di3_2_.BLIF step9j_n_79_n.BLIF un1_dis1_i_24__n.BLIF step9j_ozor_next_1_i_m2_0_2__un0_n.BLIF STEP9K_Di3_3_.BLIF \
+  step9j_n_78_n.BLIF dis1_i_24__n.BLIF step9f_uche_un11_sum_3__un3_n.BLIF STEP9K_Di3_4_.BLIF un1_dis1_21__n.BLIF un4_dis1_i_22__n.BLIF step9f_uche_un11_sum_3__un1_n.BLIF STEP9K_Di3_5_.BLIF un1_dis1_23__n.BLIF \
+  un1_dis1_i_22__n.BLIF step9f_uche_un11_sum_3__un0_n.BLIF STEP9K_Di3_6_.BLIF un1_dis1_25__n.BLIF dis1_i_22__n.BLIF step9f_uche_un11_sum_2__un3_n.BLIF STEP9K_Di4_0_.BLIF un1_dis1_26__n.BLIF zfout_i.BLIF \
+  step9f_uche_un11_sum_2__un1_n.BLIF STEP9K_Di4_1_.BLIF un4_dis1_21__n.BLIF step9b_un42_c_i_n.BLIF step9f_uche_un11_sum_2__un0_n.BLIF STEP9K_Di4_2_.BLIF un4_dis1_23__n.BLIF step9b_un38_c_1_i_n.BLIF step9f_ozor_un11_sum_3__un3_n.BLIF \
+  STEP9K_Di4_3_.BLIF un4_dis1_25__n.BLIF step9b_g_i_2__n.BLIF step9f_ozor_un11_sum_3__un1_n.BLIF STEP9K_Di4_4_.BLIF un4_dis1_26__n.BLIF step9b_un22_c_i_n.BLIF step9f_ozor_un11_sum_3__un0_n.BLIF STEP9K_Di4_5_.BLIF \
+  N_91.BLIF step9b_un26_c_i_n.BLIF step9f_ozor_un11_sum_2__un3_n.BLIF STEP9K_Di4_6_.BLIF N_92.BLIF step9b_c_0_2__n.BLIF step9f_ozor_un11_sum_2__un1_n.BLIF STEP9K_outDISP_21_.BLIF N_93.BLIF \
+  step9b_un35_c_i_n.BLIF step9f_ozor_un11_sum_2__un0_n.BLIF STEP9K_outDISP_22_.BLIF N_94.BLIF step9b_g_i_3__n.BLIF step9j_ozor_next_1_i_m2_2__un3_n.BLIF STEP9K_outDISP_23_.BLIF N_95.BLIF step9b_un38_c_i_n.BLIF \
+  step9j_ozor_next_1_i_m2_2__un1_n.BLIF STEP9K_outDISP_24_.BLIF N_90.BLIF cfout_0.BLIF step9j_ozor_next_1_i_m2_2__un0_n.BLIF STEP9K_outDISP_25_.BLIF N_220.BLIF step9f_n_27_0_n.BLIF STEP9K_outDISP_26_.BLIF \
+  un1_dis1_15__n.BLIF jumbo_leds_i_0__n.BLIF STEP9K_outDISP_27_.BLIF un1_dis1_20__n.BLIF step9c_un1_lt_i_n.BLIF midred_0__n.BLIF un4_dis1_15__n.BLIF randprice_i_2__n.BLIF midred_1__n.BLIF \
+  N_39.BLIF step9a_un4_feedback_0_n.BLIF midred_2__n.BLIF un4_dis1_27__n.BLIF randprice_i_1__n.BLIF midred_3__n.BLIF un1_dis1_27__n.BLIF randprice_i_0__n.BLIF jumbo_0__n.BLIF \
+  STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.BLIF N_169_i.BLIF jumbo_1__n.BLIF step9j_n_40_n.BLIF N_172_0.BLIF jumbo_2__n.BLIF step9j_n_37_n.BLIF N_165_i.BLIF un1_dis1_7__n.BLIF \
+  step9j_n_185_n.BLIF N_168_0.BLIF un1_dis1_8__n.BLIF step9j_n_87_n.BLIF step9f_n_90_i_n.BLIF un1_dis1_9__n.BLIF step9j_n_85_n.BLIF step9f_next_oscore4_0_n.BLIF un1_dis1_10__n.BLIF \
+  step9j_n_86_n.BLIF un4_dis1_i_14__n.BLIF un1_dis1_11__n.BLIF S1BC_i.BLIF un1_dis1_i_14__n.BLIF un1_dis1_12__n.BLIF S2BC_i.BLIF dis1_i_14__n.BLIF un1_dis1_13__n.BLIF \
+  jumbo_i_0__n.BLIF N_185_i.BLIF STEP9D_G_162.BLIF jumbo_i_1__n.BLIF un4_dis1_1_i_0__n.BLIF STEP9D_G_164.BLIF jumbo_i_2__n.BLIF un1_dis1_i_0__n.BLIF STEP9D_G_166.BLIF \
+  un1_dis1_i_7__n.BLIF dis1_i_0__n.BLIF un1_dis1_i_8__n.BLIF un4_dis1_i_1__n.BLIF N_173.BLIF un1_dis1_i_9__n.BLIF un1_dis1_i_1__n.BLIF step9c_un1_lt_n.BLIF un1_dis1_i_10__n.BLIF \
+  dis1_i_1__n.BLIF STEP9A_un1_feedback.BLIF un1_dis1_i_11__n.BLIF un4_dis1_i_2__n.BLIF step9a_un4_feedback_n.BLIF un1_dis1_i_12__n.BLIF un1_dis1_i_2__n.BLIF STEP9K_Di1_0_.BLIF un1_dis1_i_13__n.BLIF \
+  dis1_i_2__n.BLIF STEP9K_Di1_1_.BLIF dip_i_0__n.BLIF un4_dis1_i_3__n.BLIF STEP9K_Di1_2_.BLIF dip_i_1__n.BLIF un1_dis1_i_3__n.BLIF STEP9K_Di1_3_.BLIF dip_i_2__n.BLIF \
+  dis1_i_3__n.BLIF STEP9K_Di1_4_.BLIF dip_i_3__n.BLIF un4_dis1_1_i_4__n.BLIF STEP9K_Di1_5_.BLIF dip_i_4__n.BLIF un1_dis1_i_4__n.BLIF STEP9K_Di1_6_.BLIF dip_i_5__n.BLIF \
+  dis1_i_4__n.BLIF STEP9J_CQ_3_.BLIF dip_i_6__n.BLIF un4_dis1_i_5__n.BLIF STEP9J_CQ_1_.BLIF dip_i_7__n.BLIF un1_dis1_i_5__n.BLIF STEP9J_CQ_2_.BLIF midred_i_0__n.BLIF \
+  dis1_i_5__n.BLIF STEP9J_CQ_0_.BLIF midred_i_1__n.BLIF un4_dis1_i_6__n.BLIF step9j_un1_next_cq41_1_n.BLIF midred_i_2__n.BLIF un1_dis1_i_6__n.BLIF STEP9J_next_CQ_0_.BLIF midred_i_3__n.BLIF \
+  dis1_i_6__n.BLIF STEP9J_next_CQ_1_.BLIF step9j_cq_i_1__n.BLIF N_142_i.BLIF STEP9J_next_CQ_2_.BLIF step9j_cq_i_3__n.BLIF N_141_i.BLIF STEP9J_next_CQ_3_.BLIF step9j_cq_i_0__n.BLIF \
+  N_128_i.BLIF STEP9J_next_0_.BLIF step9j_cq_i_2__n.BLIF N_195_i.BLIF STEP9J_next_1_.BLIF N_89_i.BLIF N_129_i.BLIF STEP9J_next_2_.BLIF gmoverf_i.BLIF \
+  N_130_i.BLIF STEP9J_next_3_.BLIF myscore_i_2__n.BLIF un4_dis1_i_18__n.BLIF STEP9J_next_4_.BLIF N_37_i.BLIF un1_dis1_i_18__n.BLIF STEP9J_next_5_.BLIF N_39_i.BLIF \
+  dis1_i_18__n.BLIF STEP9J_next_6_.BLIF N_38_i.BLIF un4_dis1_i_19__n.BLIF myscore_i_5__n.BLIF un1_dis1_i_19__n.BLIF myscore_i_4__n.BLIF dis1_i_19__n.BLIF step9j_n_26_n.BLIF \
+  myscore_i_6__n.BLIF step9f_n_29_0_n.BLIF step9j_n_27_n.BLIF step9j_n_78_i_n.BLIF N_34_i.BLIF step9j_n_31_n.BLIF N_92_i.BLIF step9j_n_77_0_n.BLIF step9j_n_34_n.BLIF \
+  N_91_i.BLIF step9j_n_27_0_n.BLIF step9j_n_39_n.BLIF N_97_i.BLIF N_46_i.BLIF step9j_n_52_n.BLIF N_90_i.BLIF N_45_i.BLIF step9j_n_53_n.BLIF \
+  myscore_i_7__n.BLIF N_32_i.BLIF step9j_n_54_n.BLIF step9f_ozor_un3_sum_i_i_2__n.BLIF N_47_i.BLIF N_34.BLIF step9f_uche_un3_sum_i_i_2__n.BLIF N_33_i.BLIF step9j_n_88_n.BLIF \
+  N_85_i.BLIF un4_dis1_i_17__n.BLIF step9j_n_89_n.BLIF N_86_i.BLIF un1_dis1_i_17__n.BLIF step9j_n_90_n.BLIF N_87_i.BLIF dis1_i_17__n.BLIF step9j_n_92_n.BLIF \
+  step9b_n_4_i_n.BLIF un4_dis1_i_16__n.BLIF step9j_n_94_n.BLIF myscore_i_3__n.BLIF un1_dis1_i_16__n.BLIF step9j_n_96_n.BLIF step9b_n_8_i_n.BLIF dis1_i_16__n.BLIF step9j_n_98_n.BLIF \
+  step9b_n_6_i_n.BLIF step9j_n_187_i_n.BLIF step9j_n_100_n.BLIF diffout_i_0__n.BLIF step9j_n_183_i_n.BLIF step9j_n_102_n.BLIF roundnum_i_0__n.BLIF step9j_n_34_0_n.BLIF step9j_n_108_n.BLIF \
+  roundnum_i_1__n.BLIF step9j_n_216_i_n.BLIF step9j_n_109_n.BLIF roundnum_i_3__n.BLIF step9f_n_90_1_i_n.BLIF step9j_n_123_n.BLIF roundnum_i_2__n.BLIF step9j_n_33_0_n.BLIF step9j_n_124_n.BLIF \
+  N_144_i.BLIF step9j_n_180_i_n.BLIF step9j_n_125_n.BLIF N_135_i.BLIF step9j_n_181_i_n.BLIF step9j_n_126_n.BLIF N_133_i.BLIF step9f_n_33_i_n.BLIF step9j_n_127_n.BLIF \
+  N_145_i.BLIF step9f_n_35_i_n.BLIF step9j_n_128_n.BLIF N_139_i.BLIF step9f_n_36_0_n.BLIF step9j_n_129_n.BLIF N_140_i.BLIF step9j_n_102_i_n.BLIF step9j_n_130_n.BLIF \
+  N_138_i.BLIF step9j_n_157_i_n.BLIF step9j_n_131_n.BLIF N_41_i.BLIF step9j_n_207_i_n.BLIF step9j_n_132_n.BLIF N_42_i.BLIF step9j_n_133_n.BLIF myscore_i_0__n.BLIF \
+  step9j_n_134_i_n.BLIF step9j_n_134_n.BLIF N_217_i.BLIF step9j_n_144_i_n.BLIF step9j_n_135_n.BLIF myscore_i_1__n.BLIF step9j_n_146_i_n.BLIF step9j_n_136_n.BLIF N_43_i.BLIF \
+  step9j_n_148_i_n.BLIF step9j_n_137_n.BLIF N_44_i.BLIF step9j_n_150_i_n.BLIF step9j_n_138_n.BLIF step9j_n_76_i_0_n.BLIF step9j_n_156_i_n.BLIF step9j_n_140_n.BLIF i_S2_NO_i.BLIF \
+  step9j_n_142_n.BLIF step9j_n_140_i_n.BLIF step9j_n_144_n.BLIF i_S1_NO_i.BLIF step9j_n_142_i_n.BLIF step9j_n_146_n.BLIF step9j_n_209_i_n.BLIF step9j_n_148_n.BLIF step9j_n_150_n.BLIF \
+  step9j_n_135_i_n.BLIF step9j_n_156_n.BLIF step9j_n_32_i_i_0_n.BLIF step9j_n_136_i_n.BLIF step9j_n_157_n.BLIF step9j_un1_next_cq41_1_i_n.BLIF step9j_n_137_i_n.BLIF step9j_n_207_n.BLIF step9j_n_138_i_n.BLIF \
+  step9j_n_172_n.BLIF dip_c_0__n.BLIF step9j_n_215_i_n.BLIF step9j_n_177_n.BLIF step9j_n_184_n.BLIF dip_c_1__n.BLIF step9j_n_131_i_n.BLIF step9j_n_186_n.BLIF step9j_n_132_i_n.BLIF \
+  step9j_n_187_n.BLIF dip_c_2__n.BLIF step9j_n_133_i_n.BLIF step9j_n_209_n.BLIF step9j_n_192_n.BLIF dip_c_3__n.BLIF step9j_n_124_i_n.BLIF step9j_n_212_n.BLIF step9j_n_125_i_n.BLIF \
+  step9j_n_213_n.BLIF dip_c_4__n.BLIF step9j_n_126_i_n.BLIF step9j_n_214_n.BLIF step9j_n_127_i_n.BLIF step9j_n_215_n.BLIF dip_c_5__n.BLIF step9j_n_128_i_n.BLIF step9j_n_216_n.BLIF \
+  step9j_n_129_i_n.BLIF step9j_n_218_n.BLIF dip_c_6__n.BLIF step9j_n_130_i_n.BLIF STEP9J_ozor_next_1_i_x2_3_.BLIF step9j_n_212_i_n.BLIF step9f_next_oscore_0_sqmuxa_n.BLIF dip_c_7__n.BLIF STEP9F_uche_G_3_i_o2.BLIF \
+  step9j_n_98_i_n.BLIF STEP9F_uche_G_12_0_a2.BLIF i_S1_NC_c.BLIF step9j_n_100_i_n.BLIF STEP9F_G_34.BLIF step9j_n_108_i_n.BLIF step9f_n_23_n.BLIF i_S1_NO_c.BLIF step9j_n_109_i_n.BLIF \
+  step9f_n_27_n.BLIF step9j_n_123_i_n.BLIF step9f_n_29_n.BLIF i_S2_NC_c.BLIF step9f_n_30_n.BLIF step9j_n_90_i_n.BLIF step9f_n_36_n.BLIF i_S2_NO_c.BLIF step9j_n_94_i_n.BLIF \
+  step9f_n_48_n.BLIF step9j_n_96_i_n.BLIF step9f_n_61_n.BLIF step9j_next_cq_1_0_3__n.BLIF step9f_n_73_n.BLIF step9j_n_88_i_n.BLIF STEP9F_G_33_0_a2.BLIF step9j_n_89_i_n.BLIF STEP9F_ozor_G_63.BLIF \
+  step9j_n_92_i_n.BLIF STEP9F_uche_G_17.BLIF step9b_c_2__n.BLIF STEP9C_un1_LT_0_x2.BLIF STEP9F_uche_un11_SUM_i_1_.BLIF step9j_n_77_0_1_n.BLIF STEP9C_un1_LT_0_x2_1.BLIF STEP9C_un1_LT_0_x2_2.BLIF STEP9F_uche_G_39_i.BLIF \
+  STEP9C_un1_LT_0_x2_3.BLIF STEP9F_ozor_un11_SUM_i_1_.BLIF cfout_0_1.BLIF cfout_0_2.BLIF cfout_0_3.BLIF STEP9F_uche_G_1.BLIF step9b_c_0_1_2__n.BLIF step9f_n_33_n.BLIF step9b_c_0_2_2__n.BLIF \
+  step9f_n_35_n.BLIF step9f_tenscarry_0_1_n.BLIF step9f_n_90_1_n.BLIF step9f_tenscarry_0_2_n.BLIF step9j_n_33_n.BLIF step9f_tenscarry_0_3_n.BLIF step9j_n_180_n.BLIF step9f_hundredscarry_0_1_n.BLIF N_89.BLIF \
+  step9j_n_34_0_1_n.BLIF step9j_n_181_n.BLIF un4_dis1_1_16__n.BLIF step9j_n_183_n.BLIF un4_dis1_1_17__n.BLIF N_41.BLIF un4_dis1_1_20__n.BLIF un1_dis1_16__n.BLIF un4_dis1_1_19__n.BLIF \
+  un1_dis1_17__n.BLIF un4_dis1_2_19__n.BLIF un4_dis1_16__n.BLIF N_43_1.BLIF un4_dis1_17__n.BLIF un4_dis1_1_14__n.BLIF step9j_n_76_n.BLIF N_42_1.BLIF N_47.BLIF \
+  un4_dis1_1_18__n.BLIF un4_dis1_20__n.BLIF N_138_1.BLIF N_44.BLIF N_135_1.BLIF N_43.BLIF un4_dis1_1_5__n.BLIF un4_dis1_19__n.BLIF un4_dis1_1_1__n.BLIF \
+  N_46.BLIF un4_dis1_1_2__n.BLIF N_45.BLIF step9b_un38_c_1_1_n.BLIF N_217.BLIF step9b_un42_c_1_1_n.BLIF N_38.BLIF step9f_n_90_1_0_n.BLIF N_37.BLIF \
+  N_165_1.BLIF step9j_n_77_n.BLIF step9a_un4_feedback_0_1_n.BLIF un4_dis1_14__n.BLIF un4_dis1_1_22__n.BLIF un1_dis1_2__n.BLIF un4_dis1_2_22__n.BLIF un1_dis1_5__n.BLIF N_87_1.BLIF \
+  un1_dis1_6__n.BLIF un4_dis1_1_24__n.BLIF N_42.BLIF N_91_1.BLIF un4_dis1_18__n.BLIF un4_dis1_1_26__n.BLIF un1_dis1_19__n.BLIF un4_dis1_2_26__n.BLIF un1_dis1_18__n.BLIF \
+  un4_dis1_1_25__n.BLIF N_195.BLIF un4_dis1_1_21__n.BLIF N_143_1.BLIF un4_dis1_1_23__n.BLIF N_138.BLIF N_90_1.BLIF N_135.BLIF un4_dis1_1_15__n.BLIF \
+  un4_dis1_1_4__n.BLIF un4_dis1_2_15__n.BLIF un4_dis1_5__n.BLIF N_39_1.BLIF N_140.BLIF un4_dis1_1_27__n.BLIF N_139.BLIF step9j_n_40_0_1_n.BLIF un4_dis1_1_0__n.BLIF \
+  step9j_n_185_1_n.BLIF N_145.BLIF STEP9A_un1_feedback_1.BLIF un4_dis1_1__n.BLIF step9j_n_86_i_n.BLIF step9j_n_25_0_1_n.BLIF N_133.BLIF step9j_n_85_i_n.BLIF step9j_n_25_0_2_n.BLIF \
+  N_144.BLIF step9j_n_25_0_3_n.BLIF un4_dis1_2__n.BLIF step9j_n_87_i_n.BLIF step9j_n_23_i_1_n.BLIF un4_dis1_3__n.BLIF step9j_n_80_i_i_n.BLIF step9j_n_23_i_2_n.BLIF un4_dis1_6__n.BLIF \
+  step9j_next_cq_1_0_1__n.BLIF step9j_n_23_i_3_n.BLIF N_130.BLIF step9j_n_31_0_n.BLIF step9j_n_23_i_4_n.BLIF N_142.BLIF step9j_n_185_i_n.BLIF step9j_n_23_i_5_n.BLIF N_141.BLIF \
+  step9j_n_36_0_n.BLIF step9j_n_21_0_1_n.BLIF N_185.BLIF step9j_n_186_i_n.BLIF step9j_n_21_0_2_n.BLIF un1_dis1_4__n.BLIF step9j_n_37_0_n.BLIF step9j_n_21_0_3_n.BLIF   I1>OSCOUT.BLIF
+.outputs o_TOPRED_7_ o_MIDRED_7_ o_BOTRED_7_ o_DIS1_6_ o_DIS2_6_ o_DIS3_6_ o_DIS4_6_ o_JUMBO_2_ o_LED_YELLOW_1_ o_TOPRED_6_ o_TOPRED_5_ \
+  o_TOPRED_4_ o_TOPRED_3_ o_TOPRED_2_ o_TOPRED_1_ o_TOPRED_0_ o_MIDRED_6_ o_MIDRED_5_ o_MIDRED_4_ o_MIDRED_3_ o_MIDRED_2_ o_MIDRED_1_ \
+  o_MIDRED_0_ o_BOTRED_6_ o_BOTRED_5_ o_BOTRED_4_ o_BOTRED_3_ o_BOTRED_2_ o_BOTRED_1_ o_BOTRED_0_ o_DIS1_5_ o_DIS1_4_ o_DIS1_3_ \
+  o_DIS1_2_ o_DIS1_1_ o_DIS1_0_ o_DIS2_5_ o_DIS2_4_ o_DIS2_3_ o_DIS2_2_ o_DIS2_1_ o_DIS2_0_ o_DIS3_5_ o_DIS3_4_ \
+  o_DIS3_3_ o_DIS3_2_ o_DIS3_1_ o_DIS3_0_ o_DIS4_5_ o_DIS4_4_ o_DIS4_3_ o_DIS4_2_ o_DIS4_1_ o_DIS4_0_ o_JUMBO_1_ \
+  o_JUMBO_0_ o_LED_YELLOW_0_ STEP9A_qprice_0_.D STEP9A_qprice_0_.C STEP9A_qprice_0_.AR STEP9A_qprice_1_.D STEP9A_qprice_1_.C STEP9A_qprice_1_.AR STEP9A_qprice_2_.D STEP9A_qprice_2_.C STEP9A_qprice_2_.AR \
+  STEP9A_qprice_3_.D STEP9A_qprice_3_.C STEP9A_qprice_3_.AR STEP9F_oSCORE_0_.D STEP9F_oSCORE_0_.CE STEP9F_oSCORE_0_.C STEP9F_oSCORE_0_.AR STEP9F_oSCORE_1_.D STEP9F_oSCORE_1_.CE STEP9F_oSCORE_1_.C STEP9F_oSCORE_1_.AR \
+  STEP9F_oSCORE_2_.D STEP9F_oSCORE_2_.CE STEP9F_oSCORE_2_.C STEP9F_oSCORE_2_.AR STEP9F_oSCORE_3_.D STEP9F_oSCORE_3_.CE STEP9F_oSCORE_3_.C STEP9F_oSCORE_3_.AR STEP9F_oSCORE_4_.D STEP9F_oSCORE_4_.CE STEP9F_oSCORE_4_.C \
+  STEP9F_oSCORE_4_.AR STEP9F_oSCORE_5_.D STEP9F_oSCORE_5_.CE STEP9F_oSCORE_5_.C STEP9F_oSCORE_5_.AR STEP9F_oSCORE_6_.D STEP9F_oSCORE_6_.CE STEP9F_oSCORE_6_.C STEP9F_oSCORE_6_.AR STEP9F_oSCORE_7_.D STEP9F_oSCORE_7_.CE \
+  STEP9F_oSCORE_7_.C STEP9F_oSCORE_7_.AR STEP9J_outCHAR_4_.D STEP9J_outCHAR_4_.C STEP9J_outCHAR_4_.AR STEP9J_outCHAR_5_.D STEP9J_outCHAR_5_.C STEP9J_outCHAR_5_.AR STEP9J_outCHAR_6_.D STEP9J_outCHAR_6_.C STEP9J_outCHAR_6_.AR \
+  STEP9J_CQ_0_.D STEP9J_CQ_0_.CE STEP9J_CQ_0_.C STEP9J_CQ_1_.D STEP9J_CQ_1_.CE STEP9J_CQ_1_.C STEP9J_CQ_2_.D STEP9J_CQ_2_.CE STEP9J_CQ_2_.C STEP9J_CQ_3_.D STEP9J_CQ_3_.CE \
+  STEP9J_CQ_3_.C STEP9J_outCHAR_0_.D STEP9J_outCHAR_0_.C STEP9J_outCHAR_0_.AR STEP9J_outCHAR_1_.D STEP9J_outCHAR_1_.C STEP9J_outCHAR_1_.AR STEP9J_outCHAR_2_.D STEP9J_outCHAR_2_.C STEP9J_outCHAR_2_.AR STEP9J_outCHAR_3_.D \
+  STEP9J_outCHAR_3_.C STEP9J_outCHAR_3_.AR STEP9K_Di1_5_.D STEP9K_Di1_5_.CE STEP9K_Di1_5_.C STEP9K_Di1_5_.AR STEP9K_Di1_6_.D STEP9K_Di1_6_.CE STEP9K_Di1_6_.C STEP9K_Di1_6_.AR STEP9K_Di2_4_.D \
+  STEP9K_Di2_4_.CE STEP9K_Di2_4_.C STEP9K_Di2_4_.AR STEP9K_Di2_5_.D STEP9K_Di2_5_.CE STEP9K_Di2_5_.C STEP9K_Di2_5_.AR STEP9K_Di2_6_.D STEP9K_Di2_6_.CE STEP9K_Di2_6_.C STEP9K_Di2_6_.AR \
+  STEP9K_Di1_0_.D STEP9K_Di1_0_.CE STEP9K_Di1_0_.C STEP9K_Di1_0_.AR STEP9K_Di1_1_.D STEP9K_Di1_1_.CE STEP9K_Di1_1_.C STEP9K_Di1_1_.AR STEP9J_next_CQ_1_.D STEP9J_next_CQ_1_.LH STEP9K_Di1_2_.D \
+  STEP9K_Di1_2_.CE STEP9K_Di1_2_.C STEP9K_Di1_2_.AR STEP9J_next_CQ_2_.D STEP9J_next_CQ_2_.LH STEP9K_Di1_3_.D STEP9K_Di1_3_.CE STEP9K_Di1_3_.C STEP9K_Di1_3_.AR STEP9J_next_CQ_3_.D STEP9J_next_CQ_3_.LH \
+  STEP9K_Di1_4_.D STEP9K_Di1_4_.CE STEP9K_Di1_4_.C STEP9K_Di1_4_.AR STEP9J_next_0_.D STEP9J_next_0_.LH STEP9K_Di2_0_.D STEP9K_Di2_0_.CE STEP9K_Di2_0_.C STEP9K_Di2_0_.AR STEP9J_next_1_.D \
+  STEP9J_next_1_.LH STEP9K_Di2_1_.D STEP9K_Di2_1_.CE STEP9K_Di2_1_.C STEP9K_Di2_1_.AR STEP9J_next_2_.D STEP9J_next_2_.LH STEP9K_Di2_2_.D STEP9K_Di2_2_.CE STEP9K_Di2_2_.C STEP9K_Di2_2_.AR \
+  STEP9J_next_3_.D STEP9J_next_3_.LH STEP9K_Di2_3_.D STEP9K_Di2_3_.CE STEP9K_Di2_3_.C STEP9K_Di2_3_.AR STEP9J_next_4_.D STEP9J_next_4_.LH STEP9K_outDISP_21_.D STEP9K_outDISP_21_.CE STEP9K_outDISP_21_.C \
+  STEP9K_outDISP_21_.AR STEP9J_next_5_.D STEP9J_next_5_.LH STEP9K_outDISP_22_.D STEP9K_outDISP_22_.CE STEP9K_outDISP_22_.C STEP9K_outDISP_22_.AR STEP9K_outDISP_23_.D STEP9K_outDISP_23_.CE STEP9K_outDISP_23_.C STEP9K_outDISP_23_.AR \
+  STEP9J_next_6_.D STEP9J_next_6_.LH STEP9K_outDISP_24_.D STEP9K_outDISP_24_.CE STEP9K_outDISP_24_.C STEP9K_outDISP_24_.AR STEP9K_outDISP_25_.D STEP9K_outDISP_25_.CE STEP9K_outDISP_25_.C STEP9K_outDISP_25_.AR STEP9J_next_CQ_0_.D \
+  STEP9J_next_CQ_0_.LH STEP9K_outDISP_26_.D STEP9K_outDISP_26_.CE STEP9K_outDISP_26_.C STEP9K_outDISP_26_.AR STEP9K_outDISP_27_.D STEP9K_outDISP_27_.CE STEP9K_outDISP_27_.C STEP9K_outDISP_27_.AR STEP9K_Di3_0_.D STEP9K_Di3_0_.CE \
+  STEP9K_Di3_0_.C STEP9K_Di3_0_.AR STEP9K_Di3_1_.D STEP9K_Di3_1_.CE STEP9K_Di3_1_.C STEP9K_Di3_1_.AR STEP9K_Di3_2_.D STEP9K_Di3_2_.CE STEP9K_Di3_2_.C STEP9K_Di3_2_.AR STEP9K_Di3_3_.D \
+  STEP9K_Di3_3_.CE STEP9K_Di3_3_.C STEP9K_Di3_3_.AR STEP9K_Di3_4_.D STEP9K_Di3_4_.CE STEP9K_Di3_4_.C STEP9K_Di3_4_.AR STEP9K_Di3_5_.D STEP9K_Di3_5_.CE STEP9K_Di3_5_.C STEP9K_Di3_5_.AR \
+  STEP9K_Di3_6_.D STEP9K_Di3_6_.CE STEP9K_Di3_6_.C STEP9K_Di3_6_.AR STEP9K_Di4_0_.D STEP9K_Di4_0_.CE STEP9K_Di4_0_.C STEP9K_Di4_0_.AR STEP9K_Di4_1_.D STEP9K_Di4_1_.CE STEP9K_Di4_1_.C \
+  STEP9K_Di4_1_.AR STEP9K_Di4_2_.D STEP9K_Di4_2_.CE STEP9K_Di4_2_.C STEP9K_Di4_2_.AR STEP9K_Di4_3_.D STEP9K_Di4_3_.CE STEP9K_Di4_3_.C STEP9K_Di4_3_.AR STEP9K_Di4_4_.D STEP9K_Di4_4_.CE \
+  STEP9K_Di4_4_.C STEP9K_Di4_4_.AR STEP9K_Di4_5_.D STEP9K_Di4_5_.CE STEP9K_Di4_5_.C STEP9K_Di4_5_.AR STEP9K_Di4_6_.D STEP9K_Di4_6_.CE STEP9K_Di4_6_.C STEP9K_Di4_6_.AR STEP9D_qrnd_0_.D \
+  STEP9D_qrnd_0_.C STEP9D_qrnd_0_.AP STEP9D_qrnd_1_.D STEP9D_qrnd_1_.C STEP9D_qrnd_1_.AR STEP9D_qrnd_2_.D STEP9D_qrnd_2_.C STEP9D_qrnd_2_.AR STEP9D_qrnd_3_.D STEP9D_qrnd_3_.C STEP9D_qrnd_3_.AR \
+  FDIVBY2_clk_out.D FDIVBY2_clk_out.C FDIVBY2_clk_out.AR FDIVBY4_clk_out.D FDIVBY4_clk_out.C FDIVBY4_clk_out.AR RGTPB_Q.D RGTPB_Q.C RGTPB_Q.AR RGTPB_Q.AP LFTPB_Q.D \
+  LFTPB_Q.C LFTPB_Q.AR LFTPB_Q.AP STEP9A_un1_feedback_1.X1 STEP9A_un1_feedback_1.X2 STEP9A_un1_feedback.X1 STEP9A_un1_feedback.X2 STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.X1 STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.X2 STEP9J_ozor_next_1_i_x2_3_.X1 STEP9J_ozor_next_1_i_x2_3_.X2 \
+  STEP9C_un1_LT_0_x2_1.X1 STEP9C_un1_LT_0_x2_1.X2 STEP9C_un1_LT_0_x2_2.X1 STEP9C_un1_LT_0_x2_2.X2 STEP9C_un1_LT_0_x2_3.X1 STEP9C_un1_LT_0_x2_3.X2 STEP9C_un1_LT_0_x2.X1 STEP9C_un1_LT_0_x2.X2 STEP9F_G_41_i_o3.X1 STEP9F_G_41_i_o3.X2 STEP9F_G_43.X1 \
+  STEP9F_G_43.X2 STEP9F_uche_un11_SUM_i_1_.X1 STEP9F_uche_un11_SUM_i_1_.X2 STEP9F_uche_G_39_i.X1 STEP9F_uche_G_39_i.X2 STEP9F_ozor_G_45.X1 STEP9F_ozor_G_45.X2 STEP9F_ozor_G_62_i.X1 STEP9F_ozor_G_62_i.X2 STEP9F_ozor_un11_SUM_i_1_.X1 STEP9F_ozor_un11_SUM_i_1_.X2 \
+  STEP9F_uche_G_17_1.X1 STEP9F_uche_G_17_1.X2 STEP9F_uche_G_17.X1 STEP9F_uche_G_17.X2 STEP9F_uche_G_12_0_a2_1.X1 STEP9F_uche_G_12_0_a2_1.X2 STEP9F_uche_G_12_0_a2.X1 STEP9F_uche_G_12_0_a2.X2 STEP9F_ozor_G_63_1.X1 STEP9F_ozor_G_63_1.X2 STEP9F_ozor_G_63.X1 \
+  STEP9F_ozor_G_63.X2 STEP9F_G_34_1.X1 STEP9F_G_34_1.X2 STEP9F_G_34_2.X1 STEP9F_G_34_2.X2 STEP9F_G_34.X1 STEP9F_G_34.X2 STEP9F_G_33_0_a2_1.X1 STEP9F_G_33_0_a2_1.X2 STEP9F_uche_G_1.X1 STEP9F_uche_G_1.X2 \
+  STEP9F_G_33_0_a2_2.X1 STEP9F_G_33_0_a2_2.X2 STEP9F_G_33_0_a2.X1 STEP9F_G_33_0_a2.X2 STEP9B_P_3_.X1 STEP9B_P_3_.X2 STEP9B_P_1_.X1 STEP9B_P_1_.X2 STEP9B_P_2_.X1 STEP9B_P_2_.X2 STEP9B_P_0_.X1 \
+  STEP9B_P_0_.X2 STEP9F_uche_G_3_i_o2.X1 STEP9F_uche_G_3_i_o2.X2 STEP9D_G_166.X1 STEP9D_G_166.X2 STEP9D_G_164.X1 STEP9D_G_164.X2 STEP9D_G_162.X1 STEP9D_G_162.X2 un1_dis1_3__n step9j_n_39_0_n \
+  step9j_n_17_0_1_n un1_dis1_1__n step9j_n_40_0_n step9j_n_17_0_2_n un1_dis1_0__n step9j_n_54_0_n step9j_n_17_0_3_n un1_dis1_14__n un4_dis1_i_27__n step9j_n_17_0_4_n step9b_un38_c_1_n \
+  un1_dis1_i_27__n step9j_n_15_0_1_n dis1_i_27__n step9j_n_15_0_2_n step9b_un47_c_1_n un4_dis1_i_20__n step9j_n_13_0_1_n un1_dis1_i_20__n step9j_n_13_0_2_n dis1_i_20__n step9j_n_13_0_3_n \
+  step9b_g_2__n un4_dis1_i_15__n step9j_n_13_0_4_n step9b_un47_c_2_n un1_dis1_i_15__n step9j_n_13_0_5_n step9b_un26_c_n dis1_i_15__n step9j_n_13_0_6_n step9b_un42_c_1_n N_220_0 \
+  step9j_n_13_0_7_n step9b_un22_c_n N_95_i step9j_n_197_0_1_n N_81_i step9j_n_197_0_2_n step9b_un42_c_n N_94_i step9j_n_197_0_3_n step9f_next_oscore4_n N_93_i \
+  step9j_n_197_0_4_n gnd_n_n step9f_n_90_n N_80_i step9j_n_197_0_5_n vcc_n_n N_168 un4_dis1_i_26__n step9j_next_cq_1_0_1_3__n N_165 un1_dis1_i_26__n \
+  step9j_n_8_0_1_n N_169 dis1_i_26__n step9j_n_8_0_2_n N_172 un4_dis1_i_25__n step9j_n_187_1_n step9f_n_20_n un1_dis1_i_25__n step9j_n_186_1_n zfout \
+  jumbo_leds_0__n dis1_i_25__n step9j_n_207_1_n gmoverf cfout un4_dis1_i_23__n step9j_n_207_2_n step9b_un38_c_n un1_dis1_i_23__n step9j_n_157_1_n step9b_un35_c_n \
+  dis1_i_23__n step9j_n_157_2_n step9b_g_3__n un4_dis1_i_21__n step9j_n_156_1_n un1_dis1_22__n un1_dis1_i_21__n step9j_n_142_1_n un4_dis1_22__n dis1_i_21__n step9j_n_137_1_n \
+  N_86 step9j_n_79_0_n step9j_n_130_1_n N_87 step9j_n_52_0_n step9j_n_130_2_n N_85 step9j_n_26_0_n step9j_n_129_1_n un4_dis1_24__n N_221_i \
+  step9j_n_129_2_n N_97 N_224_0 step9j_n_128_1_n un1_dis1_24__n step9j_msel_i_i_n step9j_n_125_1_n step9f_n_31_n step9j_n_53_0_n step9j_n_124_1_n step9f_tenscarry_n \
+  step9f_uche_z_i_1__n step9j_n_123_1_n step9f_uche_un5_cout_n step9f_uche_z_i_2__n step9j_n_109_1_n step9f_uche_un2_cout_n step9f_n_48_0_n step9j_n_108_1_n step9f_ozor_z_i_2__n step9j_n_100_1_n step9f_ozor_z_i_1__n \
+  step9j_n_96_1_n step9f_n_73_0_n step9j_n_89_1_n step9f_n_28_i_n step9f_hundredscarry_n step9f_n_30_i_n step9f_ozor_un5_cout_n step9f_ozor_un2_cout_i_n step9f_ozor_un2_cout_n step9f_ozor_un5_cout_i_n step9f_n_56_n \
+  step9f_hundredscarry_0_n step9f_n_59_n step9f_uche_un2_cout_i_n step9f_n_28_n step9f_n_31_i_n step9j_msel_i_n step9f_uche_un5_cout_i_n step9f_n_30_1_n N_224 step9f_tenscarry_0_n step9j_ozor_next_1_i_m2_0_2__un3_n \
+  N_221 un4_dis1_i_24__n step9j_ozor_next_1_i_m2_0_2__un1_n step9j_n_79_n un1_dis1_i_24__n step9j_ozor_next_1_i_m2_0_2__un0_n step9j_n_78_n dis1_i_24__n step9f_uche_un11_sum_3__un3_n un1_dis1_21__n un4_dis1_i_22__n \
+  step9f_uche_un11_sum_3__un1_n un1_dis1_23__n un1_dis1_i_22__n step9f_uche_un11_sum_3__un0_n un1_dis1_25__n dis1_i_22__n step9f_uche_un11_sum_2__un3_n un1_dis1_26__n zfout_i step9f_uche_un11_sum_2__un1_n un4_dis1_21__n \
+  step9b_un42_c_i_n step9f_uche_un11_sum_2__un0_n un4_dis1_23__n step9b_un38_c_1_i_n step9f_ozor_un11_sum_3__un3_n un4_dis1_25__n step9b_g_i_2__n step9f_ozor_un11_sum_3__un1_n un4_dis1_26__n step9b_un22_c_i_n step9f_ozor_un11_sum_3__un0_n \
+  N_91 step9b_un26_c_i_n step9f_ozor_un11_sum_2__un3_n N_92 step9b_c_0_2__n step9f_ozor_un11_sum_2__un1_n N_93 step9b_un35_c_i_n step9f_ozor_un11_sum_2__un0_n N_94 step9b_g_i_3__n \
+  step9j_ozor_next_1_i_m2_2__un3_n N_95 step9b_un38_c_i_n step9j_ozor_next_1_i_m2_2__un1_n N_90 cfout_0 step9j_ozor_next_1_i_m2_2__un0_n N_220 step9f_n_27_0_n un1_dis1_15__n jumbo_leds_i_0__n \
+  un1_dis1_20__n step9c_un1_lt_i_n midred_0__n un4_dis1_15__n randprice_i_2__n midred_1__n N_39 step9a_un4_feedback_0_n midred_2__n un4_dis1_27__n randprice_i_1__n \
+  midred_3__n un1_dis1_27__n randprice_i_0__n jumbo_0__n N_169_i jumbo_1__n step9j_n_40_n N_172_0 jumbo_2__n step9j_n_37_n N_165_i \
+  un1_dis1_7__n step9j_n_185_n N_168_0 un1_dis1_8__n step9j_n_87_n step9f_n_90_i_n un1_dis1_9__n step9j_n_85_n step9f_next_oscore4_0_n un1_dis1_10__n step9j_n_86_n \
+  un4_dis1_i_14__n un1_dis1_11__n S1BC_i un1_dis1_i_14__n un1_dis1_12__n S2BC_i dis1_i_14__n un1_dis1_13__n jumbo_i_0__n N_185_i jumbo_i_1__n \
+  un4_dis1_1_i_0__n jumbo_i_2__n un1_dis1_i_0__n un1_dis1_i_7__n dis1_i_0__n un1_dis1_i_8__n un4_dis1_i_1__n N_173 un1_dis1_i_9__n un1_dis1_i_1__n step9c_un1_lt_n \
+  un1_dis1_i_10__n dis1_i_1__n un1_dis1_i_11__n un4_dis1_i_2__n step9a_un4_feedback_n un1_dis1_i_12__n un1_dis1_i_2__n un1_dis1_i_13__n dis1_i_2__n dip_i_0__n un4_dis1_i_3__n \
+  dip_i_1__n un1_dis1_i_3__n dip_i_2__n dis1_i_3__n dip_i_3__n un4_dis1_1_i_4__n dip_i_4__n un1_dis1_i_4__n dip_i_5__n dis1_i_4__n dip_i_6__n \
+  un4_dis1_i_5__n dip_i_7__n un1_dis1_i_5__n midred_i_0__n dis1_i_5__n midred_i_1__n un4_dis1_i_6__n step9j_un1_next_cq41_1_n midred_i_2__n un1_dis1_i_6__n midred_i_3__n \
+  dis1_i_6__n step9j_cq_i_1__n N_142_i step9j_cq_i_3__n N_141_i step9j_cq_i_0__n N_128_i step9j_cq_i_2__n N_195_i N_89_i N_129_i \
+  gmoverf_i N_130_i myscore_i_2__n un4_dis1_i_18__n N_37_i un1_dis1_i_18__n N_39_i dis1_i_18__n N_38_i un4_dis1_i_19__n myscore_i_5__n \
+  un1_dis1_i_19__n myscore_i_4__n dis1_i_19__n step9j_n_26_n myscore_i_6__n step9f_n_29_0_n step9j_n_27_n step9j_n_78_i_n N_34_i step9j_n_31_n N_92_i \
+  step9j_n_77_0_n step9j_n_34_n N_91_i step9j_n_27_0_n step9j_n_39_n N_97_i N_46_i step9j_n_52_n N_90_i N_45_i step9j_n_53_n \
+  myscore_i_7__n N_32_i step9j_n_54_n step9f_ozor_un3_sum_i_i_2__n N_47_i N_34 step9f_uche_un3_sum_i_i_2__n N_33_i step9j_n_88_n N_85_i un4_dis1_i_17__n \
+  step9j_n_89_n N_86_i un1_dis1_i_17__n step9j_n_90_n N_87_i dis1_i_17__n step9j_n_92_n step9b_n_4_i_n un4_dis1_i_16__n step9j_n_94_n myscore_i_3__n \
+  un1_dis1_i_16__n step9j_n_96_n step9b_n_8_i_n dis1_i_16__n step9j_n_98_n step9b_n_6_i_n step9j_n_187_i_n step9j_n_100_n diffout_i_0__n step9j_n_183_i_n step9j_n_102_n \
+  roundnum_i_0__n step9j_n_34_0_n step9j_n_108_n roundnum_i_1__n step9j_n_216_i_n step9j_n_109_n roundnum_i_3__n step9f_n_90_1_i_n step9j_n_123_n roundnum_i_2__n step9j_n_33_0_n \
+  step9j_n_124_n N_144_i step9j_n_180_i_n step9j_n_125_n N_135_i step9j_n_181_i_n step9j_n_126_n N_133_i step9f_n_33_i_n step9j_n_127_n N_145_i \
+  step9f_n_35_i_n step9j_n_128_n N_139_i step9f_n_36_0_n step9j_n_129_n N_140_i step9j_n_102_i_n step9j_n_130_n N_138_i step9j_n_157_i_n step9j_n_131_n \
+  N_41_i step9j_n_207_i_n step9j_n_132_n N_42_i step9j_n_133_n myscore_i_0__n step9j_n_134_i_n step9j_n_134_n N_217_i step9j_n_144_i_n step9j_n_135_n \
+  myscore_i_1__n step9j_n_146_i_n step9j_n_136_n N_43_i step9j_n_148_i_n step9j_n_137_n N_44_i step9j_n_150_i_n step9j_n_138_n step9j_n_76_i_0_n step9j_n_156_i_n \
+  step9j_n_140_n i_S2_NO_i step9j_n_142_n step9j_n_140_i_n step9j_n_144_n i_S1_NO_i step9j_n_142_i_n step9j_n_146_n step9j_n_209_i_n step9j_n_148_n step9j_n_150_n \
+  step9j_n_135_i_n step9j_n_156_n step9j_n_32_i_i_0_n step9j_n_136_i_n step9j_n_157_n step9j_un1_next_cq41_1_i_n step9j_n_137_i_n step9j_n_207_n step9j_n_138_i_n step9j_n_172_n dip_c_0__n \
+  step9j_n_215_i_n step9j_n_177_n step9j_n_184_n dip_c_1__n step9j_n_131_i_n step9j_n_186_n step9j_n_132_i_n step9j_n_187_n dip_c_2__n step9j_n_133_i_n step9j_n_209_n \
+  step9j_n_192_n dip_c_3__n step9j_n_124_i_n step9j_n_212_n step9j_n_125_i_n step9j_n_213_n dip_c_4__n step9j_n_126_i_n step9j_n_214_n step9j_n_127_i_n step9j_n_215_n \
+  dip_c_5__n step9j_n_128_i_n step9j_n_216_n step9j_n_129_i_n step9j_n_218_n dip_c_6__n step9j_n_130_i_n step9j_n_212_i_n step9f_next_oscore_0_sqmuxa_n dip_c_7__n step9j_n_98_i_n \
+  i_S1_NC_c step9j_n_100_i_n step9j_n_108_i_n step9f_n_23_n i_S1_NO_c step9j_n_109_i_n step9f_n_27_n step9j_n_123_i_n step9f_n_29_n i_S2_NC_c step9f_n_30_n \
+  step9j_n_90_i_n step9f_n_36_n i_S2_NO_c step9j_n_94_i_n step9f_n_48_n step9j_n_96_i_n step9f_n_61_n step9j_next_cq_1_0_3__n step9f_n_73_n step9j_n_88_i_n step9j_n_89_i_n \
+  step9j_n_92_i_n step9b_c_2__n step9j_n_77_0_1_n cfout_0_1 cfout_0_2 cfout_0_3 step9b_c_0_1_2__n step9f_n_33_n step9b_c_0_2_2__n step9f_n_35_n step9f_tenscarry_0_1_n \
+  step9f_n_90_1_n step9f_tenscarry_0_2_n step9j_n_33_n step9f_tenscarry_0_3_n step9j_n_180_n step9f_hundredscarry_0_1_n N_89 step9j_n_34_0_1_n step9j_n_181_n un4_dis1_1_16__n step9j_n_183_n \
+  un4_dis1_1_17__n N_41 un4_dis1_1_20__n un1_dis1_16__n un4_dis1_1_19__n un1_dis1_17__n un4_dis1_2_19__n un4_dis1_16__n N_43_1 un4_dis1_17__n un4_dis1_1_14__n \
+  step9j_n_76_n N_42_1 N_47 un4_dis1_1_18__n un4_dis1_20__n N_138_1 N_44 N_135_1 N_43 un4_dis1_1_5__n un4_dis1_19__n \
+  un4_dis1_1_1__n N_46 un4_dis1_1_2__n N_45 step9b_un38_c_1_1_n N_217 step9b_un42_c_1_1_n N_38 step9f_n_90_1_0_n N_37 N_165_1 \
+  step9j_n_77_n step9a_un4_feedback_0_1_n un4_dis1_14__n un4_dis1_1_22__n un1_dis1_2__n un4_dis1_2_22__n un1_dis1_5__n N_87_1 un1_dis1_6__n un4_dis1_1_24__n N_42 \
+  N_91_1 un4_dis1_18__n un4_dis1_1_26__n un1_dis1_19__n un4_dis1_2_26__n un1_dis1_18__n un4_dis1_1_25__n N_195 un4_dis1_1_21__n N_143_1 un4_dis1_1_23__n \
+  N_138 N_90_1 N_135 un4_dis1_1_15__n un4_dis1_1_4__n un4_dis1_2_15__n un4_dis1_5__n N_39_1 N_140 un4_dis1_1_27__n N_139 \
+  step9j_n_40_0_1_n un4_dis1_1_0__n step9j_n_185_1_n N_145 un4_dis1_1__n step9j_n_86_i_n step9j_n_25_0_1_n N_133 step9j_n_85_i_n step9j_n_25_0_2_n N_144 \
+  step9j_n_25_0_3_n un4_dis1_2__n step9j_n_87_i_n step9j_n_23_i_1_n un4_dis1_3__n step9j_n_80_i_i_n step9j_n_23_i_2_n un4_dis1_6__n step9j_next_cq_1_0_1__n step9j_n_23_i_3_n N_130 \
+  step9j_n_31_0_n step9j_n_23_i_4_n N_142 step9j_n_185_i_n step9j_n_23_i_5_n N_141 step9j_n_36_0_n step9j_n_21_0_1_n N_185 step9j_n_186_i_n step9j_n_21_0_2_n \
+  un1_dis1_4__n step9j_n_37_0_n step9j_n_21_0_3_n
+.names  step9j_n_40_0_1_n.BLIF step9j_n_187_i_n.BLIF step9j_n_40_0_n
+11 1
+.names  step9j_n_185_n.BLIF step9j_n_185_i_n
+0 1
+.names  STEP9F_oSCORE_0_.BLIF STEP9F_oSCORE_1_.BLIF step9j_n_216_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di3_1_.CE
+1 1
+.names  step9j_cq_i_1__n.BLIF STEP9J_CQ_2_.BLIF step9j_n_185_1_n
+11 1
+.names  step9j_n_186_n.BLIF step9j_n_186_i_n
+0 1
+.names  STEP9F_oSCORE_1_.BLIF step9j_ozor_next_1_i_m2_2__un3_n
+0 1
+.names  STEP9F_uche_G_12_0_a2_1.BLIF STEP9F_uche_G_12_0_a2.X1
+1 1
+.names  step9j_n_185_1_n.BLIF step9j_cq_i_0__n.BLIF step9j_n_185_n
+11 1
+.names  step9j_n_37_0_n.BLIF step9j_n_37_n
+0 1
+.names  STEP9F_oSCORE_3_.BLIF STEP9F_oSCORE_1_.BLIF step9j_ozor_next_1_i_m2_2__un1_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_1_.C
+1 1
+.names  dip_c_0__n.BLIF dip_i_0__n
+0 1
+.names  STEP9F_oSCORE_2_.BLIF step9j_ozor_next_1_i_m2_2__un3_n.BLIF step9j_ozor_next_1_i_m2_2__un0_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_0_.C
+1 1
+.names  STEP9F_oSCORE_2_.BLIF STEP9F_uche_G_12_0_a2.X2
+1 1
+.names  dip_c_1__n.BLIF dip_i_1__n
+0 1
+.names  step9j_ozor_next_1_i_m2_2__un1_n.BLIF step9j_ozor_next_1_i_m2_2__un0_n.BLIF step9j_n_76_n
+1- 1
+-1 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_1_.AR
+1 1
+.names  step9j_n_34_0_n.BLIF step9j_n_39_n.BLIF step9j_n_25_0_1_n
+11 1
+.names  dip_c_2__n.BLIF dip_i_2__n
+0 1
+.names  STEP9F_oSCORE_2_.BLIF myscore_i_0__n.BLIF N_34_i
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_0_.AR
+1 1
+.names  step9j_n_102_i_n.BLIF step9j_n_157_i_n.BLIF step9j_n_25_0_2_n
+11 1
+.names  dip_c_3__n.BLIF dip_i_3__n
+0 1
+.names  step9j_n_177_n.BLIF STEP9F_oSCORE_2_.BLIF step9j_n_192_n
+11 1
+.names  step9f_n_61_n.BLIF STEP9F_ozor_G_63_1.X1
+1 1
+.names  step9j_n_25_0_1_n.BLIF step9j_n_25_0_2_n.BLIF step9j_n_25_0_3_n
+11 1
+.names  dip_c_4__n.BLIF dip_i_4__n
+0 1
+.names  step9j_n_77_n.BLIF step9j_n_213_n.BLIF step9j_n_132_n
+11 1
+.names  STEP9K_Di2_2_.BLIF STEP9K_Di3_2_.D
+1 1
+.names  step9j_n_25_0_3_n.BLIF step9j_n_207_i_n.BLIF STEP9J_next_4_.D
+11 1
+.names  dip_c_5__n.BLIF dip_i_5__n
+0 1
+.names  step9f_n_23_n.BLIF STEP9F_oSCORE_2_.BLIF step9f_n_35_n
+11 1
+.names  step9f_n_73_n.BLIF STEP9F_ozor_G_63_1.X2
+1 1
+.names  step9j_n_36_0_n.BLIF step9j_n_134_i_n.BLIF step9j_n_23_i_1_n
+11 1
+.names  dip_c_6__n.BLIF dip_i_6__n
+0 1
+.names  myscore_i_3__n.BLIF zfout_i.BLIF step9f_n_29_0_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_1_.C
+1 1
+.names  gmoverf.BLIF STEP9K_Di3_2_.CE
+1 1
+.names  N_91_1.BLIF myscore_i_5__n.BLIF N_91
+11 1
+.names  dip_c_7__n.BLIF dip_i_7__n
+0 1
+.names  N_217.BLIF N_217_i
+0 1
+.names  N_89_i.BLIF N_91_i.BLIF un4_dis1_1_26__n
+11 1
+.names  midred_0__n.BLIF midred_i_0__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di2_2_.BLIF un1_dis1_2__n
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_1_.AR
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_2_.C
+1 1
+.names  STEP9F_ozor_G_63_1.BLIF STEP9F_ozor_G_63.X1
+1 1
+.names  N_92_i.BLIF gmoverf_i.BLIF un4_dis1_2_26__n
+11 1
+.names  midred_1__n.BLIF midred_i_1__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_5_.BLIF un1_dis1_5__n
+11 1
+.names  un4_dis1_1_26__n.BLIF un4_dis1_2_26__n.BLIF un4_dis1_26__n
+11 1
+.names  midred_2__n.BLIF midred_i_2__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_6_.BLIF un1_dis1_6__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_2_.AR
+1 1
+.names  STEP9F_oSCORE_7_.BLIF STEP9F_ozor_G_63.X2
+1 1
+.names  gmoverf_i.BLIF N_89_i.BLIF un4_dis1_1_25__n
+11 1
+.names  midred_3__n.BLIF midred_i_3__n
+0 1
+.names  STEP9F_oSCORE_0_.BLIF myscore_i_0__n
+0 1
+.names  un4_dis1_1_25__n.BLIF N_90_i.BLIF un4_dis1_25__n
+11 1
+.names  STEP9J_CQ_0_.BLIF step9j_n_54_n.BLIF step9j_n_85_n
+11 1
+.names  N_41.BLIF N_41_i
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_2_.C
+1 1
+.names  gmoverf_i.BLIF N_81_i.BLIF un4_dis1_1_21__n
+11 1
+.names  STEP9J_CQ_1_.BLIF step9j_cq_i_1__n
+0 1
+.names  N_42.BLIF N_42_i
+0 1
+.names  STEP9K_Di2_3_.BLIF STEP9K_Di3_3_.D
+1 1
+.names  step9f_n_36_n.BLIF STEP9F_G_34_1.X1
+1 1
+.names  un4_dis1_1_21__n.BLIF N_97_i.BLIF un4_dis1_21__n
+11 1
+.names  step9j_cq_i_1__n.BLIF step9j_n_184_n.BLIF step9j_un1_next_cq41_1_n
+11 1
+.names  un1_dis1_i_16__n.BLIF un4_dis1_i_16__n.BLIF dis1_i_16__n
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_2_.AR
+1 1
+.names  myscore_i_4__n.BLIF step9j_n_78_i_n.BLIF un4_dis1_1_23__n
+11 1
+.names  RGTPB_Q.BLIF S1BC_i
+0 1
+.names  un1_dis1_i_17__n.BLIF un4_dis1_i_17__n.BLIF dis1_i_17__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di3_3_.CE
+1 1
+.names  step9f_n_48_n.BLIF STEP9F_G_34_1.X2
+1 1
+.names  un4_dis1_1_23__n.BLIF gmoverf_i.BLIF un4_dis1_23__n
+11 1
+.names  LFTPB_Q.BLIF S2BC_i
+0 1
+.names  step9j_n_76_n.BLIF step9j_n_76_i_0_n
+0 1
+.names  STEP9F_oSCORE_5_.BLIF myscore_i_4__n.BLIF N_90_1
+11 1
+.names  jumbo_0__n.BLIF jumbo_i_0__n
+0 1
+.names  step9j_n_216_n.BLIF STEP9F_oSCORE_2_.BLIF N_47
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_3_.C
+1 1
+.names  N_90_1.BLIF myscore_i_6__n.BLIF N_90
+11 1
+.names  jumbo_1__n.BLIF jumbo_i_1__n
+0 1
+.names  N_43.BLIF N_43_i
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_3_.C
+1 1
+.names  STEP9F_oSCORE_3_.BLIF STEP9F_G_34_2.X1
+1 1
+.names  N_37_i.BLIF N_38_i.BLIF un4_dis1_1_15__n
+11 1
+.names  jumbo_2__n.BLIF jumbo_i_2__n
+0 1
+.names  N_44.BLIF N_44_i
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_3_.AR
+1 1
+.names  N_39_i.BLIF gmoverf_i.BLIF un4_dis1_2_15__n
+11 1
+.names  un1_dis1_7__n.BLIF un1_dis1_i_7__n
+0 1
+.names  N_41_i.BLIF N_47_i.BLIF N_33_i
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_3_.AR
+1 1
+.names  zfout.BLIF STEP9F_G_34_2.X2
+1 1
+.names  un4_dis1_1_15__n.BLIF un4_dis1_2_15__n.BLIF un4_dis1_15__n
+11 1
+.names  un1_dis1_8__n.BLIF un1_dis1_i_8__n
+0 1
+.names  N_45_i.BLIF N_46_i.BLIF N_32_i
+11 1
+.names  step9b_un42_c_1_1_n.BLIF STEP9A_qprice_0_.BLIF step9b_un42_c_1_n
+11 1
+.names  un1_dis1_9__n.BLIF un1_dis1_i_9__n
+0 1
+.names  myscore_i_1__n.BLIF myscore_i_2__n.BLIF step9j_n_27_0_n
+11 1
+.names  STEP9K_Di2_4_.BLIF STEP9K_Di3_4_.D
+1 1
+.names  step9f_n_90_1_n.BLIF myscore_i_2__n.BLIF step9f_n_90_1_0_n
+11 1
+.names  un1_dis1_10__n.BLIF un1_dis1_i_10__n
+0 1
+.names  step9j_n_27_0_n.BLIF myscore_i_3__n.BLIF N_217
+11 1
+.names  STEP9F_G_34_1.BLIF STEP9F_G_34.X1
+1 1
+.names  step9f_n_90_1_0_n.BLIF myscore_i_3__n.BLIF step9f_n_90_n
+11 1
+.names  un1_dis1_11__n.BLIF un1_dis1_i_11__n
+0 1
+.names  N_217.BLIF STEP9F_oSCORE_0_.BLIF N_46
+11 1
+.names  gmoverf.BLIF STEP9K_Di1_5_.CE
+1 1
+.names  gmoverf.BLIF STEP9K_Di3_4_.CE
+1 1
+.names  dip_i_3__n.BLIF dip_i_1__n.BLIF N_165_1
+11 1
+.names  un1_dis1_12__n.BLIF un1_dis1_i_12__n
+0 1
+.names  STEP9F_oSCORE_1_.BLIF myscore_i_1__n
+0 1
+.names  STEP9F_G_34_2.BLIF STEP9F_G_34.X2
+1 1
+.names  N_165_1.BLIF dip_i_2__n.BLIF N_165
+11 1
+.names  un1_dis1_13__n.BLIF un1_dis1_i_13__n
+0 1
+.names  N_34_i.BLIF myscore_i_1__n.BLIF N_45
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_5_.C
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_4_.C
+1 1
+.names  randprice_i_0__n.BLIF randprice_i_1__n.BLIF step9a_un4_feedback_0_1_n
+11 1
+.names  STEP9J_CQ_3_.BLIF step9j_n_31_0_n.BLIF step9j_n_150_n
+11 1
+.names  N_34_i.BLIF STEP9F_oSCORE_1_.BLIF N_44
+11 1
+.names  step9a_un4_feedback_0_1_n.BLIF randprice_i_2__n.BLIF step9a_un4_feedback_0_n
+11 1
+.names  step9j_n_31_n.BLIF step9j_n_209_n.BLIF step9j_n_146_n
+11 1
+.names  STEP9F_oSCORE_2_.BLIF STEP9F_oSCORE_3_.BLIF N_38
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_5_.AR
+1 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_4_.AR
+1 1
+.names  step9c_un1_lt_i_n.BLIF STEP9F_G_33_0_a2_1.X1
+1 1
+.names  N_85_i.BLIF N_86_i.BLIF un4_dis1_1_22__n
+11 1
+.names  step9j_n_37_n.BLIF step9j_n_172_n.BLIF step9j_n_144_n
+11 1
+.names  myscore_i_0__n.BLIF myscore_i_1__n.BLIF step9f_n_90_1_n
+11 1
+.names  N_87_i.BLIF gmoverf_i.BLIF un4_dis1_2_22__n
+11 1
+.names  step9j_cq_i_1__n.BLIF step9j_n_212_n.BLIF step9j_n_138_n
+11 1
+.names  STEP9J_CQ_3_.BLIF step9j_n_177_n.BLIF step9j_n_92_n
+11 1
+.names  step9f_n_23_n.BLIF STEP9F_G_33_0_a2_1.X2
+1 1
+.names  un4_dis1_1_22__n.BLIF un4_dis1_2_22__n.BLIF un4_dis1_22__n
+11 1
+.names  step9j_n_37_n.BLIF step9j_n_184_n.BLIF step9j_n_135_n
+11 1
+.names  step9j_cq_i_1__n.BLIF step9j_n_177_n.BLIF step9j_n_126_n
+11 1
+.names  STEP9K_Di2_5_.BLIF STEP9K_Di3_5_.D
+1 1
+.names  STEP9F_oSCORE_4_.BLIF myscore_i_6__n.BLIF N_87_1
+11 1
+.names  step9j_n_40_n.BLIF step9j_n_177_n.BLIF step9j_n_134_n
+11 1
+.names  step9j_n_192_n.BLIF STEP9F_oSCORE_3_.BLIF step9j_n_127_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di1_6_.CE
+1 1
+.names  N_87_1.BLIF myscore_i_7__n.BLIF N_87
+11 1
+.names  step9j_n_31_0_n.BLIF step9j_n_209_n.BLIF step9j_n_133_n
+11 1
+.names  step9j_n_33_n.BLIF step9j_n_192_n.BLIF step9j_n_136_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di3_5_.CE
+1 1
+.names  STEP9F_oSCORE_0_.BLIF STEP9F_uche_G_1.X1
+1 1
+.names  gmoverf_i.BLIF N_80_i.BLIF un4_dis1_1_24__n
+11 1
+.names  step9j_cq_i_1__n.BLIF step9j_n_209_n.BLIF step9j_n_102_n
+11 1
+.names  step9j_n_33_0_n.BLIF step9j_n_192_n.BLIF step9j_n_140_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_6_.C
+1 1
+.names  un4_dis1_1_24__n.BLIF N_81_i.BLIF un4_dis1_24__n
+11 1
+.names  STEP9J_CQ_3_.BLIF step9j_cq_i_3__n
+0 1
+.names  step9f_n_90_1_n.BLIF step9j_n_192_n.BLIF step9j_n_148_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_5_.C
+1 1
+.names  zfout.BLIF STEP9F_uche_G_1.X2
+1 1
+.names  STEP9F_oSCORE_4_.BLIF STEP9F_oSCORE_6_.BLIF N_91_1
+11 1
+.names  step9j_cq_i_3__n.BLIF step9j_n_34_n.BLIF step9j_n_98_n
+11 1
+.names  N_89.BLIF step9j_n_214_n.BLIF step9j_n_180_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_6_.AR
+1 1
+.names  gmoverf_i.BLIF N_41_i.BLIF un4_dis1_1_18__n
+11 1
+.names  STEP9J_CQ_3_.BLIF step9j_n_31_n.BLIF step9j_n_94_n
+11 1
+.names  STEP9J_CQ_0_.BLIF step9j_cq_i_1__n.BLIF step9j_n_181_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_5_.AR
+1 1
+.names  un4_dis1_1_18__n.BLIF N_42_i.BLIF un4_dis1_18__n
+11 1
+.names  STEP9J_CQ_2_.BLIF step9j_n_31_0_n.BLIF step9j_n_90_n
+11 1
+.names  N_41.BLIF step9j_n_177_n.BLIF step9j_n_183_n
+11 1
+.names  STEP9F_uche_G_3_i_o2.BLIF STEP9F_G_33_0_a2_2.X1
+1 1
+.names  STEP9D_qrnd_1_.BLIF roundnum_i_0__n.BLIF N_138_1
+11 1
+.names  step9j_n_39_0_n.BLIF step9j_n_53_n.BLIF step9j_n_88_n
+11 1
+.names  step9j_cq_i_3__n.BLIF step9j_n_177_n.BLIF step9j_n_213_n
+11 1
+.names  N_138_1.BLIF roundnum_i_2__n.BLIF N_138
+11 1
+.names  STEP9J_CQ_2_.BLIF step9j_n_215_n.BLIF step9j_n_87_n
+11 1
+.names  step9j_n_27_n.BLIF STEP9F_oSCORE_3_.BLIF N_41
+11 1
+.names  gmoverf.BLIF STEP9K_Di2_4_.CE
+1 1
+.names  STEP9K_Di2_6_.BLIF STEP9K_Di3_6_.D
+1 1
+.names  STEP9F_oSCORE_2_.BLIF STEP9F_G_33_0_a2_2.X2
+1 1
+.names  STEP9D_qrnd_0_.BLIF roundnum_i_2__n.BLIF N_135_1
+11 1
+.names  step9j_n_53_0_n.BLIF step9j_n_209_n.BLIF step9j_n_86_n
+11 1
+.names  step9f_n_90_1_i_n.BLIF step9j_n_216_i_n.BLIF step9j_n_33_0_n
+11 1
+.names  N_135_1.BLIF roundnum_i_3__n.BLIF N_135
+11 1
+.names  STEP9J_CQ_3_.BLIF step9j_cq_i_2__n.BLIF step9j_n_39_0_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_2_.BLIF un1_dis1_16__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_4_.C
+1 1
+.names  gmoverf.BLIF STEP9K_Di3_6_.CE
+1 1
+.names  gmoverf_i.BLIF N_139_i.BLIF un4_dis1_1_5__n
+11 1
+.names  N_89_i.BLIF step9j_n_186_i_n.BLIF step9j_n_37_0_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_3_.BLIF un1_dis1_17__n
+11 1
+.names  STEP9F_G_33_0_a2_1.BLIF STEP9F_G_33_0_a2.X1
+1 1
+.names  un4_dis1_1_5__n.BLIF N_140_i.BLIF un4_dis1_5__n
+11 1
+.names  step9j_n_54_n.BLIF step9j_n_185_i_n.BLIF step9j_n_36_0_n
+11 1
+.names  FDIVBY2_clk_out.BLIF FDIVBY2_clk_out.D
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_4_.AR
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_6_.C
+1 1
+.names  gmoverf_i.BLIF N_133_i.BLIF un4_dis1_1_1__n
+11 1
+.names  STEP9J_CQ_0_.BLIF STEP9J_CQ_1_.BLIF step9j_n_31_0_n
+11 1
+.names  FDIVBY4_clk_out.BLIF FDIVBY4_clk_out.D
+0 1
+.names  STEP9F_G_33_0_a2_2.BLIF STEP9F_G_33_0_a2.X2
+1 1
+.names  un4_dis1_1_1__n.BLIF N_135_i.BLIF un4_dis1_1__n
+11 1
+.names  step9j_n_80_i_i_n.BLIF step9j_n_87_i_n.BLIF step9j_next_cq_1_0_1__n
+11 1
+.names  i_S1_NO_c.BLIF i_S1_NO_i
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_6_.AR
+1 1
+.names  roundnum_i_0__n.BLIF N_144_i.BLIF un4_dis1_1_2__n
+11 1
+.names  step9j_n_85_i_n.BLIF step9j_n_86_i_n.BLIF STEP9J_next_CQ_0_.D
+11 1
+.names  i_S1_NC_c.BLIF RGTPB_Q.AR
+0 1
+.names  un4_dis1_1_2__n.BLIF gmoverf_i.BLIF un4_dis1_2__n
+11 1
+.names  STEP9J_CQ_1_.BLIF STEP9J_CQ_3_.BLIF step9j_n_215_n
+11 1
+.names  i_S2_NO_c.BLIF i_S2_NO_i
+0 1
+.names  gmoverf.BLIF STEP9K_Di2_5_.CE
+1 1
+.names  dip_c_3__n.BLIF STEP9B_P_3_.X1
+1 1
+.names  dip_i_1__n.BLIF step9b_n_8_i_n.BLIF step9b_un38_c_1_1_n
+11 1
+.names  step9j_cq_i_0__n.BLIF step9j_cq_i_2__n.BLIF step9j_n_214_n
+11 1
+.names  i_S2_NC_c.BLIF LFTPB_Q.AR
+0 1
+.names  STEP9K_Di3_0_.BLIF STEP9K_Di4_0_.D
+1 1
+.names  step9b_un38_c_1_1_n.BLIF STEP9A_qprice_1_.BLIF step9b_un38_c_1_n
+11 1
+.names  STEP9J_CQ_2_.BLIF step9j_n_172_n.BLIF step9j_n_212_n
+11 1
+.names  step9f_n_33_i_n.BLIF step9f_n_35_i_n.BLIF step9f_n_36_0_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_5_.C
+1 1
+.names  STEP9A_qprice_3_.BLIF STEP9B_P_3_.X2
+1 1
+.names  dip_i_0__n.BLIF step9b_n_6_i_n.BLIF step9b_un42_c_1_1_n
+11 1
+.names  STEP9J_CQ_2_.BLIF step9j_cq_i_3__n.BLIF step9j_n_209_n
+11 1
+.names  STEP9J_ozor_next_1_i_x2_3_.BLIF step9j_n_32_i_i_0_n
+0 1
+.names  gmoverf.BLIF STEP9K_Di4_0_.CE
+1 1
+.names  myscore_i_0__n.BLIF step9j_n_76_i_0_n.BLIF un4_dis1_1_16__n
+11 1
+.names  step9j_cq_i_2__n.BLIF step9j_n_172_n.BLIF step9j_n_184_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_5_.AR
+1 1
+.names  un4_dis1_1_16__n.BLIF gmoverf_i.BLIF un4_dis1_16__n
+11 1
+.names  STEP9J_CQ_2_.BLIF step9j_cq_i_2__n
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_0_.C
+1 1
+.names  dip_c_1__n.BLIF STEP9B_P_1_.X1
+1 1
+.names  gmoverf_i.BLIF N_32_i.BLIF un4_dis1_1_17__n
+11 1
+.names  STEP9J_CQ_0_.BLIF step9j_cq_i_2__n.BLIF step9j_n_177_n
+11 1
+.names  un4_dis1_1_17__n.BLIF N_33_i.BLIF un4_dis1_17__n
+11 1
+.names  STEP9J_CQ_0_.BLIF step9j_cq_i_0__n
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_0_.AR
+1 1
+.names  STEP9A_qprice_1_.BLIF STEP9B_P_1_.X2
+1 1
+.names  gmoverf_i.BLIF N_32_i.BLIF un4_dis1_1_20__n
+11 1
+.names  step9j_cq_i_0__n.BLIF step9j_cq_i_3__n.BLIF step9j_n_172_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di2_6_.CE
+1 1
+.names  un4_dis1_1_20__n.BLIF N_41_i.BLIF un4_dis1_20__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_1_.BLIF un1_dis1_15__n
+11 1
+.names  N_41_i.BLIF N_43_i.BLIF un4_dis1_1_19__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_6_.BLIF un1_dis1_20__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_6_.C
+1 1
+.names  STEP9K_Di3_1_.BLIF STEP9K_Di4_1_.D
+1 1
+.names  dip_c_2__n.BLIF STEP9B_P_2_.X1
+1 1
+.names  N_44_i.BLIF gmoverf_i.BLIF un4_dis1_2_19__n
+11 1
+.names  un1_dis1_i_15__n.BLIF un4_dis1_i_15__n.BLIF dis1_i_15__n
+11 1
+.names  un4_dis1_1_19__n.BLIF un4_dis1_2_19__n.BLIF un4_dis1_19__n
+11 1
+.names  un1_dis1_i_20__n.BLIF un4_dis1_i_20__n.BLIF dis1_i_20__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_6_.AR
+1 1
+.names  gmoverf.BLIF STEP9K_Di4_1_.CE
+1 1
+.names  STEP9A_qprice_2_.BLIF STEP9B_P_2_.X2
+1 1
+.names  STEP9F_oSCORE_0_.BLIF STEP9F_oSCORE_2_.BLIF N_43_1
+11 1
+.names  N_39.BLIF N_39_i
+0 1
+.names  step9j_un1_next_cq41_1_n.BLIF step9j_un1_next_cq41_1_i_n
+0 1
+.names  N_43_1.BLIF myscore_i_1__n.BLIF N_43
+11 1
+.names  N_38.BLIF N_38_i
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_1_.C
+1 1
+.names  gmoverf_i.BLIF N_33_i.BLIF un4_dis1_1_14__n
+11 1
+.names  N_37.BLIF N_37_i
+0 1
+.names  STEP9A_un1_feedback.BLIF STEP9A_qprice_0_.D
+0 1
+.names  dip_c_0__n.BLIF STEP9B_P_0_.X1
+1 1
+.names  un4_dis1_1_14__n.BLIF N_217_i.BLIF un4_dis1_14__n
+11 1
+.names  STEP9F_oSCORE_2_.BLIF myscore_i_2__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di1_0_.CE
+1 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_1_.AR
+1 1
+.names  STEP9F_oSCORE_1_.BLIF myscore_i_0__n.BLIF N_42_1
+11 1
+.names  gmoverf.BLIF gmoverf_i
+0 1
+.names  gnd_n_n
+.names  STEP9A_qprice_0_.BLIF STEP9B_P_0_.X2
+1 1
+.names  N_42_1.BLIF myscore_i_2__n.BLIF N_42
+11 1
+.names  N_89.BLIF N_89_i
+0 1
+.names  vcc_n_n
+1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_0_.C
+1 1
+.names  step9b_g_i_3__n.BLIF step9b_un35_c_i_n.BLIF cfout_0_1
+11 1
+.names  un1_dis1_i_27__n.BLIF un4_dis1_i_27__n.BLIF dis1_i_27__n
+11 1
+.names  STEP9K_Di3_2_.BLIF STEP9K_Di4_2_.D
+1 1
+.names  step9b_un42_c_i_n.BLIF zfout_i.BLIF cfout_0_2
+11 1
+.names  gmoverf.BLIF STEP9K_outDISP_27_.BLIF un1_dis1_27__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_0_.AR
+1 1
+.names  step9f_n_20_n.BLIF STEP9F_uche_G_3_i_o2.X1
+1 1
+.names  cfout_0_1.BLIF cfout_0_2.BLIF cfout_0_3
+11 1
+.names  gmoverf.BLIF STEP9K_Di3_1_.BLIF un1_dis1_8__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_2_.CE
+1 1
+.names  cfout_0_3.BLIF step9b_un38_c_i_n.BLIF cfout_0
+11 1
+.names  STEP9F_oSCORE_1_.BLIF STEP9F_uche_G_3_i_o2.X2
+1 1
+.names  step9b_g_i_2__n.BLIF step9b_un38_c_1_i_n.BLIF step9b_c_0_1_2__n
+11 1
+.names  STEP9J_CQ_1_.BLIF step9j_n_39_0_n.BLIF step9j_n_54_0_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_2_.C
+1 1
+.names  step9b_un22_c_i_n.BLIF step9b_un26_c_i_n.BLIF step9b_c_0_2_2__n
+11 1
+.names  step9j_n_52_0_n.BLIF myscore_i_5__n.BLIF N_93
+11 1
+.names  gmoverf.BLIF STEP9K_Di1_1_.CE
+1 1
+.names  step9b_c_0_1_2__n.BLIF step9b_c_0_2_2__n.BLIF step9b_c_0_2__n
+11 1
+.names  N_97.BLIF STEP9F_oSCORE_4_.BLIF N_94
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_2_.AR
+1 1
+.names  N_195.BLIF STEP9D_G_166.X1
+1 1
+.names  step9f_n_28_i_n.BLIF step9f_n_30_i_n.BLIF step9f_tenscarry_0_1_n
+11 1
+.names  N_93_i.BLIF N_94_i.BLIF N_80_i
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_1_.C
+1 1
+.names  step9f_n_31_i_n.BLIF step9f_uche_un2_cout_i_n.BLIF step9f_tenscarry_0_2_n
+11 1
+.names  N_89_i.BLIF N_95_i.BLIF N_81_i
+11 1
+.names  STEP9D_qrnd_3_.BLIF STEP9D_G_166.X2
+1 1
+.names  step9f_tenscarry_0_1_n.BLIF step9f_tenscarry_0_2_n.BLIF step9f_tenscarry_0_3_n
+11 1
+.names  N_90.BLIF N_90_i
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_1_.AR
+1 1
+.names  STEP9K_Di3_3_.BLIF STEP9K_Di4_3_.D
+1 1
+.names  step9f_tenscarry_0_3_n.BLIF step9f_uche_un5_cout_i_n.BLIF step9f_tenscarry_0_n
+11 1
+.names  N_97.BLIF N_97_i
+0 1
+.names  N_86_i.BLIF step9f_ozor_un2_cout_i_n.BLIF step9f_hundredscarry_0_1_n
+11 1
+.names  N_92.BLIF N_92_i
+0 1
+.names  gmoverf.BLIF STEP9K_Di4_3_.CE
+1 1
+.names  N_143_1.BLIF STEP9D_G_164.X1
+1 1
+.names  step9f_hundredscarry_0_1_n.BLIF step9f_ozor_un5_cout_i_n.BLIF step9f_hundredscarry_0_n
+11 1
+.names  N_91.BLIF N_91_i
+0 1
+.names  step9j_n_180_i_n.BLIF step9j_n_181_i_n.BLIF step9j_n_34_0_1_n
+11 1
+.names  step9j_n_78_n.BLIF step9j_n_78_i_n
+0 1
+.names  gmoverf.BLIF STEP9J_next_CQ_1_.LH
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_3_.C
+1 1
+.names  STEP9D_qrnd_2_.BLIF STEP9D_G_164.X2
+1 1
+.names  step9j_n_34_0_1_n.BLIF step9j_n_183_i_n.BLIF step9j_n_34_0_n
+11 1
+.names  STEP9F_oSCORE_6_.BLIF myscore_i_6__n
+0 1
+.names  step9j_n_123_n.BLIF step9j_n_123_i_n
+0 1
+.names  step9j_n_218_n.BLIF STEP9F_oSCORE_6_.BLIF N_95
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_3_.AR
+1 1
+.names  step9j_n_90_n.BLIF step9j_n_90_i_n
+0 1
+.names  STEP9F_oSCORE_4_.BLIF myscore_i_4__n
+0 1
+.names  STEP9D_qrnd_0_.BLIF STEP9D_G_162.X1
+1 1
+.names  step9j_n_94_n.BLIF step9j_n_94_i_n
+0 1
+.names  N_217_i.BLIF STEP9F_oSCORE_4_.BLIF N_220_0
+11 1
+.names  gmoverf.BLIF STEP9K_Di1_2_.CE
+1 1
+.names  step9j_n_96_n.BLIF step9j_n_96_i_n
+0 1
+.names  STEP9F_oSCORE_5_.BLIF myscore_i_5__n
+0 1
+.names  STEP9K_Di3_4_.BLIF STEP9K_Di4_4_.D
+1 1
+.names  STEP9D_qrnd_1_.BLIF STEP9D_G_162.X2
+1 1
+.names  step9j_next_cq_1_0_3__n.BLIF STEP9J_next_CQ_3_.D
+0 1
+.names  N_220.BLIF myscore_i_5__n.BLIF N_221
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_2_.C
+1 1
+.names  step9j_n_88_n.BLIF step9j_n_88_i_n
+0 1
+.names  STEP9F_oSCORE_4_.BLIF STEP9F_oSCORE_5_.BLIF step9j_n_218_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_4_.CE
+1 1
+.names  step9j_n_89_n.BLIF step9j_n_89_i_n
+0 1
+.names  myscore_i_5__n.BLIF myscore_i_6__n.BLIF step9j_n_26_0_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_2_.AR
+1 1
+.names  STEP9F_uche_G_1.BLIF STEP9F_oSCORE_0_.D
+1 1
+.names  DIP_0_.BLIF dip_c_0__n
+1 1
+.names  step9j_n_92_n.BLIF step9j_n_92_i_n
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_4_.C
+1 1
+.names  STEP9F_uche_un11_SUM_i_1_.BLIF STEP9F_oSCORE_1_.D
+1 1
+.names  DIP_1_.BLIF dip_c_1__n
+1 1
+.names  STEP9C_un1_LT_0_x2.BLIF jumbo_leds_0__n
+0 1
+.names  STEP9F_oSCORE_6_.BLIF myscore_i_4__n.BLIF step9j_n_52_0_n
+11 1
+.names  STEP9F_uche_G_39_i.BLIF STEP9F_oSCORE_4_.D
+1 1
+.names  DIP_2_.BLIF dip_c_2__n
+1 1
+.names  STEP9J_CQ_1_.BLIF myscore_i_0__n.BLIF step9j_n_77_0_1_n
+11 1
+.names  STEP9F_oSCORE_5_.BLIF step9j_ozor_next_1_i_m2_0_2__un3_n
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_4_.AR
+1 1
+.names  STEP9F_ozor_un11_SUM_i_1_.BLIF STEP9F_oSCORE_5_.D
+1 1
+.names  DIP_3_.BLIF dip_c_3__n
+1 1
+.names  step9j_n_77_0_1_n.BLIF step9j_n_76_i_0_n.BLIF step9j_n_77_0_n
+11 1
+.names  STEP9F_oSCORE_7_.BLIF STEP9F_oSCORE_5_.BLIF step9j_ozor_next_1_i_m2_0_2__un1_n
+11 1
+.names  gmoverf.BLIF STEP9J_next_CQ_2_.LH
+1 1
+.names  STEP9J_next_4_.BLIF STEP9J_outCHAR_4_.D
+1 1
+.names  DIP_4_.BLIF dip_c_4__n
+1 1
+.names  STEP9F_oSCORE_6_.BLIF step9j_ozor_next_1_i_m2_0_2__un3_n.BLIF step9j_ozor_next_1_i_m2_0_2__un0_n
+11 1
+.names  STEP9J_next_5_.BLIF STEP9J_outCHAR_5_.D
+1 1
+.names  DIP_5_.BLIF dip_c_5__n
+1 1
+.names  step9j_ozor_next_1_i_m2_0_2__un1_n.BLIF step9j_ozor_next_1_i_m2_0_2__un0_n.BLIF step9j_n_78_n
+1- 1
+-1 1
+.names  STEP9K_Di3_5_.BLIF STEP9K_Di4_5_.D
+1 1
+.names  STEP9J_next_6_.BLIF STEP9J_outCHAR_6_.D
+1 1
+.names  DIP_6_.BLIF dip_c_6__n
+1 1
+.names  step9j_n_78_i_n.BLIF myscore_i_4__n.BLIF step9j_n_79_0_n
+11 1
+.names  STEP9J_next_CQ_0_.BLIF STEP9J_CQ_0_.D
+1 1
+.names  DIP_7_.BLIF dip_c_7__n
+1 1
+.names  gmoverf.BLIF STEP9K_outDISP_21_.BLIF un1_dis1_21__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di1_3_.CE
+1 1
+.names  gmoverf.BLIF STEP9K_Di4_5_.CE
+1 1
+.names  STEP9J_next_CQ_1_.BLIF STEP9J_CQ_1_.D
+1 1
+.names  i_S1_NC.BLIF i_S1_NC_c
+1 1
+.names  step9j_n_131_n.BLIF step9j_n_131_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_23_.BLIF un1_dis1_23__n
+11 1
+.names  STEP9J_next_CQ_2_.BLIF STEP9J_CQ_2_.D
+1 1
+.names  i_S1_NO.BLIF i_S1_NO_c
+1 1
+.names  step9j_n_132_n.BLIF step9j_n_132_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_25_.BLIF un1_dis1_25__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_3_.C
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_5_.C
+1 1
+.names  STEP9J_next_CQ_3_.BLIF STEP9J_CQ_3_.D
+1 1
+.names  i_S2_NC.BLIF i_S2_NC_c
+1 1
+.names  step9j_n_133_n.BLIF step9j_n_133_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_26_.BLIF un1_dis1_26__n
+11 1
+.names  STEP9J_next_0_.BLIF STEP9J_outCHAR_0_.D
+1 1
+.names  i_S2_NO.BLIF i_S2_NO_c
+1 1
+.names  step9j_n_124_n.BLIF step9j_n_124_i_n
+0 1
+.names  un1_dis1_i_21__n.BLIF un4_dis1_i_21__n.BLIF dis1_i_21__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_3_.AR
+1 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_5_.AR
+1 1
+.names  STEP9J_next_1_.BLIF STEP9J_outCHAR_1_.D
+1 1
+.names  N_173.BLIF o_TOPRED_0_
+1 1
+.names  step9j_n_125_n.BLIF step9j_n_125_i_n
+0 1
+.names  un1_dis1_i_23__n.BLIF un4_dis1_i_23__n.BLIF dis1_i_23__n
+11 1
+.names  STEP9J_next_2_.BLIF STEP9J_outCHAR_2_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_1_
+1 1
+.names  step9j_n_126_n.BLIF step9j_n_126_i_n
+0 1
+.names  un1_dis1_i_25__n.BLIF un4_dis1_i_25__n.BLIF dis1_i_25__n
+11 1
+.names  STEP9J_next_3_.BLIF STEP9J_outCHAR_3_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_2_
+1 1
+.names  step9j_n_127_n.BLIF step9j_n_127_i_n
+0 1
+.names  un1_dis1_i_26__n.BLIF un4_dis1_i_26__n.BLIF dis1_i_26__n
+11 1
+.names  STEP9K_Di3_6_.BLIF STEP9K_Di4_6_.D
+1 1
+.names  STEP9J_outCHAR_5_.BLIF STEP9K_Di1_5_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_3_
+1 1
+.names  step9j_n_128_n.BLIF step9j_n_128_i_n
+0 1
+.names  step9j_n_52_0_n.BLIF STEP9F_oSCORE_5_.BLIF N_92
+11 1
+.names  gmoverf.BLIF STEP9J_next_CQ_3_.LH
+1 1
+.names  STEP9J_outCHAR_6_.BLIF STEP9K_Di1_6_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_4_
+1 1
+.names  step9j_n_129_n.BLIF step9j_n_129_i_n
+0 1
+.names  STEP9F_G_41_i_o3.BLIF STEP9F_oSCORE_7_.BLIF step9f_ozor_un5_cout_n
+11 1
+.names  gmoverf.BLIF STEP9K_Di4_6_.CE
+1 1
+.names  STEP9K_Di1_4_.BLIF STEP9K_Di2_4_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_5_
+1 1
+.names  step9j_n_130_n.BLIF step9j_n_130_i_n
+0 1
+.names  STEP9F_G_43.BLIF STEP9F_oSCORE_7_.BLIF step9f_ozor_un2_cout_n
+11 1
+.names  STEP9K_Di1_5_.BLIF STEP9K_Di2_5_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_6_
+1 1
+.names  step9j_n_212_n.BLIF step9j_n_212_i_n
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di4_6_.C
+1 1
+.names  STEP9K_Di1_6_.BLIF STEP9K_Di2_6_.D
+1 1
+.names  vcc_n_n.BLIF o_TOPRED_7_
+1 1
+.names  step9j_n_98_n.BLIF step9j_n_98_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_Di1_4_.CE
+1 1
+.names  STEP9J_outCHAR_0_.BLIF STEP9K_Di1_0_.D
+1 1
+.names  midred_i_0__n.BLIF o_MIDRED_0_
+1 1
+.names  step9j_n_100_n.BLIF step9j_n_100_i_n
+0 1
+.names  step9f_ozor_z_i_1__n.BLIF step9f_ozor_z_i_2__n.BLIF step9f_n_73_0_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di4_6_.AR
+1 1
+.names  STEP9J_outCHAR_1_.BLIF STEP9K_Di1_1_.D
+1 1
+.names  midred_i_1__n.BLIF o_MIDRED_1_
+1 1
+.names  step9j_n_108_n.BLIF step9j_n_108_i_n
+0 1
+.names  step9f_n_59_n.BLIF STEP9F_oSCORE_6_.BLIF step9f_n_61_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di1_4_.C
+1 1
+.names  STEP9J_outCHAR_2_.BLIF STEP9K_Di1_2_.D
+1 1
+.names  midred_i_2__n.BLIF o_MIDRED_2_
+1 1
+.names  step9j_n_109_n.BLIF step9j_n_109_i_n
+0 1
+.names  step9f_n_56_n.BLIF STEP9F_oSCORE_5_.BLIF step9f_n_59_n
+11 1
+.names  STEP9J_outCHAR_3_.BLIF STEP9K_Di1_3_.D
+1 1
+.names  midred_i_3__n.BLIF o_MIDRED_3_
+1 1
+.names  step9j_n_207_n.BLIF step9j_n_207_i_n
+0 1
+.names  step9f_tenscarry_n.BLIF STEP9F_oSCORE_4_.BLIF step9f_n_56_n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di1_4_.AR
+1 1
+.names  STEP9J_outCHAR_4_.BLIF STEP9K_Di1_4_.D
+1 1
+.names  vcc_n_n.BLIF o_MIDRED_4_
+1 1
+.names  step9j_n_134_n.BLIF step9j_n_134_i_n
+0 1
+.names  step9f_uche_z_i_1__n.BLIF step9f_uche_z_i_2__n.BLIF step9f_n_48_0_n
+11 1
+.names  RGTPB_Q.BLIF STEP9D_qrnd_0_.C
+1 1
+.names  STEP9K_Di1_0_.BLIF STEP9K_Di2_0_.D
+1 1
+.names  vcc_n_n.BLIF o_MIDRED_5_
+1 1
+.names  step9j_n_144_n.BLIF step9j_n_144_i_n
+0 1
+.names  STEP9F_oSCORE_3_.BLIF zfout.BLIF step9f_n_28_n
+11 1
+.names  STEP9K_Di1_1_.BLIF STEP9K_Di2_1_.D
+1 1
+.names  vcc_n_n.BLIF o_MIDRED_6_
+1 1
+.names  step9j_n_146_n.BLIF step9j_n_146_i_n
+0 1
+.names  step9j_cq_i_1__n.BLIF step9j_msel_i_i_n.BLIF step9j_n_53_0_n
+11 1
+.names  LFTPB_Q.BLIF STEP9D_qrnd_0_.AP
+1 1
+.names  STEP9K_Di1_2_.BLIF STEP9K_Di2_2_.D
+1 1
+.names  vcc_n_n.BLIF o_MIDRED_7_
+1 1
+.names  step9j_n_148_n.BLIF step9j_n_148_i_n
+0 1
+.names  N_221_i.BLIF STEP9F_oSCORE_6_.BLIF N_224_0
+11 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_0_.LH
+1 1
+.names  STEP9K_Di1_3_.BLIF STEP9K_Di2_3_.D
+1 1
+.names  dip_i_0__n.BLIF o_BOTRED_0_
+1 1
+.names  step9j_n_150_n.BLIF step9j_n_150_i_n
+0 1
+.names  STEP9F_oSCORE_7_.BLIF myscore_i_7__n
+0 1
+.names  STEP9D_G_162.BLIF STEP9D_qrnd_1_.D
+1 1
+.names  dip_i_1__n.BLIF o_BOTRED_1_
+1 1
+.names  step9j_n_156_n.BLIF step9j_n_156_i_n
+0 1
+.names  N_224.BLIF myscore_i_7__n.BLIF step9j_msel_i_n
+11 1
+.names  STEP9D_G_164.BLIF STEP9D_qrnd_2_.D
+1 1
+.names  dip_i_2__n.BLIF o_BOTRED_2_
+1 1
+.names  step9j_n_140_n.BLIF step9j_n_140_i_n
+0 1
+.names  step9j_n_79_n.BLIF step9j_n_184_n.BLIF step9j_n_131_n
+11 1
+.names  RGTPB_Q.BLIF STEP9D_qrnd_1_.C
+1 1
+.names  STEP9D_G_166.BLIF STEP9D_qrnd_3_.D
+1 1
+.names  dip_i_3__n.BLIF o_BOTRED_3_
+1 1
+.names  step9j_n_142_n.BLIF step9j_n_142_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_24_.BLIF un1_dis1_24__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di2_0_.CE
+1 1
+.names  dip_i_4__n.BLIF o_BOTRED_4_
+1 1
+.names  step9j_n_209_n.BLIF step9j_n_209_i_n
+0 1
+.names  step9f_n_33_n.BLIF STEP9F_oSCORE_3_.BLIF step9f_n_31_n
+11 1
+.names  LFTPB_Q.BLIF STEP9D_qrnd_1_.AR
+1 1
+.names  dip_i_5__n.BLIF o_BOTRED_5_
+1 1
+.names  step9j_n_135_n.BLIF step9j_n_135_i_n
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_0_.C
+1 1
+.names  dip_i_6__n.BLIF o_BOTRED_6_
+1 1
+.names  step9j_n_136_n.BLIF step9j_n_136_i_n
+0 1
+.names  RGTPB_Q.BLIF STEP9A_qprice_0_.C
+1 1
+.names  dip_i_7__n.BLIF o_BOTRED_7_
+1 1
+.names  step9j_n_137_n.BLIF step9j_n_137_i_n
+0 1
+.names  step9f_tenscarry_n.BLIF step9f_uche_un11_sum_3__un3_n
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_0_.AR
+1 1
+.names  dis1_i_0__n.BLIF o_DIS1_0_
+1 1
+.names  step9j_n_138_n.BLIF step9j_n_138_i_n
+0 1
+.names  STEP9F_G_34.BLIF step9f_tenscarry_n.BLIF step9f_uche_un11_sum_3__un1_n
+11 1
+.names  LFTPB_Q.BLIF STEP9A_qprice_0_.AR
+1 1
+.names  RGTPB_Q.BLIF STEP9D_qrnd_2_.C
+1 1
+.names  dis1_i_1__n.BLIF o_DIS1_1_
+1 1
+.names  step9j_n_215_n.BLIF step9j_n_215_i_n
+0 1
+.names  STEP9F_uche_G_17.BLIF step9f_uche_un11_sum_3__un3_n.BLIF step9f_uche_un11_sum_3__un0_n
+11 1
+.names  dis1_i_2__n.BLIF o_DIS1_2_
+1 1
+.names  un4_dis1_16__n.BLIF un4_dis1_i_16__n
+0 1
+.names  step9f_uche_un11_sum_3__un1_n.BLIF step9f_uche_un11_sum_3__un0_n.BLIF STEP9F_oSCORE_3_.D
+1- 1
+-1 1
+.names  LFTPB_Q.BLIF STEP9D_qrnd_2_.AR
+1 1
+.names  dis1_i_3__n.BLIF o_DIS1_3_
+1 1
+.names  un1_dis1_16__n.BLIF un1_dis1_i_16__n
+0 1
+.names  STEP9F_G_33_0_a2.BLIF step9f_uche_un3_sum_i_i_2__n
+0 1
+.names  STEP9A_qprice_0_.BLIF STEP9A_qprice_1_.D
+1 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_1_.LH
+1 1
+.names  dis1_i_4__n.BLIF o_DIS1_4_
+1 1
+.names  step9j_n_187_n.BLIF step9j_n_187_i_n
+0 1
+.names  step9f_tenscarry_n.BLIF step9f_uche_un11_sum_2__un3_n
+0 1
+.names  dis1_i_5__n.BLIF o_DIS1_5_
+1 1
+.names  step9j_n_183_n.BLIF step9j_n_183_i_n
+0 1
+.names  step9f_uche_un3_sum_i_i_2__n.BLIF step9f_tenscarry_n.BLIF step9f_uche_un11_sum_2__un1_n
+11 1
+.names  RGTPB_Q.BLIF STEP9A_qprice_1_.C
+1 1
+.names  dis1_i_6__n.BLIF o_DIS1_6_
+1 1
+.names  step9j_n_34_0_n.BLIF step9j_n_34_n
+0 1
+.names  STEP9F_uche_G_12_0_a2.BLIF step9f_uche_un11_sum_2__un3_n.BLIF step9f_uche_un11_sum_2__un0_n
+11 1
+.names  RGTPB_Q.BLIF STEP9D_qrnd_3_.C
+1 1
+.names  un1_dis1_i_7__n.BLIF o_DIS2_0_
+1 1
+.names  step9j_n_216_n.BLIF step9j_n_216_i_n
+0 1
+.names  step9f_uche_un11_sum_2__un1_n.BLIF step9f_uche_un11_sum_2__un0_n.BLIF STEP9F_oSCORE_2_.D
+1- 1
+-1 1
+.names  LFTPB_Q.BLIF STEP9A_qprice_1_.AR
+1 1
+.names  gmoverf.BLIF STEP9K_Di2_1_.CE
+1 1
+.names  un1_dis1_i_8__n.BLIF o_DIS2_1_
+1 1
+.names  step9f_n_90_1_n.BLIF step9f_n_90_1_i_n
+0 1
+.names  STEP9F_uche_G_3_i_o2.BLIF STEP9F_uche_G_17.BLIF step9f_uche_un5_cout_n
+11 1
+.names  LFTPB_Q.BLIF STEP9D_qrnd_3_.AR
+1 1
+.names  un1_dis1_i_9__n.BLIF o_DIS2_2_
+1 1
+.names  step9j_n_33_0_n.BLIF step9j_n_33_n
+0 1
+.names  STEP9F_uche_G_12_0_a2.BLIF STEP9F_uche_G_17.BLIF step9f_uche_un2_cout_n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_1_.C
+1 1
+.names  un1_dis1_i_10__n.BLIF o_DIS2_3_
+1 1
+.names  step9j_n_180_n.BLIF step9j_n_180_i_n
+0 1
+.names  STEP9A_qprice_1_.BLIF STEP9A_qprice_2_.D
+1 1
+.names  un1_dis1_i_11__n.BLIF o_DIS2_4_
+1 1
+.names  step9j_n_181_n.BLIF step9j_n_181_i_n
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_1_.AR
+1 1
+.names  un1_dis1_i_12__n.BLIF o_DIS2_5_
+1 1
+.names  step9f_n_33_n.BLIF step9f_n_33_i_n
+0 1
+.names  RGTPB_Q.BLIF STEP9A_qprice_2_.C
+1 1
+.names  tmr_out.BLIF FDIVBY2_clk_out.C
+1 1
+.names  un1_dis1_i_13__n.BLIF o_DIS2_6_
+1 1
+.names  step9f_n_35_n.BLIF step9f_n_35_i_n
+0 1
+.names  step9f_hundredscarry_n.BLIF step9f_ozor_un11_sum_3__un3_n
+0 1
+.names  dis1_i_14__n.BLIF o_DIS3_0_
+1 1
+.names  step9f_n_36_0_n.BLIF step9f_n_36_n
+0 1
+.names  STEP9F_ozor_G_63.BLIF step9f_hundredscarry_n.BLIF step9f_ozor_un11_sum_3__un1_n
+11 1
+.names  LFTPB_Q.BLIF STEP9A_qprice_2_.AR
+1 1
+.names  LFTPB_Q.BLIF FDIVBY2_clk_out.AR
+1 1
+.names  dis1_i_15__n.BLIF o_DIS3_1_
+1 1
+.names  step9j_n_102_n.BLIF step9j_n_102_i_n
+0 1
+.names  STEP9F_ozor_G_45.BLIF step9f_ozor_un11_sum_3__un3_n.BLIF step9f_ozor_un11_sum_3__un0_n
+11 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_2_.LH
+1 1
+.names  dis1_i_16__n.BLIF o_DIS3_2_
+1 1
+.names  step9j_n_157_n.BLIF step9j_n_157_i_n
+0 1
+.names  step9f_ozor_un11_sum_3__un1_n.BLIF step9f_ozor_un11_sum_3__un0_n.BLIF STEP9F_oSCORE_7_.D
+1- 1
+-1 1
+.names  dis1_i_17__n.BLIF o_DIS3_3_
+1 1
+.names  N_195.BLIF N_195_i
+0 1
+.names  STEP9F_ozor_G_62_i.BLIF step9f_ozor_un3_sum_i_i_2__n
+0 1
+.names  STEP9A_qprice_2_.BLIF STEP9A_qprice_3_.D
+1 1
+.names  dis1_i_18__n.BLIF o_DIS3_4_
+1 1
+.names  N_130_i.BLIF N_130
+0 1
+.names  step9f_hundredscarry_n.BLIF step9f_ozor_un11_sum_2__un3_n
+0 1
+.names  FDIVBY2_clk_out.BLIF FDIVBY4_clk_out.C
+1 1
+.names  dis1_i_19__n.BLIF o_DIS3_5_
+1 1
+.names  un4_dis1_18__n.BLIF un4_dis1_i_18__n
+0 1
+.names  step9f_ozor_un3_sum_i_i_2__n.BLIF step9f_hundredscarry_n.BLIF step9f_ozor_un11_sum_2__un1_n
+11 1
+.names  RGTPB_Q.BLIF STEP9A_qprice_3_.C
+1 1
+.names  gmoverf.BLIF STEP9K_Di2_2_.CE
+1 1
+.names  dis1_i_20__n.BLIF o_DIS3_6_
+1 1
+.names  un1_dis1_18__n.BLIF un1_dis1_i_18__n
+0 1
+.names  STEP9F_G_43.BLIF step9f_ozor_un11_sum_2__un3_n.BLIF step9f_ozor_un11_sum_2__un0_n
+11 1
+.names  LFTPB_Q.BLIF FDIVBY4_clk_out.AR
+1 1
+.names  dis1_i_21__n.BLIF o_DIS4_0_
+1 1
+.names  un4_dis1_19__n.BLIF un4_dis1_i_19__n
+0 1
+.names  step9f_ozor_un11_sum_2__un1_n.BLIF step9f_ozor_un11_sum_2__un0_n.BLIF STEP9F_oSCORE_6_.D
+1- 1
+-1 1
+.names  LFTPB_Q.BLIF STEP9A_qprice_3_.AR
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_2_.C
+1 1
+.names  dis1_i_22__n.BLIF o_DIS4_1_
+1 1
+.names  un1_dis1_19__n.BLIF un1_dis1_i_19__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_0_.BLIF un1_dis1_7__n
+11 1
+.names  dis1_i_23__n.BLIF o_DIS4_2_
+1 1
+.names  step9f_n_29_0_n.BLIF step9f_n_29_n
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_2_.BLIF un1_dis1_9__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_2_.AR
+1 1
+.names  vcc_n_n.BLIF RGTPB_Q.D
+1 1
+.names  dis1_i_24__n.BLIF o_DIS4_3_
+1 1
+.names  N_34_i.BLIF N_34
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_3_.BLIF un1_dis1_10__n
+11 1
+.names  dis1_i_25__n.BLIF o_DIS4_4_
+1 1
+.names  step9j_n_77_0_n.BLIF step9j_n_77_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_22_.BLIF un1_dis1_22__n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_0_.CE
+1 1
+.names  i_S1_NO_i.BLIF RGTPB_Q.C
+1 1
+.names  dis1_i_26__n.BLIF o_DIS4_5_
+1 1
+.names  step9j_n_27_0_n.BLIF step9j_n_27_n
+0 1
+.names  un1_dis1_i_22__n.BLIF un4_dis1_i_22__n.BLIF dis1_i_22__n
+11 1
+.names  dis1_i_27__n.BLIF o_DIS4_6_
+1 1
+.names  N_46.BLIF N_46_i
+0 1
+.names  STEP9F_oSCORE_6_.BLIF STEP9F_oSCORE_7_.BLIF N_86
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_0_.C
+1 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_3_.LH
+1 1
+.names  jumbo_i_0__n.BLIF o_JUMBO_0_
+1 1
+.names  N_45.BLIF N_45_i
+0 1
+.names  N_86.BLIF N_86_i
+0 1
+.names  i_S1_NO_i.BLIF RGTPB_Q.AP
+1 1
+.names  jumbo_i_1__n.BLIF o_JUMBO_1_
+1 1
+.names  N_47.BLIF N_47_i
+0 1
+.names  N_87.BLIF N_87_i
+0 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_0_.AR
+1 1
+.names  jumbo_i_2__n.BLIF o_JUMBO_2_
+1 1
+.names  un4_dis1_17__n.BLIF un4_dis1_i_17__n
+0 1
+.names  N_85.BLIF N_85_i
+0 1
+.names  S1BC_i.BLIF o_LED_YELLOW_0_
+1 1
+.names  un1_dis1_17__n.BLIF un1_dis1_i_17__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_6_.BLIF un1_dis1_13__n
+11 1
+.names  gmoverf.BLIF STEP9K_Di2_3_.CE
+1 1
+.names  vcc_n_n.BLIF LFTPB_Q.D
+1 1
+.names  S2BC_i.BLIF o_LED_YELLOW_1_
+1 1
+.names  un1_dis1_0__n.BLIF un1_dis1_i_0__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_5_.BLIF un1_dis1_12__n
+11 1
+.names  step9j_n_89_1_n.BLIF step9j_cq_i_3__n.BLIF step9j_n_89_n
+11 1
+.names  un4_dis1_1__n.BLIF un4_dis1_i_1__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di3_4_.BLIF un1_dis1_11__n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_1_.CE
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di2_3_.C
+1 1
+.names  i_S2_NO_i.BLIF LFTPB_Q.C
+1 1
+.names  un1_dis1_1__n.BLIF un1_dis1_i_1__n
+0 1
+.names  step9j_n_26_0_n.BLIF myscore_i_7__n.BLIF N_97
+11 1
+.names  un4_dis1_2__n.BLIF un4_dis1_i_2__n
+0 1
+.names  step9j_n_52_n.BLIF STEP9F_oSCORE_5_.BLIF N_85
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_1_.C
+1 1
+.names  LFTPB_Q.BLIF STEP9K_Di2_3_.AR
+1 1
+.names  un1_dis1_2__n.BLIF un1_dis1_i_2__n
+0 1
+.names  un1_dis1_i_24__n.BLIF un4_dis1_i_24__n.BLIF dis1_i_24__n
+11 1
+.names  i_S2_NO_i.BLIF LFTPB_Q.AP
+1 1
+.names  un4_dis1_3__n.BLIF un4_dis1_i_3__n
+0 1
+.names  step9f_n_20_n.BLIF STEP9F_oSCORE_1_.BLIF step9f_n_23_n
+11 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_1_.AR
+1 1
+.names  un1_dis1_3__n.BLIF un1_dis1_i_3__n
+0 1
+.names  STEP9F_oSCORE_0_.BLIF zfout.BLIF step9f_n_20_n
+11 1
+.names  un4_dis1_1_4__n.BLIF un4_dis1_1_i_4__n
+0 1
+.names  dip_c_7__n.BLIF zfout.BLIF jumbo_2__n
+11 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_4_.LH
+1 1
+.names  step9a_un4_feedback_n.BLIF STEP9A_un1_feedback_1.X1
+1 1
+.names  un1_dis1_4__n.BLIF un1_dis1_i_4__n
+0 1
+.names  dip_c_7__n.BLIF step9c_un1_lt_i_n.BLIF jumbo_1__n
+11 1
+.names  un4_dis1_5__n.BLIF un4_dis1_i_5__n
+0 1
+.names  dip_c_7__n.BLIF jumbo_leds_0__n.BLIF jumbo_0__n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_2_.CE
+1 1
+.names  STEP9A_qprice_2_.BLIF STEP9A_un1_feedback_1.X2
+1 1
+.names  un1_dis1_5__n.BLIF un1_dis1_i_5__n
+0 1
+.names  jumbo_leds_i_0__n.BLIF zfout_i.BLIF step9c_un1_lt_i_n
+11 1
+.names  STEP9K_Di4_0_.BLIF STEP9K_outDISP_21_.D
+1 1
+.names  un4_dis1_6__n.BLIF un4_dis1_i_6__n
+0 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_2_.C
+1 1
+.names  un1_dis1_6__n.BLIF un1_dis1_i_6__n
+0 1
+.names  step9c_un1_lt_i_n.BLIF STEP9F_oSCORE_2_.BLIF step9f_n_33_n
+11 1
+.names  gmoverf.BLIF STEP9K_outDISP_21_.CE
+1 1
+.names  STEP9A_un1_feedback_1.BLIF STEP9A_un1_feedback.X1
+1 1
+.names  N_142.BLIF N_142_i
+0 1
+.names  step9c_un1_lt_n.BLIF myscore_i_2__n.BLIF step9f_n_27_0_n
+11 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_2_.AR
+1 1
+.names  step9f_n_29_n.BLIF step9f_n_23_n.BLIF step9f_n_30_1_n
+11 1
+.names  N_141.BLIF N_141_i
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_21_.C
+1 1
+.names  STEP9A_qprice_3_.BLIF STEP9A_un1_feedback.X2
+1 1
+.names  step9f_n_30_1_n.BLIF step9f_n_27_n.BLIF step9f_n_30_n
+11 1
+.names  step9c_un1_lt_i_n.BLIF step9c_un1_lt_n
+0 1
+.names  step9b_n_4_i_n.BLIF step9b_un38_c_1_n.BLIF step9b_un38_c_n
+11 1
+.names  step9j_n_52_n.BLIF step9j_n_172_n.BLIF step9j_n_125_1_n
+11 1
+.names  STEP9A_qprice_2_.BLIF randprice_i_2__n
+0 1
+.names  dip_i_3__n.BLIF STEP9A_qprice_3_.BLIF step9b_g_3__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_21_.AR
+1 1
+.names  step9j_n_125_1_n.BLIF STEP9F_oSCORE_5_.BLIF step9j_n_125_n
+11 1
+.names  step9a_un4_feedback_0_n.BLIF step9a_un4_feedback_n
+0 1
+.names  STEP9B_P_3_.BLIF step9b_n_4_i_n
+0 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_3_.CE
+1 1
+.names  STEP9J_CQ_0_.BLIF STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.X1
+1 1
+.names  N_34.BLIF step9j_n_177_n.BLIF step9j_n_124_1_n
+11 1
+.names  STEP9A_qprice_1_.BLIF randprice_i_1__n
+0 1
+.names  step9b_g_2__n.BLIF step9b_n_4_i_n.BLIF step9b_un35_c_n
+11 1
+.names  step9j_n_124_1_n.BLIF STEP9F_oSCORE_1_.BLIF step9j_n_124_n
+11 1
+.names  STEP9A_qprice_0_.BLIF randprice_i_0__n
+0 1
+.names  step9j_n_26_n.BLIF STEP9F_oSCORE_7_.BLIF N_89
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_3_.C
+1 1
+.names  STEP9J_CQ_1_.BLIF STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.X2
+1 1
+.names  step9j_n_26_0_n.BLIF step9j_n_184_n.BLIF step9j_n_123_1_n
+11 1
+.names  N_169.BLIF N_169_i
+0 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_5_.LH
+1 1
+.names  step9j_n_123_1_n.BLIF myscore_i_7__n.BLIF step9j_n_123_n
+11 1
+.names  N_172_0.BLIF N_172
+0 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_3_.AR
+1 1
+.names  step9j_n_27_0_n.BLIF step9j_n_213_n.BLIF step9j_n_109_1_n
+11 1
+.names  N_165.BLIF N_165_i
+0 1
+.names  STEP9F_oSCORE_4_.BLIF STEP9J_ozor_next_1_i_x2_3_.X1
+1 1
+.names  step9j_n_109_1_n.BLIF myscore_i_3__n.BLIF step9j_n_109_n
+11 1
+.names  N_168_0.BLIF N_168
+0 1
+.names  step9f_n_90_i_n.BLIF STEP9F_oSCORE_7_.BLIF step9f_next_oscore4_0_n
+11 1
+.names  STEP9K_Di4_1_.BLIF STEP9K_outDISP_22_.D
+1 1
+.names  step9j_cq_i_3__n.BLIF step9j_n_192_n.BLIF step9j_n_108_1_n
+11 1
+.names  step9f_n_90_n.BLIF step9f_n_90_i_n
+0 1
+.names  step9f_next_oscore4_n.BLIF gmoverf_i.BLIF step9f_next_oscore_0_sqmuxa_n
+11 1
+.names  STEP9F_oSCORE_5_.BLIF STEP9J_ozor_next_1_i_x2_3_.X2
+1 1
+.names  step9j_n_108_1_n.BLIF step9j_n_216_n.BLIF step9j_n_108_n
+11 1
+.names  step9f_next_oscore4_0_n.BLIF step9f_next_oscore4_n
+0 1
+.names  STEP9F_oSCORE_3_.BLIF myscore_i_3__n
+0 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_4_.CE
+1 1
+.names  gmoverf.BLIF STEP9K_outDISP_22_.CE
+1 1
+.names  step9j_n_184_n.BLIF step9j_n_218_n.BLIF step9j_n_100_1_n
+11 1
+.names  un4_dis1_14__n.BLIF un4_dis1_i_14__n
+0 1
+.names  dip_c_4__n.BLIF N_165_i.BLIF N_168_0
+11 1
+.names  step9j_n_100_1_n.BLIF STEP9F_oSCORE_6_.BLIF step9j_n_100_n
+11 1
+.names  un1_dis1_14__n.BLIF un1_dis1_i_14__n
+0 1
+.names  dip_i_5__n.BLIF N_168.BLIF N_169
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_4_.C
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_22_.C
+1 1
+.names  dip_c_3__n.BLIF STEP9C_un1_LT_0_x2_1.X1
+1 1
+.names  step9j_n_53_0_n.BLIF STEP9J_CQ_2_.BLIF step9j_n_96_1_n
+11 1
+.names  N_185_i.BLIF N_185
+0 1
+.names  dip_c_6__n.BLIF N_169_i.BLIF N_172_0
+11 1
+.names  step9j_n_96_1_n.BLIF step9j_cq_i_0__n.BLIF step9j_n_96_n
+11 1
+.names  un4_dis1_1_0__n.BLIF un4_dis1_1_i_0__n
+0 1
+.names  dip_i_7__n.BLIF N_172.BLIF N_173
+11 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_4_.AR
+1 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_22_.AR
+1 1
+.names  step9b_c_2__n.BLIF STEP9C_un1_LT_0_x2_1.X2
+1 1
+.names  step9j_n_31_n.BLIF step9j_cq_i_2__n.BLIF step9j_n_89_1_n
+11 1
+.names  un4_dis1_22__n.BLIF un4_dis1_i_22__n
+0 1
+.names  dip_c_7__n.BLIF STEP9A_qprice_0_.BLIF midred_0__n
+11 1
+.names  step9j_n_157_1_n.BLIF step9j_n_157_2_n.BLIF step9j_n_157_n
+11 1
+.names  un1_dis1_22__n.BLIF un1_dis1_i_22__n
+0 1
+.names  dip_c_7__n.BLIF STEP9A_qprice_1_.BLIF midred_1__n
+11 1
+.names  step9j_n_52_0_n.BLIF step9j_n_172_n.BLIF step9j_n_156_1_n
+11 1
+.names  zfout.BLIF zfout_i
+0 1
+.names  dip_c_7__n.BLIF STEP9A_qprice_2_.BLIF midred_2__n
+11 1
+.names  STEP9K_Di4_2_.BLIF STEP9K_outDISP_23_.D
+1 1
+.names  STEP9A_qprice_3_.BLIF STEP9C_un1_LT_0_x2_2.X1
+1 1
+.names  step9j_n_156_1_n.BLIF myscore_i_5__n.BLIF step9j_n_156_n
+11 1
+.names  step9b_un42_c_n.BLIF step9b_un42_c_i_n
+0 1
+.names  dip_c_7__n.BLIF STEP9A_qprice_3_.BLIF midred_3__n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_5_.CE
+1 1
+.names  STEP9J_ozor_next_1_i_x2_3_.BLIF step9j_n_214_n.BLIF step9j_n_142_1_n
+11 1
+.names  step9b_un38_c_1_n.BLIF step9b_un38_c_1_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_23_.CE
+1 1
+.names  step9b_c_2__n.BLIF STEP9C_un1_LT_0_x2_2.X2
+1 1
+.names  step9j_n_142_1_n.BLIF STEP9F_oSCORE_6_.BLIF step9j_n_142_n
+11 1
+.names  step9b_g_2__n.BLIF step9b_g_i_2__n
+0 1
+.names  STEP9D_qrnd_0_.BLIF STEP9D_qrnd_1_.BLIF N_143_1
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_5_.C
+1 1
+.names  step9j_n_32_i_i_0_n.BLIF step9j_n_184_n.BLIF step9j_n_137_1_n
+11 1
+.names  step9b_un22_c_n.BLIF step9b_un22_c_i_n
+0 1
+.names  N_185.BLIF STEP9D_qrnd_3_.BLIF gmoverf
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_23_.C
+1 1
+.names  step9j_n_137_1_n.BLIF STEP9F_oSCORE_6_.BLIF step9j_n_137_n
+11 1
+.names  step9b_un26_c_n.BLIF step9b_un26_c_i_n
+0 1
+.names  roundnum_i_1__n.BLIF roundnum_i_2__n.BLIF N_185_i
+11 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_5_.AR
+1 1
+.names  STEP9C_un1_LT_0_x2_1.BLIF STEP9C_un1_LT_0_x2_3.X1
+1 1
+.names  step9j_n_172_n.BLIF STEP9F_oSCORE_4_.BLIF step9j_n_130_1_n
+11 1
+.names  step9b_c_0_2__n.BLIF step9b_c_2__n
+0 1
+.names  un1_dis1_i_14__n.BLIF un4_dis1_i_14__n.BLIF dis1_i_14__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_23_.AR
+1 1
+.names  myscore_i_6__n.BLIF myscore_i_7__n.BLIF step9j_n_130_2_n
+11 1
+.names  step9b_un35_c_n.BLIF step9b_un35_c_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_Di4_0_.BLIF un1_dis1_14__n
+11 1
+.names  STEP9C_un1_LT_0_x2_2.BLIF STEP9C_un1_LT_0_x2_3.X2
+1 1
+.names  step9j_n_130_1_n.BLIF step9j_n_130_2_n.BLIF step9j_n_130_n
+11 1
+.names  step9b_g_3__n.BLIF step9b_g_i_3__n
+0 1
+.names  STEP9B_P_0_.BLIF diffout_i_0__n
+0 1
+.names  step9j_n_177_n.BLIF STEP9F_oSCORE_0_.BLIF step9j_n_129_1_n
+11 1
+.names  step9b_un38_c_n.BLIF step9b_un38_c_i_n
+0 1
+.names  step9b_n_6_i_n.BLIF diffout_i_0__n.BLIF step9b_un47_c_1_n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_6_.CE
+1 1
+.names  myscore_i_2__n.BLIF myscore_i_3__n.BLIF step9j_n_129_2_n
+11 1
+.names  cfout_0.BLIF cfout
+0 1
+.names  dip_i_2__n.BLIF STEP9A_qprice_2_.BLIF step9b_g_2__n
+11 1
+.names  step9j_un1_next_cq41_1_i_n.BLIF STEP9J_next_6_.LH
+1 1
+.names  STEP9C_un1_LT_0_x2_3.BLIF STEP9C_un1_LT_0_x2.X1
+1 1
+.names  step9j_n_129_1_n.BLIF step9j_n_129_2_n.BLIF step9j_n_129_n
+11 1
+.names  step9f_n_27_0_n.BLIF step9f_n_27_n
+0 1
+.names  step9b_un47_c_1_n.BLIF step9b_un47_c_2_n.BLIF zfout
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_6_.C
+1 1
+.names  step9j_n_172_n.BLIF STEP9F_oSCORE_6_.BLIF step9j_n_128_1_n
+11 1
+.names  jumbo_leds_0__n.BLIF jumbo_leds_i_0__n
+0 1
+.names  step9b_n_8_i_n.BLIF step9b_un47_c_1_n.BLIF step9b_un26_c_n
+11 1
+.names  cfout.BLIF STEP9C_un1_LT_0_x2.X2
+1 1
+.names  step9j_n_128_1_n.BLIF STEP9F_oSCORE_7_.BLIF step9j_n_128_n
+11 1
+.names  step9f_n_48_0_n.BLIF step9f_n_48_n
+0 1
+.names  STEP9B_P_1_.BLIF step9b_n_6_i_n
+0 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_6_.AR
+1 1
+.names  STEP9K_Di4_3_.BLIF STEP9K_outDISP_24_.D
+1 1
+.names  step9j_n_197_0_4_n.BLIF step9j_n_197_0_5_n.BLIF STEP9J_next_0_.D
+11 1
+.names  STEP9F_G_43.BLIF step9f_ozor_z_i_2__n
+0 1
+.names  step9b_n_8_i_n.BLIF step9b_un42_c_1_n.BLIF step9b_un22_c_n
+11 1
+.names  step9j_n_96_i_n.BLIF step9j_n_90_i_n.BLIF step9j_next_cq_1_0_1_3__n
+11 1
+.names  STEP9F_G_41_i_o3.BLIF step9f_ozor_z_i_1__n
+0 1
+.names  STEP9B_P_2_.BLIF step9b_n_8_i_n
+0 1
+.names  gmoverf.BLIF STEP9K_outDISP_24_.CE
+1 1
+.names  step9f_n_56_n.BLIF STEP9F_G_41_i_o3.X1
+1 1
+.names  step9j_next_cq_1_0_1_3__n.BLIF step9j_n_94_i_n.BLIF step9j_next_cq_1_0_3__n
+11 1
+.names  step9f_n_73_0_n.BLIF step9f_n_73_n
+0 1
+.names  step9b_n_4_i_n.BLIF step9b_n_8_i_n.BLIF step9b_un47_c_2_n
+11 1
+.names  step9j_n_88_i_n.BLIF step9j_n_89_i_n.BLIF step9j_n_8_0_1_n
+11 1
+.names  step9f_n_28_n.BLIF step9f_n_28_i_n
+0 1
+.names  step9b_un42_c_1_n.BLIF step9b_un47_c_2_n.BLIF step9b_un42_c_n
+11 1
+.names  step9f_next_oscore_0_sqmuxa_n.BLIF STEP9F_oSCORE_7_.CE
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_24_.C
+1 1
+.names  STEP9F_oSCORE_5_.BLIF STEP9F_G_41_i_o3.X2
+1 1
+.names  step9j_n_90_i_n.BLIF step9j_n_92_i_n.BLIF step9j_n_8_0_2_n
+11 1
+.names  step9f_n_30_n.BLIF step9f_n_30_i_n
+0 1
+.names  N_130.BLIF STEP9D_qrnd_1_.BLIF N_133
+11 1
+.names  step9j_n_8_0_1_n.BLIF step9j_n_8_0_2_n.BLIF STEP9J_next_CQ_2_.D
+11 1
+.names  step9f_ozor_un2_cout_n.BLIF step9f_ozor_un2_cout_i_n
+0 1
+.names  un1_dis1_i_6__n.BLIF un4_dis1_i_6__n.BLIF dis1_i_6__n
+11 1
+.names  RGTPB_Q.BLIF STEP9F_oSCORE_7_.C
+1 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_24_.AR
+1 1
+.names  step9j_n_27_0_n.BLIF STEP9F_oSCORE_0_.BLIF step9j_n_187_1_n
+11 1
+.names  step9f_ozor_un5_cout_n.BLIF step9f_ozor_un5_cout_i_n
+0 1
+.names  un1_dis1_i_5__n.BLIF un4_dis1_i_5__n.BLIF dis1_i_5__n
+11 1
+.names  step9f_n_59_n.BLIF STEP9F_G_43.X1
+1 1
+.names  step9j_n_187_1_n.BLIF myscore_i_3__n.BLIF step9j_n_187_n
+11 1
+.names  step9f_hundredscarry_0_n.BLIF step9f_hundredscarry_n
+0 1
+.names  un1_dis1_i_4__n.BLIF un4_dis1_1_i_4__n.BLIF dis1_i_4__n
+11 1
+.names  LFTPB_Q.BLIF STEP9F_oSCORE_7_.AR
+1 1
+.names  step9j_n_26_0_n.BLIF STEP9F_oSCORE_4_.BLIF step9j_n_186_1_n
+11 1
+.names  step9f_uche_un2_cout_n.BLIF step9f_uche_un2_cout_i_n
+0 1
+.names  un1_dis1_i_3__n.BLIF un4_dis1_i_3__n.BLIF dis1_i_3__n
+11 1
+.names  STEP9K_Di4_4_.BLIF STEP9K_outDISP_25_.D
+1 1
+.names  STEP9F_oSCORE_6_.BLIF STEP9F_G_43.X2
+1 1
+.names  step9j_n_186_1_n.BLIF myscore_i_7__n.BLIF step9j_n_186_n
+11 1
+.names  step9f_n_31_n.BLIF step9f_n_31_i_n
+0 1
+.names  un1_dis1_i_2__n.BLIF un4_dis1_i_2__n.BLIF dis1_i_2__n
+11 1
+.names  step9j_n_214_n.BLIF STEP9F_oSCORE_5_.BLIF step9j_n_207_1_n
+11 1
+.names  step9f_uche_un5_cout_n.BLIF step9f_uche_un5_cout_i_n
+0 1
+.names  un1_dis1_i_1__n.BLIF un4_dis1_i_1__n.BLIF dis1_i_1__n
+11 1
+.names  gmoverf.BLIF STEP9K_outDISP_25_.CE
+1 1
+.names  myscore_i_4__n.BLIF myscore_i_6__n.BLIF step9j_n_207_2_n
+11 1
+.names  step9f_tenscarry_0_n.BLIF step9f_tenscarry_n
+0 1
+.names  un1_dis1_i_0__n.BLIF un4_dis1_1_i_0__n.BLIF dis1_i_0__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_4_.C
+1 1
+.names  step9f_tenscarry_n.BLIF STEP9F_uche_un11_SUM_i_1_.X1
+1 1
+.names  step9j_n_207_1_n.BLIF step9j_n_207_2_n.BLIF step9j_n_207_n
+11 1
+.names  un4_dis1_24__n.BLIF un4_dis1_i_24__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_4_.BLIF un1_dis1_4__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_25_.C
+1 1
+.names  step9j_n_177_n.BLIF STEP9F_oSCORE_1_.BLIF step9j_n_157_1_n
+11 1
+.names  un1_dis1_24__n.BLIF un1_dis1_i_24__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_3_.BLIF un1_dis1_3__n
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_4_.AR
+1 1
+.names  STEP9F_uche_G_3_i_o2.BLIF STEP9F_uche_un11_SUM_i_1_.X2
+1 1
+.names  myscore_i_0__n.BLIF myscore_i_2__n.BLIF step9j_n_157_2_n
+11 1
+.names  un4_dis1_25__n.BLIF un4_dis1_i_25__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_1_.BLIF un1_dis1_1__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_25_.AR
+1 1
+.names  step9j_n_132_i_n.BLIF step9j_n_133_i_n.BLIF step9j_n_15_0_2_n
+11 1
+.names  un1_dis1_25__n.BLIF un1_dis1_i_25__n
+0 1
+.names  STEP9D_qrnd_3_.BLIF STEP9K_Di2_0_.BLIF un1_dis1_0__n
+11 1
+.names  step9j_n_15_0_1_n.BLIF step9j_n_15_0_2_n.BLIF STEP9J_next_2_.D
+11 1
+.names  un4_dis1_23__n.BLIF un4_dis1_i_23__n
+0 1
+.names  STEP9D_qrnd_0_.BLIF roundnum_i_0__n
+0 1
+.names  step9f_tenscarry_n.BLIF STEP9F_uche_G_39_i.X1
+1 1
+.names  step9j_n_54_n.BLIF step9j_n_124_i_n.BLIF step9j_n_13_0_1_n
+11 1
+.names  un1_dis1_23__n.BLIF un1_dis1_i_23__n
+0 1
+.names  gmoverf_i.BLIF roundnum_i_0__n.BLIF STEP9D_qrnd_0_.D
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_5_.C
+1 1
+.names  step9j_n_125_i_n.BLIF step9j_n_126_i_n.BLIF step9j_n_13_0_2_n
+11 1
+.names  un4_dis1_21__n.BLIF un4_dis1_i_21__n
+0 1
+.names  N_143_1.BLIF STEP9D_qrnd_2_.BLIF N_195
+11 1
+.names  gmoverf.BLIF STEP9J_next_CQ_0_.LH
+1 1
+.names  STEP9F_oSCORE_4_.BLIF STEP9F_uche_G_39_i.X2
+1 1
+.names  step9j_n_127_i_n.BLIF step9j_n_128_i_n.BLIF step9j_n_13_0_3_n
+11 1
+.names  un1_dis1_21__n.BLIF un1_dis1_i_21__n
+0 1
+.names  N_144.BLIF N_144_i
+0 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_5_.AR
+1 1
+.names  step9j_n_129_i_n.BLIF step9j_n_130_i_n.BLIF step9j_n_13_0_4_n
+11 1
+.names  step9j_n_79_0_n.BLIF step9j_n_79_n
+0 1
+.names  N_128_i.BLIF N_129_i.BLIF un4_dis1_3__n
+11 1
+.names  step9j_n_13_0_1_n.BLIF step9j_n_13_0_2_n.BLIF step9j_n_13_0_5_n
+11 1
+.names  step9j_n_52_0_n.BLIF step9j_n_52_n
+0 1
+.names  N_128_i.BLIF gmoverf_i.BLIF un4_dis1_6__n
+11 1
+.names  STEP9K_Di4_5_.BLIF STEP9K_outDISP_26_.D
+1 1
+.names  step9f_n_61_n.BLIF STEP9F_ozor_G_45.X1
+1 1
+.names  step9j_n_13_0_3_n.BLIF step9j_n_13_0_4_n.BLIF step9j_n_13_0_6_n
+11 1
+.names  step9j_n_26_0_n.BLIF step9j_n_26_n
+0 1
+.names  STEP9D_qrnd_2_.BLIF roundnum_i_2__n
+0 1
+.names  step9j_n_13_0_5_n.BLIF step9j_n_13_0_6_n.BLIF step9j_n_13_0_7_n
+11 1
+.names  N_221.BLIF N_221_i
+0 1
+.names  STEP9D_qrnd_2_.BLIF roundnum_i_0__n.BLIF N_130_i
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_outCHAR_6_.C
+1 1
+.names  gmoverf.BLIF STEP9K_outDISP_26_.CE
+1 1
+.names  STEP9F_oSCORE_7_.BLIF STEP9F_ozor_G_45.X2
+1 1
+.names  step9j_n_13_0_7_n.BLIF step9j_n_212_i_n.BLIF STEP9J_next_1_.D
+11 1
+.names  N_224_0.BLIF N_224
+0 1
+.names  N_195_i.BLIF gmoverf_i.BLIF N_129_i
+11 1
+.names  step9j_n_54_n.BLIF step9j_n_98_i_n.BLIF step9j_n_197_0_1_n
+11 1
+.names  step9j_msel_i_n.BLIF step9j_msel_i_i_n
+0 1
+.names  N_141_i.BLIF N_142_i.BLIF N_128_i
+11 1
+.names  LFTPB_Q.BLIF STEP9J_outCHAR_6_.AR
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_26_.C
+1 1
+.names  step9j_n_100_i_n.BLIF step9j_n_102_i_n.BLIF step9j_n_197_0_2_n
+11 1
+.names  step9j_n_53_0_n.BLIF step9j_n_53_n
+0 1
+.names  STEP9D_qrnd_3_.BLIF roundnum_i_3__n
+0 1
+.names  STEP9F_G_41_i_o3.BLIF STEP9F_ozor_G_62_i.X1
+1 1
+.names  step9j_n_123_i_n.BLIF step9j_n_108_i_n.BLIF step9j_n_197_0_3_n
+11 1
+.names  STEP9F_uche_G_3_i_o2.BLIF step9f_uche_z_i_1__n
+0 1
+.names  N_185_i.BLIF roundnum_i_3__n.BLIF N_145
+11 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_26_.AR
+1 1
+.names  step9j_n_197_0_1_n.BLIF step9j_n_197_0_2_n.BLIF step9j_n_197_0_4_n
+11 1
+.names  STEP9F_uche_G_12_0_a2.BLIF step9f_uche_z_i_2__n
+0 1
+.names  STEP9D_qrnd_2_.BLIF roundnum_i_1__n.BLIF N_144
+11 1
+.names  STEP9F_G_43.BLIF STEP9F_ozor_G_62_i.X2
+1 1
+.names  step9j_n_197_0_3_n.BLIF step9j_n_109_i_n.BLIF step9j_n_197_0_5_n
+11 1
+.names  step9j_n_39_0_n.BLIF step9j_n_39_n
+0 1
+.names  N_145.BLIF STEP9D_qrnd_0_.BLIF N_142
+11 1
+.names  S2BC_i.BLIF STEP9J_CQ_0_.CE
+1 1
+.names  step9j_n_144_i_n.BLIF step9j_n_146_i_n.BLIF step9j_n_23_i_2_n
+11 1
+.names  step9j_n_40_0_n.BLIF step9j_n_40_n
+0 1
+.names  STEP9D_qrnd_1_.BLIF roundnum_i_1__n
+0 1
+.names  STEP9K_Di4_6_.BLIF STEP9K_outDISP_27_.D
+1 1
+.names  step9j_n_148_i_n.BLIF step9j_n_150_i_n.BLIF step9j_n_23_i_3_n
+11 1
+.names  step9j_n_54_0_n.BLIF step9j_n_54_n
+0 1
+.names  N_130_i.BLIF roundnum_i_1__n.BLIF N_141
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_CQ_0_.C
+1 1
+.names  step9f_hundredscarry_n.BLIF STEP9F_ozor_un11_SUM_i_1_.X1
+1 1
+.names  step9j_n_23_i_1_n.BLIF step9j_n_23_i_2_n.BLIF step9j_n_23_i_4_n
+11 1
+.names  un4_dis1_27__n.BLIF un4_dis1_i_27__n
+0 1
+.names  N_130_i.BLIF STEP9D_qrnd_1_.BLIF N_140
+11 1
+.names  gmoverf.BLIF STEP9K_outDISP_27_.CE
+1 1
+.names  step9j_n_23_i_3_n.BLIF step9j_n_156_i_n.BLIF step9j_n_23_i_5_n
+11 1
+.names  un1_dis1_27__n.BLIF un1_dis1_i_27__n
+0 1
+.names  N_144.BLIF STEP9D_qrnd_0_.BLIF N_139
+11 1
+.names  STEP9F_G_41_i_o3.BLIF STEP9F_ozor_un11_SUM_i_1_.X2
+1 1
+.names  step9j_n_23_i_4_n.BLIF step9j_n_23_i_5_n.BLIF STEP9J_next_6_.D
+11 1
+.names  un4_dis1_20__n.BLIF un4_dis1_i_20__n
+0 1
+.names  un1_dis1_i_19__n.BLIF un4_dis1_i_19__n.BLIF dis1_i_19__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_outDISP_27_.C
+1 1
+.names  step9j_n_34_0_n.BLIF step9j_n_39_n.BLIF step9j_n_21_0_1_n
+11 1
+.names  un1_dis1_20__n.BLIF un1_dis1_i_20__n
+0 1
+.names  un1_dis1_i_18__n.BLIF un4_dis1_i_18__n.BLIF dis1_i_18__n
+11 1
+.names  S2BC_i.BLIF STEP9J_CQ_1_.CE
+1 1
+.names  step9j_n_140_i_n.BLIF step9j_n_142_i_n.BLIF step9j_n_21_0_2_n
+11 1
+.names  un4_dis1_15__n.BLIF un4_dis1_i_15__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di4_5_.BLIF un1_dis1_19__n
+11 1
+.names  LFTPB_Q.BLIF STEP9K_outDISP_27_.AR
+1 1
+.names  step9f_n_36_n.BLIF STEP9F_uche_G_17_1.X1
+1 1
+.names  step9j_n_21_0_1_n.BLIF step9j_n_21_0_2_n.BLIF step9j_n_21_0_3_n
+11 1
+.names  un1_dis1_15__n.BLIF un1_dis1_i_15__n
+0 1
+.names  gmoverf.BLIF STEP9K_Di4_4_.BLIF un1_dis1_18__n
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_CQ_1_.C
+1 1
+.names  step9j_n_21_0_3_n.BLIF step9j_n_209_i_n.BLIF STEP9J_next_5_.D
+11 1
+.names  N_220_0.BLIF N_220
+0 1
+.names  STEP9F_oSCORE_3_.BLIF STEP9F_uche_G_17_1.X2
+1 1
+.names  step9j_n_138_i_n.BLIF step9j_n_215_i_n.BLIF step9j_n_17_0_1_n
+11 1
+.names  N_95.BLIF N_95_i
+0 1
+.names  STEP9K_Di2_0_.BLIF STEP9K_Di3_0_.D
+1 1
+.names  step9j_n_134_i_n.BLIF step9j_n_135_i_n.BLIF step9j_n_17_0_2_n
+11 1
+.names  N_94.BLIF N_94_i
+0 1
+.names  step9j_n_136_i_n.BLIF step9j_n_137_i_n.BLIF step9j_n_17_0_3_n
+11 1
+.names  N_93.BLIF N_93_i
+0 1
+.names  N_138.BLIF N_138_i
+0 1
+.names  S2BC_i.BLIF STEP9J_CQ_2_.CE
+1 1
+.names  gmoverf.BLIF STEP9K_Di3_0_.CE
+1 1
+.names  STEP9F_uche_G_17_1.BLIF STEP9F_uche_G_17.X1
+1 1
+.names  step9j_n_17_0_1_n.BLIF step9j_n_17_0_2_n.BLIF step9j_n_17_0_4_n
+11 1
+.names  un4_dis1_26__n.BLIF un4_dis1_i_26__n
+0 1
+.names  N_138_i.BLIF gmoverf_i.BLIF un4_dis1_1_4__n
+11 1
+.names  step9j_n_17_0_4_n.BLIF step9j_n_17_0_3_n.BLIF STEP9J_next_3_.D
+11 1
+.names  un1_dis1_26__n.BLIF un1_dis1_i_26__n
+0 1
+.names  N_139.BLIF N_139_i
+0 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_CQ_2_.C
+1 1
+.names  FDIVBY4_clk_out.BLIF STEP9K_Di3_0_.C
+1 1
+.names  zfout.BLIF STEP9F_uche_G_17.X2
+1 1
+.names  step9j_n_36_0_n.BLIF step9j_n_131_i_n.BLIF step9j_n_15_0_1_n
+11 1
+.names  step9j_n_86_n.BLIF step9j_n_86_i_n
+0 1
+.names  N_140.BLIF N_140_i
+0 1
+.names  STEP9F_oSCORE_0_.BLIF myscore_i_2__n.BLIF N_39_1
+11 1
+.names  step9j_n_85_n.BLIF step9j_n_85_i_n
+0 1
+.names  N_145.BLIF N_145_i
+0 1
+.names  LFTPB_Q.BLIF STEP9K_Di3_0_.AR
+1 1
+.names  N_39_1.BLIF myscore_i_3__n.BLIF N_39
+11 1
+.names  step9j_n_87_n.BLIF step9j_n_87_i_n
+0 1
+.names  N_129_i.BLIF N_145_i.BLIF un4_dis1_1_0__n
+11 1
+.names  step9c_un1_lt_i_n.BLIF STEP9F_uche_G_12_0_a2_1.X1
+1 1
+.names  gmoverf_i.BLIF N_80_i.BLIF un4_dis1_1_27__n
+11 1
+.names  STEP9J_ozor_next_CQ_1_0_0_0_x2_1_.BLIF step9j_n_80_i_i_n
+0 1
+.names  N_133.BLIF N_133_i
+0 1
+.names  S2BC_i.BLIF STEP9J_CQ_3_.CE
+1 1
+.names  un4_dis1_1_27__n.BLIF N_89_i.BLIF un4_dis1_27__n
+11 1
+.names  step9j_next_cq_1_0_1__n.BLIF STEP9J_next_CQ_1_.D
+0 1
+.names  N_135.BLIF N_135_i
+0 1
+.names  STEP9K_Di2_1_.BLIF STEP9K_Di3_1_.D
+1 1
+.names  step9f_n_23_n.BLIF STEP9F_uche_G_12_0_a2_1.X2
+1 1
+.names  N_41_i.BLIF STEP9J_CQ_1_.BLIF step9j_n_40_0_1_n
+11 1
+.names  step9j_n_31_0_n.BLIF step9j_n_31_n
+0 1
+.names  N_34.BLIF STEP9F_oSCORE_1_.BLIF N_37
+11 1
+.names  FDIVBY4_clk_out.BLIF STEP9J_CQ_3_.C
+1 1
+.end
